@@ -1,0 +1,20 @@
+.card__btn-text_type_big {
+    background-image: url('../../../../images/cards/default-btn.png');
+    background-position: -5px 36px;
+    background-repeat: no-repeat;
+    background-size: auto 95px;
+    font-size: 16px;
+    align-self: end;
+    padding: 95px 0 20px 0;
+    opacity: 1;
+    transition: transform .25s linear, opacity .25s linear;
+    overflow: visible;
+}
+
+@media (max-width: 550px) {
+    .card__btn-text_type_big {
+        background-size: auto 85px;
+        background-position: -10px 50px;
+        font-size: 13px;
+    }
+}

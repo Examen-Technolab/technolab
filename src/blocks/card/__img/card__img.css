@@ -1,0 +1,15 @@
+.card__img {
+    grid-area: kit;
+    height: 220px;
+    width: 280px;
+    justify-self: end;
+    object-fit: contain;
+    margin: 10px;
+}
+
+@media (max-width: 550px) {
+    .card__img {
+        height: 140px;
+        width: 200px;
+    }
+}

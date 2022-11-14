@@ -1,0 +1,17 @@
+.photo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 650px;
+    height: 650px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 2;
+}
+
+@media (max-width: 1100px) {
+    .photo {
+        display: none;
+    }
+}

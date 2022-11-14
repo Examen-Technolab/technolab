@@ -1,0 +1,15 @@
+.main__link_level_professional {
+    background-image: url(../../../../images/professional-inactive.png);
+    grid-area: professional;
+}
+
+.main__link_level_professional:hover {
+    background-image: url(../../../../images/professional-active.png);
+}
+
+@media (max-width: 880px) {
+    .main__link_level_professional {
+        background-image: url(../../../../images/professional-active.png);
+    }
+
+}

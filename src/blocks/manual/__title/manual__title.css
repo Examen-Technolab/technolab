@@ -1,0 +1,20 @@
+.manual__title {
+    grid-area: title;
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 830px) {
+    .manual__title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 550px) {
+    .manual__title {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,8 @@
+.card__link_type_active {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.card__link_type_active:hover {
+    opacity: 1;
+}

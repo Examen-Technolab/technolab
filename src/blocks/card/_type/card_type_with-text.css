@@ -1,0 +1,16 @@
+.card_type_with-text {
+    z-index: 7;
+    height: 505px;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 20px 0 25px 20px;
+    background-color: #f1f0f0;
+    background-image: none;
+}
+
+@media (max-width: 550px) {
+    .card_type_with-text {
+        height: 400px;
+        width: 270px;
+    }
+}

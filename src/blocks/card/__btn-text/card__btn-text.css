@@ -1,0 +1,17 @@
+.card__btn-text {
+    font-size: 13px;
+    width: 150px;
+    margin: 0;
+    padding: 0 0 13px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media (max-width: 550px) {
+    .card__btn-text {
+        width: 120px;
+        font-size: 11px;
+        padding: 0 0 15px 0;
+    }
+}

@@ -1,0 +1,12 @@
+.manual__img {
+    grid-area: img;
+    width: 100px;
+    justify-self: center;
+    align-self: center;
+}
+
+@media (max-width: 550px) {
+    .manual__img {
+        width: 80px;
+    }
+}

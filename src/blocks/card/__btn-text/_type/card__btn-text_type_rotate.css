@@ -1,0 +1,12 @@
+.card__btn-text_type_rotate {
+    transform: rotate(180deg);
+    padding-top: 15px;
+    width: 150px;
+}
+
+@media (max-width: 550px) {
+    .card__btn-text_type_rotate {
+        width: 120px;
+        padding-top: 15px;
+    }
+}

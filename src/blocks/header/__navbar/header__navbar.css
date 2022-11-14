@@ -1,0 +1,14 @@
+.header__navbar {
+    background-color: #d5d4d4;
+    border-radius: 9px;
+    display: flex;
+    margin-left: 10vw;
+}
+
+@media (max-width: 880px) {
+    .header__navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px 0 0;
+    }
+}

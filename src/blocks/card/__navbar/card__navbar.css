@@ -1,0 +1,12 @@
+.card__navbar {
+    justify-self: center;
+    grid-area: navbar;
+    display: flex;
+    padding: 0 35px 10px 35px;
+}
+
+@media (max-width: 550px) {
+    .card__navbar {
+        margin-left: -20px;
+    }
+}

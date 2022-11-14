@@ -1,0 +1,28 @@
+.card_type_with-menu {
+    height: 550px;
+    border-radius: 30px;
+    display: grid;
+    grid-template-areas: 'kit kit kit'
+        '. title pic'
+        '. article pic'
+        '. price pic'
+        'navbar navbar navbar';
+    grid-template-columns: 40px auto 40px;
+    grid-template-rows: 240px auto;
+    justify-items: start;
+    z-index: 5;
+    overflow: hidden;
+}
+
+@media (max-width: 550px) {
+    .card_type_with-menu {
+        height: 400px;
+        grid-template-columns: 15px auto;
+        grid-template-rows: 180px auto;
+        grid-template-areas: 'kit kit'
+            '. title'
+            '. article'
+            '. price'
+            'navbar navbar';
+    }
+}

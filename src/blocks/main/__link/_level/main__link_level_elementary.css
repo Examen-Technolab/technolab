@@ -1,0 +1,14 @@
+.main__link_level_elementary {
+    background-image: url(../../../../images/elementary-inactive.png);
+    grid-area: elementary;
+}
+
+.main__link_level_elementary:hover {
+    background-image: url(../../../../images/elementary-active.png);
+}
+
+@media (max-width: 880px) {
+    .main__link_level_elementary {
+        background-image: url(../../../../images/elementary-active.png);
+    }
+}

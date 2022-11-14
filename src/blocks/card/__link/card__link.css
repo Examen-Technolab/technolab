@@ -1,0 +1,11 @@
+.card__link {
+    text-decoration: none;
+    justify-self: start;
+    transition: transform .25s linear, opacity .25s linear;
+    opacity: .8;
+}
+
+.card__link:hover {
+    transform: scale(1.05, 1.05);
+    opacity: 1;
+}

@@ -1,0 +1,22 @@
+.card_type_with-btn {
+    display: grid;
+    grid-template-areas: 'kit kit kit'
+        '. title title'
+        '. article btn'
+        '. price btn';
+    grid-template-columns: .4fr 1.8fr 2fr;
+    grid-template-rows: 240px auto;
+    justify-items: start;
+    transition: transform .3s linear;
+}
+
+.card_type_with-btn:hover {
+    transform: scale(1.02, 1.02);
+}
+
+@media (max-width: 550px) {
+    .card_type_with-btn {
+        grid-template-columns: 15px 115px auto;
+        grid-template-rows: 180px auto;
+    }
+}

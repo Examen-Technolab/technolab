@@ -1,0 +1,4 @@
+.text-background__shape_polygon_right {
+    float: right;
+    shape-outside: polygon(100% 0, 100% 100%, 0% 100%);
+}

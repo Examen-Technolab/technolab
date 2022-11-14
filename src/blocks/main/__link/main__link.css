@@ -1,0 +1,39 @@
+.main__link {
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 -50px 0 0;
+    padding: 0;
+    height: 100px;
+    width: 173px;
+    font-size: 0;
+    transition: background-image .25s linear, transform .25s linear;
+}
+
+.main__link:hover {
+    transform: scale(1.1, 1.1);
+}
+
+@media (max-width: 1250px) {
+    .main__link {
+        height: 90px;
+        width: 155px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .main__link {
+        margin-right: -50px;
+    }
+}
+
+@media (max-width: 880px) {
+    .main__link {
+        margin-right: -30px;
+        height: 80px;
+        width: 120px;
+    }
+
+    .main__link:hover {
+        opacity: .6;
+    }
+}

@@ -1,0 +1,14 @@
+.main__link_level_preliminary {
+    background-image: url(../../../../images/preliminary-inactive.png);
+    grid-area: preliminary;
+}
+
+.main__link_level_preliminary:hover {
+    background-image: url(../../../../images/preliminary-active.png);
+}
+
+@media (max-width: 880px) {
+    .main__link_level_preliminary {
+        background-image: url(../../../../images/preliminary-active.png);
+    }
+}

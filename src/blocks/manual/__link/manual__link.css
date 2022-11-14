@@ -1,0 +1,37 @@
+.manual__link {
+    z-index: 5;
+    width: 80%;
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-template-rows: 30px 35px auto;
+    grid-template-areas: "img title"
+        "img subtitle"
+        "img text";
+    grid-gap: 0px 40px;
+    align-items: center;
+    text-decoration: none;
+    color: #3d3d3d;
+    padding: 30px;
+    border-radius: 30px;
+    transition: color .25s linear;
+    transition: background-color .25s linear, transform .25s linear;
+}
+
+.manual__link:hover {
+    color: #000;
+    background-color: rgba(241, 240, 240, .8);
+    transform: scale(1.02, 1.02);
+}
+
+@media (max-width: 700px) {
+    .manual__link {
+        grid-template-rows: 1fr 1fr 0;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .manual__link {
+        padding: 10px;
+    }
+}

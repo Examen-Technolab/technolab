@@ -1,0 +1,10 @@
+.card__pic {
+    grid-area: pic;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 180px;
+    justify-self: start;
+    margin: -25px 0 0 -40px;
+    transform: rotate(-45deg);
+}

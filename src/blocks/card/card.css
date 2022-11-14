@@ -1,0 +1,20 @@
+.card {
+    background-color: #f1f0f0;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 160px auto;
+    background-image: url('../../images/cards/default-background.png');
+    width: 390px;
+    height: 430px;
+    border-radius: 30px;
+    z-index: 5;
+}
+
+@media (max-width: 550px) {
+    .card {
+        margin-bottom: 10px;
+        width: 290px;
+        height: 330px;
+        background-size: 140px auto;
+    }
+}
