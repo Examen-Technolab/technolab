@@ -1,1 +1,1 @@
-# [Посмотреть здесь.](https://ger-an-a.github.io/technolab_new/)
+# [Посмотреть здесь.](https://ger-an-a.github.io/Technolab/)
