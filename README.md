@@ -1,1 +1,1 @@
-# [Посмотреть здесь.](https://ger-an-a.github.io/Technolab/)
+# [Посмотреть здесь.](http://examen-technolab.ru/main)
