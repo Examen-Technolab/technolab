@@ -1,4 +1,5 @@
 .card__navbar {
+    -ms-grid-column-align: center;
     justify-self: center;
     grid-area: navbar;
     display: flex;

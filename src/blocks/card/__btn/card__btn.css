@@ -7,10 +7,17 @@
     border: none;
     width: 130px;
     height: 90px;
+    -ms-grid-column-align: start;
     justify-self: start;
     margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     cursor: pointer;
 }

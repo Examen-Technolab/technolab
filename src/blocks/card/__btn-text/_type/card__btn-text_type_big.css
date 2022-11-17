@@ -4,10 +4,16 @@
     background-repeat: no-repeat;
     background-size: auto 95px;
     font-size: 16px;
+    -ms-flex-item-align: end;
+    -ms-grid-row-align: end;
     align-self: end;
     padding: 95px 0 20px 0;
     opacity: 1;
+    -webkit-transition: opacity .25s linear, -webkit-transform .25s linear;
+    transition: opacity .25s linear, -webkit-transform .25s linear;
+    -o-transition: transform .25s linear, opacity .25s linear;
     transition: transform .25s linear, opacity .25s linear;
+    transition: transform .25s linear, opacity .25s linear, -webkit-transform .25s linear;
     overflow: visible;
 }
 
