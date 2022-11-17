@@ -112,3 +112,9 @@
 @import url(./blocks/card/__list/card__list.css);
 @import url(./blocks/card/__list-item/card__list-item.css);
 @import url(./blocks/text/_italic/text_italic.css);
+@import url(./blocks/card/__text/_level/card__text_level_aero.css);
+@import url(./blocks/card/__text/_level/card__text_level_basic.css);
+@import url(./blocks/card/__text/_level/card__text_level_elementary.css);
+@import url(./blocks/card/__text/_level/card__text_level_preliminary.css);
+@import url(./blocks/card/__text/_level/card__text_level_professional.css);
+@import url(./blocks/card/__text/_level/card__text_level_research.css);

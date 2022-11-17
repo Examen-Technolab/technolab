@@ -20,10 +20,10 @@ function Product() {
                     <CardWithText list={card.specifications} level={level} />
                 </Route>
                 <Route path={`${path}/downloads`}>
-                    <div className='cardd'>
-                        <div className='card card_type_with-text'>
-                            <p className='text'> Раздел дополняется.</p>
-                        </div></div>
+                    <CardWithText list={[{
+                        title: "Раздел дополняется", list: [],
+                        note: '',
+                    }]} level={level} />
                 </Route>
             </Switch>
         </section>

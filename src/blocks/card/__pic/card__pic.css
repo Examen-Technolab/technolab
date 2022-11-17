@@ -8,3 +8,9 @@
     margin: -25px 0 0 -40px;
     transform: rotate(-45deg);
 }
+
+@media (max-width: 550px) {
+    .card__pic {
+        display: none;
+    }
+}

@@ -1,0 +1,21 @@
+.card__text_level_basic {
+    scrollbar-color: #509ADB #E9E9E9;
+    scrollbar-width: thin;
+}
+
+.card__text_level_basic::-webkit-scrollbar {
+    width: 15px;
+}
+
+.card__text_level_basic::-webkit-scrollbar-track {
+    background: #E9E9E9;
+    border-radius: 15px;
+}
+
+
+.card__text_level_basic::-webkit-scrollbar-thumb {
+    background-color: #509ADB;
+    border-radius: 15px;
+    padding-right: 30px;
+    border: 3px solid #E9E9E9;
+}

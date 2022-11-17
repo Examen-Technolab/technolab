@@ -1,0 +1,21 @@
+.card__text_level_research {
+    scrollbar-color: #A85B9F #E9E9E9;
+    scrollbar-width: thin;
+}
+
+.card__text_level_research::-webkit-scrollbar {
+    width: 15px;
+}
+
+.card__text_level_research::-webkit-scrollbar-track {
+    background: #E9E9E9;
+    border-radius: 15px;
+}
+
+
+.card__text_level_research::-webkit-scrollbar-thumb {
+    background-color: #A85B9F;
+    border-radius: 15px;
+    padding-right: 30px;
+    border: 3px solid #E9E9E9;
+}

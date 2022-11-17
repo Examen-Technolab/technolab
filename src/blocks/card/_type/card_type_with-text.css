@@ -1,6 +1,7 @@
 .card_type_with-text {
     z-index: 7;
     height: 505px;
+    width: 370px;
     border-radius: 30px;
     overflow: hidden;
     padding: 20px 0 25px 20px;
