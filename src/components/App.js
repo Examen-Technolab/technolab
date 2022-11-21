@@ -6,6 +6,7 @@ import Catalog from './Catalog';
 import Manuals from './Manuals';
 //import Events from './Events';
 import TextSection from './TextSection';
+import Downloads from './Downloads';
 import Product from './Product';
 import { BrowserRouter, Route, Redirect } from 'react-router-dom';
 
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route path="/about">
             <TextSection class="section" level="about" page="about" />
+          </Route>
+          <Route path="/downloads">
+            <Downloads />
           </Route>
           {/*
           <Route path="/events">

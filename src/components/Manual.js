@@ -1,6 +1,6 @@
 function Manual(props) {
     return (
-        <li className="manual" key={props.index.toString()}>
+        <li className="manual">
             <a title="Открыть pdf-файл" className="manual__link" target="_blank" rel="noreferrer" href={props.manual.link}>
                 <img className="manual__img" alt="Обложка" src={props.manual.img} />
                 <h2 className="text manual__title">{props.manual.title}</h2>

@@ -5,7 +5,7 @@ import cards from '../utils/cards';
 
 function Catalog() {
     return (
-        <section className="catalog">
+        <section className="section">
             <h1 className="title"> Каталог </h1>
             <ul className="list grid">
                 {

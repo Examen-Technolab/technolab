@@ -13,6 +13,7 @@ function Navbar() {
             <NavLink to="/manuals" activeClassName={`highlighted-text highlighted-text_level_${level}`} className="link"> Обучение </NavLink>
             <NavLink to="/contacts" activeClassName={`highlighted-text highlighted-text_level_${level}`} className="link"> Контакты </NavLink>
             <NavLink to="/about" activeClassName={`highlighted-text highlighted-text_level_${level}`} className="link"> О нас </NavLink>
+            <NavLink to="/downloads" activeClassName={`highlighted-text highlighted-text_level_${level}`} className="link"> Загрузки </NavLink>
             {/*
             <NavLink to="/events" activeClassName={`highlighted-text highlighted-text_level_${level}`} className="link"> Мероприятия </NavLink>
     */}

@@ -1,0 +1,9 @@
+.downloads__btn-text {
+    font-size: 18px;
+    width: 150px;
+    margin: 0;
+    padding: 0 0 40px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}

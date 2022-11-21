@@ -1,0 +1,22 @@
+.downloads__btn {
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url('../../../images/cards/default-btn.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    width: 250px;
+    height: 180px;
+    -ms-grid-column-align: start;
+    justify-self: start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+}

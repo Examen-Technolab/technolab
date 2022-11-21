@@ -9,7 +9,7 @@ function Product() {
     let card = cards.find(card => card.level === level.toString());
     const { url, path } = useRouteMatch();
     return (
-        <section className="product grid">
+        <section className="section grid">
             <h1 className="title"> {card.title} </h1>
             <CardWithMenu url={url} level={level} img={card.img} title={card.title} article={card.article} price={card.price} />
             <Switch>

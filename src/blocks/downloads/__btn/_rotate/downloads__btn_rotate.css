@@ -1,0 +1,7 @@
+.downloads__btn_rotate {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    margin: -15px -85px 0;
+    padding: 40px;
+}

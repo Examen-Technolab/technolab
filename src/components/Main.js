@@ -25,7 +25,7 @@ function Main() {
     }, []);
 
     return (
-        <main className="section">
+        <main className="section flex">
             <div className="main__navbar">
                 <a href="http://dobot.examen-technolab.ru/" target="_blank" rel="noreferrer">
                     <img className="link-triangle main__link main__link_level_dobot" src={dobotLogo}

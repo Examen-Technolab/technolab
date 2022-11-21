@@ -3,12 +3,12 @@ import manuals from '../utils/manuals'
 
 function Manuals() {
     return (
-        <section className="section">
+        <section className="section flex">
             <ul className="list">
                 {
                     manuals.map((item, index) => {
                         return (
-                            <Manual manual={item} index={index} />
+                            <Manual key={index.toString()} manual={item} index={index} />
                         )
                     })
                 }
