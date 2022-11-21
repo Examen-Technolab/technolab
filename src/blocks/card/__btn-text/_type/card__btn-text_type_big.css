@@ -1,13 +1,12 @@
 .card__btn-text_type_big {
     background-image: url('../../../../images/cards/default-btn.png');
-    background-position: -5px 36px;
     background-repeat: no-repeat;
     background-size: auto 95px;
+    background-position: -45px 0;
+    padding: 58px 40px 18px 10px;
+    text-align: left;
     font-size: 16px;
-    -ms-flex-item-align: end;
-    -ms-grid-row-align: end;
-    align-self: end;
-    padding: 95px 0 20px 0;
+    width: 60px;
     opacity: 1;
     -webkit-transition: opacity .25s linear, -webkit-transform .25s linear;
     transition: opacity .25s linear, -webkit-transform .25s linear;
@@ -20,7 +19,9 @@
 @media (max-width: 550px) {
     .card__btn-text_type_big {
         background-size: auto 85px;
-        background-position: -10px 50px;
+        background-position: -40px 10px;
         font-size: 13px;
+        width: 60px;
+        padding: 65px 30px 15px 10px;
     }
 }
