@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.655151f1.css",
-    "main.js": "/static/js/main.d10d47a7.js",
+    "main.css": "/static/css/main.6c30ad18.css",
+    "main.js": "/static/js/main.e63394e3.js",
     "static/js/787.e3fa5a41.chunk.js": "/static/js/787.e3fa5a41.chunk.js",
     "static/media/about-photo.png": "/static/media/about-photo.e14284a31668bbbb319e.png",
     "static/media/contacts-photo.png": "/static/media/contacts-photo.eef7873359aae37c7766.png",
@@ -67,12 +67,12 @@
     "static/media/tv-0441-m-1.jpg": "/static/media/tv-0441-m-1.48b98d18547dc287ed6a.jpg",
     "static/media/dobot-logo.svg": "/static/media/dobot-logo.4b85fe52298de3d7ef8ec2a3e16ee4be.svg",
     "index.html": "/index.html",
-    "main.655151f1.css.map": "/static/css/main.655151f1.css.map",
-    "main.d10d47a7.js.map": "/static/js/main.d10d47a7.js.map",
+    "main.6c30ad18.css.map": "/static/css/main.6c30ad18.css.map",
+    "main.e63394e3.js.map": "/static/js/main.e63394e3.js.map",
     "787.e3fa5a41.chunk.js.map": "/static/js/787.e3fa5a41.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.655151f1.css",
-    "static/js/main.d10d47a7.js"
+    "static/css/main.6c30ad18.css",
+    "static/js/main.e63394e3.js"
   ]
 }
