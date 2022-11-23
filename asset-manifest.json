@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.08218ffa.css",
-    "main.js": "/static/js/main.a8127728.js",
+    "main.js": "/static/js/main.16761189.js",
     "static/js/787.e3fa5a41.chunk.js": "/static/js/787.e3fa5a41.chunk.js",
     "static/media/about-photo.png": "/static/media/about-photo.5c3764571389b326fd2d.png",
     "static/media/contacts-photo.png": "/static/media/contacts-photo.237cd65b0f85f4c20aa5.png",
@@ -64,15 +64,15 @@
     "static/media/background-triangle.png": "/static/media/background-triangle.3a0465969a3ef1cb2a47.png",
     "static/media/tv-0441-m-1.jpg": "/static/media/tv-0441-m-1.48b98d18547dc287ed6a.jpg",
     "static/media/professional-pic.png": "/static/media/professional-pic.d529e990b3a69b51fa7a.png",
-    "static/media/dobot-logo-inactive.svg": "/static/media/dobot-logo-inactive.80039c68c4377ebb2dbd59be8cf6db92.svg",
-    "static/media/dobot-logo.svg": "/static/media/dobot-logo.4b85fe52298de3d7ef8ec2a3e16ee4be.svg",
+    "static/media/dobot-logo-inactive.svg": "/static/media/dobot-logo-inactive.80039c68c4377ebb2dbd.svg",
+    "static/media/dobot-logo.svg": "/static/media/dobot-logo.4b85fe52298de3d7ef8e.svg",
     "index.html": "/index.html",
     "main.08218ffa.css.map": "/static/css/main.08218ffa.css.map",
-    "main.a8127728.js.map": "/static/js/main.a8127728.js.map",
+    "main.16761189.js.map": "/static/js/main.16761189.js.map",
     "787.e3fa5a41.chunk.js.map": "/static/js/787.e3fa5a41.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.08218ffa.css",
-    "static/js/main.a8127728.js"
+    "static/js/main.16761189.js"
   ]
 }
