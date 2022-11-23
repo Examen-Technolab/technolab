@@ -1,7 +1,5 @@
 import React from 'react';
 import { Switch, useRouteMatch, Route, Link } from 'react-router-dom';
-import dobotLogoActive from '../images/link/dobot-logo.svg';
-import dobotLogoInactive from '../images/link/dobot-logo-inactive.svg';
 import AboutModule from './AboutModule';
 import MainLink from './MainLink';
 
@@ -25,16 +23,10 @@ function Main() {
         return () => clearInterval(interval);
     }, []);
 
-    const [dobotLogo, setdobotLogo] = React.useState(dobotLogoInactive);
-
-    function handleHover() {
-        setdobotLogo(dobotLogoActive);
-    }
-
     return (
         <main className="section flex">
             <div className="main__navbar">
-                <Link to="http://dobot.examen-technolab.ru/" onHover={handleHover} target="_blank" rel="noreferrer" alt="Логотип Dobot." className="main__link main__link_level_dobot" />
+                <Link to="http://dobot.examen-technolab.ru/" target="_blank" rel="noreferrer" alt="Логотип Dobot." className="main__link main__link_level_dobot" />
                 <MainLink url={url} animation={preliminaryAnimation} level="preliminary" text="Предварительный уровень." />
                 <MainLink url={url} animation={elementaryAnimation} level="elementary" text="Начальный уровень." />
                 <MainLink url={url} animation={basicAnimation} level="basic" text="Базовый уровень." />
