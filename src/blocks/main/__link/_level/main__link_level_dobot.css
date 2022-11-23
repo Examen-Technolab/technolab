@@ -1,3 +1,14 @@
 .main__link_level_dobot {
     grid-area: dobot;
+    background-image: url(../../../../images/link/dobot-logo-inactive.svg);
+}
+
+.main__link_level_dobot:hover {
+    background-image: url(../../../../images/link/dobot-logo.svg);
+}
+
+@media (max-width: 880px) {
+    .main__link_level_dobot {
+        background-image: url(../../../../images/link/dobot-logo.svg);
+    }
 }

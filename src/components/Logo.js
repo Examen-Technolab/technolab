@@ -1,11 +1,11 @@
 import { Link, useParams } from 'react-router-dom';
-import preliminary from '../images/logo-preliminary.svg';
-import elementary from '../images/logo-elementary.svg';
-import basic from '../images/logo-basic.svg';
-import professional from '../images/logo-professional.svg';
-import research from '../images/logo-research.svg';
-import aero from '../images/logo-aero.svg';
-import defaultLogo from '../images/logo.svg';
+import preliminary from '../images/logo/logo-preliminary.svg';
+import elementary from '../images/logo/logo-elementary.svg';
+import basic from '../images/logo/logo-basic.svg';
+import professional from '../images/logo/logo-professional.svg';
+import research from '../images/logo/logo-research.svg';
+import aero from '../images/logo/logo-aero.svg';
+import defaultLogo from '../images/logo/logo.svg';
 
 const logosObject = {
     "preliminary": preliminary,

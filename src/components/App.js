@@ -31,14 +31,14 @@ function App() {
           <Route path="/manuals">
             <Manuals />
           </Route>
+          <Route path="/materials-for-download">
+            <Downloads />
+          </Route>
           <Route path="/contacts">
             <TextSection class="section" level="contacts" page="contacts" />
           </Route>
           <Route path="/about">
             <TextSection class="section" level="about" page="about" />
-          </Route>
-          <Route path="/downloads">
-            <Downloads />
           </Route>
           {/*
           <Route path="/events">

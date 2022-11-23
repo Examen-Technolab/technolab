@@ -1,14 +1,14 @@
 .main__link_level_aero {
-    background-image: url(../../../../images/aero-inactive.png);
+    background-image: url(../../../../images/link/aero-inactive.png);
     grid-area: aero;
 }
 
 .main__link_level_aero:hover {
-    background-image: url(../../../../images/aero-active.png);
+    background-image: url(../../../../images/link/aero-active.png);
 }
 
 @media (max-width: 880px) {
     .main__link_level_aero {
-        background-image: url(../../../../images/aero-active.png);
+        background-image: url(../../../../images/link/aero-active.png);
     }
 }

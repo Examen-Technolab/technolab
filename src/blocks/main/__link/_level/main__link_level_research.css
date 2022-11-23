@@ -1,14 +1,14 @@
 .main__link_level_research {
-    background-image: url(../../../../images/research-inactive.png);
+    background-image: url(../../../../images/link/research-inactive.png);
     grid-area: research;
 }
 
 .main__link_level_research:hover {
-    background-image: url(../../../../images/research-active.png);
+    background-image: url(../../../../images/link/research-active.png);
 }
 
 @media (max-width: 880px) {
     .main__link_level_research {
-        background-image: url(../../../../images/research-active.png);
+        background-image: url(../../../../images/link/research-active.png);
     }
 }
