@@ -26,7 +26,9 @@ function Main() {
     return (
         <main className="section flex">
             <div className="main__navbar">
-                <Link to="https://dobot.ru/" target="_blank" rel="noreferrer" alt="Логотип Dobot." className="main__link main__link_level_dobot" />
+                <a href="https://dobot.ru/" target="_blank" rel="noreferrer" alt="Логотип Dobot.">
+                    <div className="main__link main__link_level_dobot"></div>
+                </a>
                 <MainLink url={url} animation={preliminaryAnimation} level="preliminary" text="Предварительный уровень." />
                 <MainLink url={url} animation={elementaryAnimation} level="elementary" text="Начальный уровень." />
                 <MainLink url={url} animation={basicAnimation} level="basic" text="Базовый уровень." />
