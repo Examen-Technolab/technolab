@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.40eb10eb.css",
-    "main.js": "/static/js/main.c7904c84.js",
+    "main.css": "/static/css/main.f5c05258.css",
+    "main.js": "/static/js/main.f2798b36.js",
     "static/js/787.e3fa5a41.chunk.js": "/static/js/787.e3fa5a41.chunk.js",
     "static/media/about-photo.png": "/static/media/about-photo.5c3764571389b326fd2d.png",
-    "static/media/contacts-photo.png": "/static/media/contacts-photo.237cd65b0f85f4c20aa5.png",
+    "static/media/contacts-photo.png": "/static/media/contacts-photo.bc66370f249b4ce1fc89.png",
+    "static/media/main-photo.png": "/static/media/main-photo.5e41cb5d352143c63976.png",
     "static/media/sphero_book_new.jpeg": "/static/media/sphero_book_new.5fefbb54033e2f4518d1.jpeg",
     "static/media/bits_book_2_new.jpeg": "/static/media/bits_book_2_new.aabc5100b9058e49e083.jpeg",
     "static/media/bits_book_new.jpeg": "/static/media/bits_book_new.8343396ca7b73ea4b701.jpeg",
+    "static/media/basic-start.png": "/static/media/basic-start.6aa216afb8a0bf1e2e5d.png",
     "static/media/go_book_new.jpeg": "/static/media/go_book_new.1b8ed41f65d398e657ad.jpeg",
     "static/media/iq_book_new.jpeg": "/static/media/iq_book_new.f10316b829f326ae10c4.jpeg",
     "static/media/v5_book_new.jpeg": "/static/media/v5_book_new.caea3e7482ae5790d936.jpeg",
+    "static/media/basic-start-pic.png": "/static/media/basic-start-pic.ef2b1d33a6729e241195.png",
     "static/media/tv-0712-mu.jpg": "/static/media/tv-0712-mu.0fc557d91f4710d0f4e3.jpg",
     "static/media/tv-0712-mp.jpg": "/static/media/tv-0712-mp.e52d63af03486976eeb1.jpg",
     "static/media/machines-r.png": "/static/media/machines-r.7cf8dd67dad1430f7ca1.png",
     "static/media/tr-0541-mu.jpg": "/static/media/tr-0541-mu.8ad8c2ce000bace81a68.jpg",
     "static/media/tr-0541-mp.jpg": "/static/media/tr-0541-mp.3b9cbf0891ff93ccc3ed.jpg",
     "static/media/machines.png": "/static/media/machines.b111147d34f7364ce008.png",
-    "static/media/main-photo.png": "/static/media/main-photo.027ae8c4e26cc3b56c95.png",
     "static/media/machines-m.png": "/static/media/machines-m.a8ee02d7dd6028121b41.png",
     "static/media/tr-0621-mpr.jpg": "/static/media/tr-0621-mpr.ab62dc56d1a7ebedf7ac.jpg",
     "static/media/tr-0621-mur.jpg": "/static/media/tr-0621-mur.f0510d049db24b395a80.jpg",
@@ -63,6 +65,7 @@
     "static/media/tv-0241-mp.jpg": "/static/media/tv-0241-mp.4bfdb9602823dbbce604.jpg",
     "static/media/tv-0241-mu1.jpg": "/static/media/tv-0241-mu1.9a2769db7ebcf176c7e8.jpg",
     "static/media/tv-0241-mu2.jpg": "/static/media/tv-0241-mu2.a66070c789c2e8751535.jpg",
+    "static/media/text-background.png": "/static/media/text-background.918fb142919a42e920cd.png",
     "static/media/tv-0441-m-2.jpg": "/static/media/tv-0441-m-2.cc69c9d9fdedb2d6cedf.jpg",
     "static/media/background-triangle.png": "/static/media/background-triangle.3a0465969a3ef1cb2a47.png",
     "static/media/tv-0441-m-1.jpg": "/static/media/tv-0441-m-1.48b98d18547dc287ed6a.jpg",
@@ -70,12 +73,12 @@
     "static/media/dobot-logo-inactive.svg": "/static/media/dobot-logo-inactive.80039c68c4377ebb2dbd.svg",
     "static/media/dobot-logo.svg": "/static/media/dobot-logo.4b85fe52298de3d7ef8e.svg",
     "index.html": "/index.html",
-    "main.40eb10eb.css.map": "/static/css/main.40eb10eb.css.map",
-    "main.c7904c84.js.map": "/static/js/main.c7904c84.js.map",
+    "main.f5c05258.css.map": "/static/css/main.f5c05258.css.map",
+    "main.f2798b36.js.map": "/static/js/main.f2798b36.js.map",
     "787.e3fa5a41.chunk.js.map": "/static/js/787.e3fa5a41.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40eb10eb.css",
-    "static/js/main.c7904c84.js"
+    "static/css/main.f5c05258.css",
+    "static/js/main.f2798b36.js"
   ]
 }
