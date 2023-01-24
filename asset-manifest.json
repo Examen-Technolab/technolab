@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.f5c05258.css",
-    "main.js": "/static/js/main.f2798b36.js",
+    "main.css": "/static/css/main.5556c3c8.css",
+    "main.js": "/static/js/main.b9405842.js",
     "static/js/787.e3fa5a41.chunk.js": "/static/js/787.e3fa5a41.chunk.js",
     "static/media/about-photo.png": "/static/media/about-photo.5c3764571389b326fd2d.png",
     "static/media/contacts-photo.png": "/static/media/contacts-photo.bc66370f249b4ce1fc89.png",
     "static/media/main-photo.png": "/static/media/main-photo.5e41cb5d352143c63976.png",
     "static/media/sphero_book_new.jpeg": "/static/media/sphero_book_new.5fefbb54033e2f4518d1.jpeg",
+    "static/media/aero-prog.png": "/static/media/aero-prog.071fdf322f5f1ab8c186.png",
+    "static/media/aero-sport.png": "/static/media/aero-sport.749c4773aa32b767ff08.png",
     "static/media/bits_book_2_new.jpeg": "/static/media/bits_book_2_new.aabc5100b9058e49e083.jpeg",
     "static/media/bits_book_new.jpeg": "/static/media/bits_book_new.8343396ca7b73ea4b701.jpeg",
     "static/media/basic-start.png": "/static/media/basic-start.6aa216afb8a0bf1e2e5d.png",
@@ -43,6 +45,7 @@
     "static/media/logo-aero.svg": "/static/media/logo-aero.ecd491bd51b8ad0d02361c4c2f9410cf.svg",
     "static/media/logo-professional.svg": "/static/media/logo-professional.628d2735df042d7a3167bad0d5016ddb.svg",
     "static/media/logo-research.svg": "/static/media/logo-research.24926fc49c0068331949dd99bc7d08da.svg",
+    "static/media/aero-prog-pic.png": "/static/media/aero-prog-pic.4179888930c186afc3a5.png",
     "static/media/aero-photo.png": "/static/media/aero-photo.c7ae1a8d6f4f5a6c37a4.png",
     "static/media/elementary.png": "/static/media/elementary.4db86ea553bf831d94b2.png",
     "static/media/research.png": "/static/media/research.a0164b7c65c4395faeed.png",
@@ -51,11 +54,12 @@
     "static/media/MyriadPro-Semibold.woff": "/static/media/MyriadPro-Semibold.09ef55bc062e015b4f19.woff",
     "static/media/MyriadPro-Regular.woff": "/static/media/MyriadPro-Regular.0c0973a02f40392384ac.woff",
     "static/media/aero.png": "/static/media/aero.430b3765f949dc67845b.png",
+    "static/media/aero-pic.png": "/static/media/aero-pic.196bff8d22421c7d8968.png",
     "static/media/elementary-pic.png": "/static/media/elementary-pic.7c9a4486f17296c7cbce.png",
     "static/media/MyriadPro-Semibold.woff2": "/static/media/MyriadPro-Semibold.f47b55088647720c79f2.woff2",
+    "static/media/aero-sport-pic.png": "/static/media/aero-sport-pic.a0584b60835eac2f1580.png",
     "static/media/preliminary.png": "/static/media/preliminary.d3e69832e74dee958f43.png",
     "static/media/basic-pic.png": "/static/media/basic-pic.966c0d39669f02829057.png",
-    "static/media/aero-pic.png": "/static/media/aero-pic.8fa9f590ca4b8304b7db.png",
     "static/media/preliminary-pic.png": "/static/media/preliminary-pic.dfd1edc622140cfd3446.png",
     "static/media/research-pic.png": "/static/media/research-pic.ad7da24cceb88fba0937.png",
     "static/media/tr-0152-mu2.jpg": "/static/media/tr-0152-mu2.41bf1b93589abb5b756b.jpg",
@@ -73,12 +77,12 @@
     "static/media/dobot-logo-inactive.svg": "/static/media/dobot-logo-inactive.80039c68c4377ebb2dbd.svg",
     "static/media/dobot-logo.svg": "/static/media/dobot-logo.4b85fe52298de3d7ef8e.svg",
     "index.html": "/index.html",
-    "main.f5c05258.css.map": "/static/css/main.f5c05258.css.map",
-    "main.f2798b36.js.map": "/static/js/main.f2798b36.js.map",
+    "main.5556c3c8.css.map": "/static/css/main.5556c3c8.css.map",
+    "main.b9405842.js.map": "/static/js/main.b9405842.js.map",
     "787.e3fa5a41.chunk.js.map": "/static/js/787.e3fa5a41.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5c05258.css",
-    "static/js/main.f2798b36.js"
+    "static/css/main.5556c3c8.css",
+    "static/js/main.b9405842.js"
   ]
 }
