@@ -1,0 +1,143 @@
+.text-section__background {
+    background-image: url(../../images/background/text-background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 10px 0 0;
+    height: max-content;
+    position: relative;
+    z-index: 3;
+}
+
+.text-section__background_page_about {
+    width: 920px;
+    height: 550px;
+}
+
+.text-section__background_page_contacts {
+    width: 700px;
+    height: 450px;
+    padding-bottom: 100px;
+}
+
+.text-section__background_page_main {
+    width: 850px;
+    height: 550px;
+    margin-left: -200px;
+}
+
+.text-section__shape {
+    height: 100%;
+    width: 50%;
+}
+
+.text-section__shape_polygon_left {
+    float: left;
+    shape-outside: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.text-section__shape_polygon_right {
+    float: right;
+    shape-outside: polygon(100% 0, 100% 100%, 0% 100%);
+}
+
+.text-section__photo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 650px;
+    height: 650px;
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+    z-index: 2;
+}
+
+.text-section__photo_page_about {
+    background-image: url('../../images/background/about-photo.png');
+}
+
+.text-section__photo_page_aero {
+    background-image: url('../../images/background/aero-photo.png');
+}
+
+.text-section__photo_page_basic {
+    background-image: url('../../images/background/basic-photo.png');
+}
+
+.text-section__photo_page_contacts {
+    background-image: url('../../images/background/contacts-photo.png');
+}
+
+.text-section__photo_page_elementary {
+    background-image: url('../../images/background/elementary-photo.png');
+}
+
+.text-section__photo_page_main {
+    background-image: url('../../images/background/main-photo.png');
+}
+
+.text-section__photo_page_preliminary {
+    background-image: url('../../images/background/preliminary-photo.png');
+}
+
+.text-section__photo_page_professional {
+    background-image: url('../../images/background/professional-photo.png');
+}
+
+.text-section__photo_page_research {
+    background-image: url('../../images/background/research-photo.png');
+}
+
+@media (max-width: 1300px) {
+    .text-section__background_page_main {
+        margin-left: -200px;
+        width: 750px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .text-section__background {
+        background-image: none;
+        background-color: rgba(241, 240, 240, .6);
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .text-section__background_page_about {
+        height: min-content;
+        width: 80vw;
+    }
+
+    .text-section__background_page_contacts {
+        height: min-content;
+        width: 80vw;
+        padding: 20px;
+    }
+
+    .text-section__background_page_main {
+        height: min-content;
+        width: 80vw;
+    }
+
+    .text-section__shape {
+        display: none;
+    }
+
+    .text-section__photo {
+        display: none;
+    }
+}
+
+@media (max-height: 600px) {
+
+    .text-section__photo {
+        display: none;
+    }
+}

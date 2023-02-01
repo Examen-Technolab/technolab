@@ -1,0 +1,161 @@
+.main-link {
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 -50px 0 0;
+    padding: 0;
+    height: 100px;
+    width: 173px;
+    font-size: 0;
+    transition: background-image .25s linear, transform .25s linear;
+}
+
+.main-link:hover {
+    transform: scale(1.1, 1.1);
+}
+
+/* МОДИФИКАТОРЫ ССЫЛКИ ПО МОДУЛЮ */
+
+.main-link_level_research {
+    background-image: url(../../images/link/research-inactive.png);
+    grid-area: research;
+}
+
+.main-link_level_research:hover {
+    background-image: url(../../images/link/research-active.png);
+}
+
+.main-link_level_professional {
+    background-image: url(../../images/link/professional-inactive.png);
+    grid-area: professional;
+}
+
+.main-link_level_professional:hover {
+    background-image: url(../../images/link/professional-active.png);
+}
+
+.main-link_level_preliminary {
+    background-image: url(../../images/link/preliminary-inactive.png);
+    grid-area: preliminary;
+}
+
+.main-link_level_preliminary:hover {
+    background-image: url(../../images/link/preliminary-active.png);
+}
+
+.main-link_level_elementary {
+    background-image: url(../../images/link/elementary-inactive.png);
+    grid-area: elementary;
+}
+
+.main-link_level_elementary:hover {
+    background-image: url(../../images/link/elementary-active.png);
+}
+
+.main-link_level_dobot {
+    grid-area: dobot;
+    background-image: url(../../images/link/dobot-logo-inactive.svg);
+}
+
+.main-link_level_dobot:hover {
+    background-image: url(../../images/link/dobot-logo.svg);
+}
+
+.main-link_level_basic {
+    background-image: url(../../images/link/basic-inactive.png);
+    grid-area: basic;
+}
+
+.main-link_level_basic:hover {
+    background-image: url(../../images/link/basic-active.png);
+}
+
+.main-link_level_aero {
+    background-image: url(../../images/link/aero-inactive.png);
+    grid-area: aero;
+}
+
+.main-link_level_aero:hover {
+    background-image: url(../../images/link/aero-active.png);
+}
+
+/* МОДИФИКАТОРЫ АКТИВНОЙ ССЫЛКИ ПО МОДУЛЮ */
+
+.main-link_level_research-active {
+    background-image: url(../../images/link/research-active.png);
+}
+
+.main-link_level_professional-active {
+    background-image: url(../../images/link/professional-active.png);
+}
+
+.main-link_level_preliminary-active {
+    background-image: url(../../images/link/preliminary-active.png);
+}
+
+.main-link_level_elementary-active {
+    background-image: url(../../images/link/elementary-active.png);
+}
+
+.main-link_level_basic-active {
+    background-image: url(../../images/link/basic-active.png);
+}
+
+.main-link_level_aero-active {
+    background-image: url(../../images/link/aero-active.png);
+}
+
+@media (max-width: 1250px) {
+
+    .main-link {
+        height: 90px;
+        width: 155px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .main-link {
+        margin-right: -50px;
+    }
+}
+
+@media (max-width: 880px) {
+
+    .main-link {
+        margin-right: -30px;
+        height: 80px;
+        width: 120px;
+    }
+
+    .main-link:hover {
+        opacity: .6;
+    }
+
+    .main-link_level_research {
+        background-image: url(../../images/link/research-active.png);
+    }
+
+    .main-link_level_professional {
+        background-image: url(../../images/link/professional-active.png);
+    }
+
+    .main-link_level_preliminary {
+        background-image: url(../../images/link/preliminary-active.png);
+    }
+
+    .main-link_level_elementary {
+        background-image: url(../../images/link/elementary-active.png);
+    }
+
+    .main-link_level_dobot {
+        background-image: url(../../images/link/dobot-logo.svg);
+    }
+
+    .main-link_level_basic {
+        background-image: url(../../images/link/basic-active.png);
+    }
+
+    .main-link_level_aero {
+        background-image: url(../../images/link/aero-active.png);
+    }
+}

@@ -1,0 +1,32 @@
+.navbar {
+    border-radius: 9px;
+    margin-left: 5vw;
+    display: flex;
+}
+
+.navbar__link {
+    margin-right: 14px
+}
+
+@media (max-width: 1000px) {
+    .navbar {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 950px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px 0 0;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px 0 0;
+    }
+}
