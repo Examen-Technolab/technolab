@@ -1,9 +1,9 @@
-# [Посмотреть здесь.](https://ger-an-a.github.io/Technolab/)
+# [Посмотреть здесь.](https://examen-technolab.ru/main)
 
 # Сайт компании ООО "Экзамен-Технлаб". Первая версия.
 
 Проект создан с помощью [Create React App](https://github.com/facebook/create-react-app).
-Файловая структура организована БЭМ(Flat).
+Файловая структура организована по БЭМ(Flat).
 
 Над дизайном работал дизайнер компании.
 
