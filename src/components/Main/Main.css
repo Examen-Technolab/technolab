@@ -1,69 +1,188 @@
-@keyframes scale {
+@keyframes filter {
     0% {
-        transform: scale(1, 1);
+        filter: none;
     }
 
     50% {
-        transform: scale(1.1, 1.1);
+        filter: saturate(2) drop-shadow(2px 2px 10px rgba(9, 154, 215, .2));
     }
 
     100% {
-        transform: scale(1, 1);
+        filter: none;
     }
 }
 
 .scale {
-    animation: scale linear .8s;
+    animation: filter linear .8s;
 }
 
 .main {
-    flex-direction: row;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
     position: relative;
     z-index: 3;
-    padding-left: 100px;
+    align-items: center;
+}
+
+.main__banner {
+    background-image: url(../../images/main-banner.png);
+    padding-top: 79.5px;
+    height: 500px;
+    width: 100%;
+    background-position: center bottom;
+    background-size: auto 500px;
+    background-repeat: no-repeat;
+    background-color: #099AD7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.main__title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    margin: 200px 0 5px;
+    padding: 0;
+}
+
+.main__link {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-weight: lighter;
+    text-transform: none;
+}
+
+.main__link:hover {
+    color: #3d3d3d;
 }
 
 .main__navbar {
-    margin: 60px -20px 0 0;
+    background-color: rgba(255, 255, 255, .65);
+    margin: 0;
     padding: 0;
-    z-index: 5;
-    height: min-content;
+    height: 180px;
+    width: 100%;
+    justify-content: center;
     display: grid;
-    align-items: end;
-    row-gap: 40px;
-    grid-template-areas: "dobot preliminary ...          ..."
-        "...   elementary  basic        ..."
-        "...   ...         professional research"
-        "...   ...         ...          aero";
+    grid-template-columns: repeat(auto-fit, 100px);
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    z-index: 2;
 }
 
-@media (max-width: 1100px) {
+.main__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    width: 100%;
+}
 
-    .main {
-        flex-direction: column;
-        align-items: center;
+.main__info-text {
+    max-width: 900px;
+    text-align: justify;
+    text-transform: none;
+    font-size: 20px;
+}
+
+.main__triangle {
+    background-image: url(../../images/background/background-triangle.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 100% auto;
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    bottom: 260px;
+    left: -200px;
+    z-index: 1;
+}
+
+@media (max-width: 1250px) {
+    .main__banner {
+        height: 400px;
+        background-size: auto 400px;
+    }
+
+    .main__title {
+        margin-top: 160px;
+        font-size: 20px;
+    }
+
+    .main__navbar {
+        height: 150px;
+    }
+
+    .main__info {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .main__banner {
+        padding-top: 100px;
+    }
+
+    .main__title {
+        margin-top: 160px;
+    }
+
+    .main__navbar {
+        height: 150px;
+        gap: 10px;
+    }
+
+    .main__info {
+        padding: 20px 0;
+    }
+
+    .main__info-text {
+        font-size: 18px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .main__navbar {
+        gap: 5px;
+        grid-template-columns: repeat(auto-fit, 80px);
+        height: 110px;
+    }
+
+    .main__info {
         padding: 0;
     }
 
-    .main__navbar {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 0 0 30px -50px;
+    .main__info-text {
+        font-size: 16px;
+        width: 90%;
     }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 630px) {
 
-    .main__navbar {
-        margin-left: -30px;
+    .main__banner {
+        padding-top: 118px;
     }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 550px) {
 
     .main__navbar {
-        max-width: 350px;
+        gap: 10px;
+        grid-template-columns: repeat(3, 90px);
+        height: auto;
+        padding: 30px 0;
     }
+
 }

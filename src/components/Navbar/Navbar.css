@@ -1,24 +1,28 @@
 .navbar {
     border-radius: 9px;
-    margin-left: 5vw;
     display: flex;
+    margin-right: 25px;
 }
 
 .navbar__link {
     margin-right: 14px
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1250px) {
     .navbar {
-        margin-left: 20px;
+        margin-right: 0;
     }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1050px) {
     .navbar {
         flex-wrap: wrap;
         justify-content: center;
         margin: 10px 0 0;
+    }
+
+    .navbar__link {
+        margin: 0 5px;
     }
 }
 
@@ -28,5 +32,11 @@
         flex-wrap: wrap;
         justify-content: center;
         margin: 10px 0 0;
+    }
+}
+
+@media (max-width: 370px) {
+    .navbar__link {
+        font-size: 14px;
     }
 }

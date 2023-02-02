@@ -1,7 +1,5 @@
 import React from 'react';
-import { Switch, useRouteMatch, Route } from 'react-router-dom';
 
-import AboutModule from '../AboutModule/AboutModule';
 import MainLink from '../MainLink/MainLink';
 
 function Main() {
@@ -12,7 +10,6 @@ function Main() {
     const [researchAnimation, setResearchAnimation] = React.useState('');
     const [aeroAnimation, setAeroAnimation] = React.useState('');
     const setAnimation = [setPreliminaryAnimation, setElementaryAnimation, setBasicAnimation, setProfessionalAnimation, setResearchAnimation, setAeroAnimation];
-    const { url, path } = useRouteMatch();
 
     React.useEffect(() => {
         let i = 0;
@@ -25,23 +22,25 @@ function Main() {
     }, []);
 
     return (
-        <main className="section main">
-            <div className="main__navbar">
-                <MainLink url={url} animation={preliminaryAnimation} level="preliminary" text="Предварительный уровень." />
-                <MainLink url={url} animation={elementaryAnimation} level="elementary" text="Начальный уровень." />
-                <MainLink url={url} animation={basicAnimation} level="basic" text="Базовый уровень." />
-                <MainLink url={url} animation={professionalAnimation} level="professional" text="Профессиональный уровень." />
-                <MainLink url={url} animation={researchAnimation} level="research" text="Исследовательский уровень." />
-                <MainLink url={url} animation={aeroAnimation} level="aero" text="Модуль аэро." />
+        <main className="main">
+            <div className="main__banner">
+                <h1 className="text main__title">Робототехнические модули</h1>
+                <a href="#main__info" className="link main__link">Узнать больше &#10230;</a>
             </div>
-            <Switch>
-                <Route path={`${path}/:level`}>
-                    <AboutModule />
-                </Route>
-                <Route path={`${path}`}>
-                    <AboutModule />
-                </Route>
-            </Switch>
+            <div className="main__navbar">
+                <MainLink animation={preliminaryAnimation} level="preliminary" title="Предварительный уровень" />
+                <MainLink animation={elementaryAnimation} level="elementary" title="Начальный уровень" />
+                <MainLink animation={basicAnimation} level="basic" title="Базовый уровень" />
+                <MainLink animation={professionalAnimation} level="professional" title="Профессиональный уровень" />
+                <MainLink animation={researchAnimation} level="research" title="Исследовательский уровень" />
+                <MainLink animation={aeroAnimation} level="aero" title="Модуль аэро" />
+            </div>
+            <div id="main__info" className="main__info">
+                <div className="main__triangle rotation"></div>
+                <p className="text main__info-text"> <b>Образовательные робототехнические модули</b> предназначены для освоения базовых навыков в&nbsp;области проектирования различных объектов, направлены на&nbsp;развитие у&nbsp;учащихся любознательности и&nbsp;интереса к&nbsp;технике, для освоения начальных навыков в&nbsp;области проектирования и программирования простейших роботов и&nbsp;робототехнических устройств.</p>
+                <p className="text main__info-text"><b>ООО &laquo;Экзамен-Технолаб&raquo;</b> предлагает Вашему вниманию новый образовательный продукт&nbsp;&mdash; набор специализированных образовательных робототехнических модулей для учебных классов изучения основ робототехники.</p>
+                <p className="text main__info-text"><b>Каждый модуль&nbsp;&mdash;</b> это продукт, разработанный специально для учебных целей, и&nbsp;предназначенный в&nbsp;первую очередь для применения в&nbsp;рамках программ начального и&nbsp;среднего образования во&nbsp;внеклассной работе с&nbsp;учащимися, а&nbsp;также для оснащения учебных технопарков.</p>
+            </div>
         </main>
     );
 }

@@ -3,7 +3,8 @@ import manuals from '../../utils/manuals'
 
 function Manuals() {
     return (
-        <section id="manuals" className="section">
+        <main id="manuals" className="section">
+            <h1 className="title">Обучение</h1>
             <ul className="list">
                 {
                     manuals.map((item, index) => {
@@ -13,7 +14,7 @@ function Manuals() {
                     })
                 }
             </ul>
-        </section>
+        </main>
     );
 }
 export default Manuals;

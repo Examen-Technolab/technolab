@@ -6,11 +6,11 @@ import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Catalog from '../Catalog/Catalog';
 import Manuals from '../Manuals/Manuals';
-//import Events from '../Events/Events';
-import TextSection from '../TextSection/TextSection';
 import Partners from '../Partners/Partners';
 import Product from '../Product/Product';
 import Downloads from '../Downloads/Downloads';
+import Contacts from '../Contacts/Contacts';
+import About from '../About/About';
 
 function App() {
   return (
@@ -37,10 +37,10 @@ function App() {
             <Downloads />
           </Route>
           <Route path="/contacts">
-            <TextSection class="section" level="contacts" page="contacts" />
+            <Contacts />
           </Route>
           <Route path="/about">
-            <TextSection class="section" level="about" page="about" />
+            <About />
           </Route>
           <Route path="/partners">
             <Partners />

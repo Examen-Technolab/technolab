@@ -3,7 +3,8 @@ import partners from '../../utils/partners'
 
 function Partners() {
     return (
-        <section className="section flex">
+        <main className="section">
+            <h1 className="title">Партнерам</h1>
             <ul className="list">
                 {
                     partners.map((item, index) => {
@@ -13,7 +14,7 @@ function Partners() {
                     })
                 }
             </ul>
-        </section>
+        </main>
     );
 }
 export default Partners;
