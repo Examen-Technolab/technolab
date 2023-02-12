@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.a96f439e.css",
-    "main.js": "/static/js/main.32a72ecc.js",
+    "main.css": "/static/css/main.060d17da.css",
+    "main.js": "/static/js/main.4085a718.js",
     "static/js/787.e3fa5a41.chunk.js": "/static/js/787.e3fa5a41.chunk.js",
+    "static/media/main-banner.png": "/static/media/main-banner.909e1054b30192cc99fd.png",
     "static/media/about-photo.png": "/static/media/about-photo.5c3764571389b326fd2d.png",
     "static/media/contacts-photo.png": "/static/media/contacts-photo.bc66370f249b4ce1fc89.png",
-    "static/media/main-banner.png": "/static/media/main-banner.69e7daf56912e0109977.png",
     "static/media/main-photo.png": "/static/media/main-photo.5e41cb5d352143c63976.png",
     "static/media/sphero_book_new.jpeg": "/static/media/sphero_book_new.5fefbb54033e2f4518d1.jpeg",
     "static/media/basic-b5-tc.png": "/static/media/basic-b5-tc.8f8dd9f0f6804f151131.png",
@@ -112,12 +112,12 @@
     "static/media/icon-professional.svg": "/static/media/icon-professional.37d911afa2d936d37679.svg",
     "static/media/professional-pic.png": "/static/media/professional-pic.d529e990b3a69b51fa7a.png",
     "index.html": "/index.html",
-    "main.a96f439e.css.map": "/static/css/main.a96f439e.css.map",
-    "main.32a72ecc.js.map": "/static/js/main.32a72ecc.js.map",
+    "main.060d17da.css.map": "/static/css/main.060d17da.css.map",
+    "main.4085a718.js.map": "/static/js/main.4085a718.js.map",
     "787.e3fa5a41.chunk.js.map": "/static/js/787.e3fa5a41.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a96f439e.css",
-    "static/js/main.32a72ecc.js"
+    "static/css/main.060d17da.css",
+    "static/js/main.4085a718.js"
   ]
 }
