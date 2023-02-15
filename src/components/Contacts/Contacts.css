@@ -1,0 +1,79 @@
+.contacts {
+  width: 75%;
+  min-height: 70vh;
+  display: grid;
+  grid-template-areas: 'main-text main-text main-text'
+    'support order order'
+    'support address address'
+    'phone address address';
+  grid-template-columns: 40% auto auto;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.contacts__paragraph {
+  padding: 30px;
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 30px;
+  height: 100%;
+  text-align: justify;
+  font-size: 18px;
+  background: rgba(241, 240, 240, 0.8);
+  color: #3d3d3d;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.contacts__link {
+  font-size: 16px;
+  text-align: right;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: #099ad7;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: color .3s ease-in-out;
+}
+
+.contacts__link:hover {
+  color: #3d3d3d;
+}
+
+.contacts__main-text {
+  grid-area: main-text;
+}
+
+.contacts__address {
+  grid-area: address;
+}
+
+.contacts__support {
+  grid-area: support;
+  animation: gradient 3s linear infinite;
+}
+
+.contacts__order {
+  grid-area: order;
+}
+
+.contacts__phone {
+  grid-area: phone;
+}
+
+@media (max-width:600px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__paragraph {
+    font-size: 16px;
+    width: 100%;
+  }
+}

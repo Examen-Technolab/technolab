@@ -17,7 +17,7 @@
 
 
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .catalog {
         grid-template-columns: repeat(auto-fit, 290px);
         grid-gap: 20px;

@@ -48,7 +48,7 @@ function App() {
           {/*
           <Route path="/events">
             <Events />
-          </Route> 
+          </Route>
           */}
           <Footer />
           <div className="triangle rotation"></div>

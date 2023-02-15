@@ -1,153 +1,152 @@
 @keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
 
-    to {
-        transform: rotate(-360deg);
-    }
+  to {
+    transform: rotate(-360deg);
+  }
 }
 
 .rotation {
-    animation: rotation linear infinite 40s;
+  animation: rotation linear infinite 60s;
 }
 
 .triangle {
-    background-image: url('../../images/background/background-triangle.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    width: 750px;
-    height: 500px;
-    position: fixed;
-    right: -250px;
-    bottom: -150px;
-    z-index: 1;
+  background-image: url('../../images/background-triangle.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 750px;
+  height: 500px;
+  position: fixed;
+  right: -250px;
+  bottom: -150px;
+  z-index: 1;
 }
 
 .background {
-    background-color: #d5d4d4;
+  background-color: #d5d4d4;
 }
 
 .page {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: 'Myriad Pro', sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    word-wrap: break-word;
-    width: 100%;
-    margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Myriad Pro', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  word-wrap: break-word;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .section {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-items: stretch;
-    align-items: flex-start;
-    max-width: 1280px;
-    width: 90%;
-    margin-top: 130px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
+  align-items: flex-start;
+  max-width: 1280px;
+  width: 90%;
+  margin-top: 130px;
+  box-sizing: border-box;
 }
 
 .title {
-    display: none;
+  display: none;
 }
 
 .text {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: normal;
-    line-height: 1.5;
-    z-index: 5;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.5;
+  z-index: 5;
 }
 
 .list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .link {
-    color: #3d3d3d;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 600;
-    transition: color .3s ease-in-out;
+  color: #3d3d3d;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color .3s ease-in-out;
 }
 
 .link:hover {
-    color: #099ad7;
+  color: #099ad7;
 }
 
 /* Выделение текста цыетом модуля */
 
 .highlighted-text {
-    color: #099ad7;
+  color: #099ad7;
 }
 
 .highlighted-text_level_aero {
-    color: #BE312A;
+  color: #BE312A;
 }
 
 .highlighted-text_level_basic {
-    color: #509ADB;
+  color: #509ADB;
 }
 
 .highlighted-text_level_elementary {
-    color: #63BD4C;
+  color: #63BD4C;
 }
 
 .highlighted-text_level_machines {
-    color: #C63332;
+  color: #C63332;
 }
 
 .highlighted-text_level_preliminary {
-    color: #D8B13C;
+  color: #D8B13C;
 }
 
 .highlighted-text_level_professional {
-    color: #3776C5;
+  color: #3776C5;
 }
 
 .highlighted-text_level_research {
-    color: #A85B9F;
+  color: #A85B9F;
 }
 
-@media (max-width: 1300px) {}
-
 @media (max-width: 1100px) {
-    .triangle {
-        width: 650px;
-        height: 400px;
-    }
+  .triangle {
+    width: 650px;
+    height: 400px;
+  }
 }
 
 @media (max-width: 1050px) {
-    .link {
-        font-size: 16px;
-    }
+  .link {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 950px) {
-    .section {
-        margin-top: 140px;
-    }
+  .section {
+    margin-top: 140px;
+  }
 }
 
 @media (max-width: 850px) {
 
-    .text {
-        font-size: 12px;
-    }
+  .text {
+    font-size: 12px;
+  }
 
 }

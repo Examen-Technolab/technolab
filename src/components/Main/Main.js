@@ -1,6 +1,7 @@
 import React from 'react';
 
 import MainLink from '../MainLink/MainLink';
+import boardImg from '../../images/main-board.png';
 
 function Main() {
     const [preliminaryAnimation, setPreliminaryAnimation] = React.useState('');
@@ -38,8 +39,8 @@ function Main() {
             <div id="main__info" className="main__info">
                 <div className="main__triangle rotation"></div>
                 <p className="text main__info-text"> <b>Образовательные робототехнические модули</b> предназначены для освоения базовых навыков в&nbsp;области проектирования различных объектов, направлены на&nbsp;развитие у&nbsp;учащихся любознательности и&nbsp;интереса к&nbsp;технике, для освоения начальных навыков в&nbsp;области проектирования и программирования простейших роботов и&nbsp;робототехнических устройств.</p>
-                <p className="text main__info-text"><b>ООО &laquo;Экзамен-Технолаб&raquo;</b> предлагает Вашему вниманию новый образовательный продукт&nbsp;&mdash; набор специализированных образовательных робототехнических модулей для учебных классов изучения основ робототехники.</p>
                 <p className="text main__info-text"><b>Каждый модуль&nbsp;&mdash;</b> это продукт, разработанный специально для учебных целей, и&nbsp;предназначенный в&nbsp;первую очередь для применения в&nbsp;рамках программ начального и&nbsp;среднего образования во&nbsp;внеклассной работе с&nbsp;учащимися, а&nbsp;также для оснащения учебных технопарков.</p>
+                <img className="main__info-img" src={boardImg} alt="конструктивные компоненты + элементы механики + электронные компоненты + методические указания"/>
             </div>
         </main>
     );
