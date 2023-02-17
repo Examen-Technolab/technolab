@@ -26,24 +26,31 @@ function App() {
           </Route>
           <Route exact path="/catalog">
             <Catalog />
+            <div className="triangle rotation"></div>
           </Route>
           <Route path={`/catalog/:level`}>
             <Product></Product>
+            <div className="triangle rotation"></div>
           </Route>
           <Route path="/manuals">
             <Manuals />
+            <div className="triangle rotation"></div>
           </Route>
           <Route path="/downloads">
             <Downloads />
+            <div className="triangle rotation"></div>
           </Route>
           <Route path="/contacts">
             <Contacts />
+            <div className="triangle rotation"></div>
           </Route>
           <Route path="/about">
             <About />
+            <div className="triangle rotation"></div>
           </Route>
           <Route path="/partners">
             <Partners />
+            <div className="triangle rotation"></div>
           </Route>
           {/*
           <Route path="/events">
@@ -51,7 +58,6 @@ function App() {
           </Route>
           */}
           <Footer />
-          <div className="triangle rotation"></div>
         </BrowserRouter>
       </div>
     </div>

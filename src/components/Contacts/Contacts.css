@@ -2,10 +2,10 @@
   width: 75%;
   min-height: 70vh;
   display: grid;
-  grid-template-areas: 'main-text main-text main-text'
+  grid-template-areas: 'main-text main-text phone'
     'support order order'
     'support address address'
-    'phone address address';
+    'support address address';
   grid-template-columns: 40% auto auto;
   gap: 20px;
   box-sizing: border-box;
@@ -47,6 +47,9 @@
 
 .contacts__main-text {
   grid-area: main-text;
+  background: rgba(9, 154, 215, .9);
+  color: rgb(241, 240, 240);
+  font-weight: 200;
 }
 
 .contacts__address {
