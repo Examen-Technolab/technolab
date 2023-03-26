@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e738ca2d.css",
-    "main.js": "/static/js/main.02c74267.js",
+    "main.css": "/static/css/main.41627be4.css",
+    "main.js": "/static/js/main.5cd4b57a.js",
     "static/js/787.e3fa5a41.chunk.js": "/static/js/787.e3fa5a41.chunk.js",
     "static/media/ts-61d-m10.png": "/static/media/ts-61d-m10.3dcafc1430d25ce4d557.png",
     "static/media/main-board.png": "/static/media/main-board.fa4a8d23b5af94d9dfa3.png",
@@ -27,6 +27,7 @@
     "static/media/tr-0541-mu.jpg": "/static/media/tr-0541-mu.8ad8c2ce000bace81a68.jpg",
     "static/media/tr-0541-mp.jpg": "/static/media/tr-0541-mp.3b9cbf0891ff93ccc3ed.jpg",
     "static/media/machines.png": "/static/media/machines.b111147d34f7364ce008.png",
+    "static/media/logo-machines.svg": "/static/media/logo-machines.f640336cf6cdd8fbe9ebfaa787bcb003.svg",
     "static/media/machines-m.png": "/static/media/machines-m.a8ee02d7dd6028121b41.png",
     "static/media/tr-0621-mpr.jpg": "/static/media/tr-0621-mpr.ab62dc56d1a7ebedf7ac.jpg",
     "static/media/tr-0621-mur.jpg": "/static/media/tr-0621-mur.f0510d049db24b395a80.jpg",
@@ -45,6 +46,7 @@
     "static/media/basic-b5-top.png": "/static/media/basic-b5-top.1c5db141d91e9401947b.png",
     "static/media/basic-b5-tc-top.png": "/static/media/basic-b5-tc-top.c713e1cb76e377b3c977.png",
     "static/media/machines-r-bot.png": "/static/media/machines-r-bot.08f8b983eddcde0279b2.png",
+    "static/media/logo-bridge.svg": "/static/media/logo-bridge.77c1f78ef7de6e3bbabce484b911afae.svg",
     "static/media/aero-top.png": "/static/media/aero-top.25251703f3f01a9f2e7d.png",
     "static/media/aero-prog-top.png": "/static/media/aero-prog-top.43f0dc21f123683e976f.png",
     "static/media/aero-sport-top.png": "/static/media/aero-sport-top.deb0ff33fbeafa4ef833.png",
@@ -88,6 +90,7 @@
     "static/media/machines-bot.png": "/static/media/machines-bot.fd4c627553a3dacc9801.png",
     "static/media/preliminary.png": "/static/media/preliminary.d3e69832e74dee958f43.png",
     "static/media/basic-pic.png": "/static/media/basic-pic.966c0d39669f02829057.png",
+    "static/media/table-bridge.png": "/static/media/table-bridge.2c53ae95c24c9b4f8c7d.png",
     "static/media/preliminary-pic.png": "/static/media/preliminary-pic.dfd1edc622140cfd3446.png",
     "static/media/research-pic.png": "/static/media/research-pic.ad7da24cceb88fba0937.png",
     "static/media/background-triangle.png": "/static/media/background-triangle.e2d7753968aadd063e54.png",
@@ -104,13 +107,14 @@
     "static/media/icon-professional.svg": "/static/media/icon-professional.37d911afa2d936d37679.svg",
     "static/media/professional-pic.png": "/static/media/professional-pic.d529e990b3a69b51fa7a.png",
     "static/media/about-card-green-triangle.png": "/static/media/about-card-green-triangle.0f2cb71ad4e71e9221ef.png",
+    "static/media/logo-mmso.svg": "/static/media/logo-mmso.9f715da5b8ac49c8b824caf43fe23ff3.svg",
     "index.html": "/index.html",
-    "main.e738ca2d.css.map": "/static/css/main.e738ca2d.css.map",
-    "main.02c74267.js.map": "/static/js/main.02c74267.js.map",
+    "main.41627be4.css.map": "/static/css/main.41627be4.css.map",
+    "main.5cd4b57a.js.map": "/static/js/main.5cd4b57a.js.map",
     "787.e3fa5a41.chunk.js.map": "/static/js/787.e3fa5a41.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e738ca2d.css",
-    "static/js/main.02c74267.js"
+    "static/css/main.41627be4.css",
+    "static/js/main.5cd4b57a.js"
   ]
 }
