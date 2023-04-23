@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ded7912c.css",
-    "main.js": "/static/js/main.6b08b261.js",
-    "static/js/787.e3fa5a41.chunk.js": "/static/js/787.e3fa5a41.chunk.js",
+    "main.css": "/static/css/main.3b500c2e.css",
+    "main.js": "/static/js/main.085274cb.js",
     "static/media/ts-61d-m10.png": "/static/media/ts-61d-m10.3dcafc1430d25ce4d557.png",
     "static/media/main-banner.png": "/static/media/main-banner.faa083e3cd614cde0a81.png",
     "static/media/main-board.png": "/static/media/main-board.fa4a8d23b5af94d9dfa3.png",
@@ -14,6 +13,7 @@
     "static/media/bits_book_2_new.jpeg": "/static/media/bits_book_2_new.aabc5100b9058e49e083.jpeg",
     "static/media/bits_book_new.jpeg": "/static/media/bits_book_new.8343396ca7b73ea4b701.jpeg",
     "static/media/aero-cube.png": "/static/media/aero-cube.4d6ae9874fbd4dfff6b8.png",
+    "static/media/competition-background.png": "/static/media/competition-background.cac82170b38ed2b58bec.png",
     "static/media/basic-17-tc.png": "/static/media/basic-17-tc.d8ac896ed139472892c2.png",
     "static/media/basic-start.png": "/static/media/basic-start.6aa216afb8a0bf1e2e5d.png",
     "static/media/go_book_new.jpeg": "/static/media/go_book_new.1b8ed41f65d398e657ad.jpeg",
@@ -53,9 +53,11 @@
     "static/media/aero-sport-top.png": "/static/media/aero-sport-top.deb0ff33fbeafa4ef833.png",
     "static/media/aero-sport-bot.png": "/static/media/aero-sport-bot.d056625e89b19c6498e2.png",
     "static/media/research-bot.png": "/static/media/research-bot.1eecb8d450650d314fa1.png",
+    "static/media/bridge-registration.png": "/static/media/bridge-registration.b2a18bb8751398bce48d.png",
     "static/media/aero-prog-bot.png": "/static/media/aero-prog-bot.53ac0edcc8c230799025.png",
     "static/media/aero-bot.png": "/static/media/aero-bot.0f6ec1b7d4a5ca691575.png",
     "static/media/professional-bot.png": "/static/media/professional-bot.f7e4a4b2bf34ec567109.png",
+    "static/media/bridge-guide.png": "/static/media/bridge-guide.dea980ed3280fb56afd5.png",
     "static/media/icon-research-grey.svg": "/static/media/icon-research-grey.d26176f59f2785c56fa8.svg",
     "static/media/icon-research.svg": "/static/media/icon-research.92b49e53a6c494febd87.svg",
     "static/media/basic-bot.png": "/static/media/basic-bot.88ad80a41e9ff09c3b5a.png",
@@ -73,6 +75,7 @@
     "static/media/elementary.png": "/static/media/elementary.4db86ea553bf831d94b2.png",
     "static/media/research.png": "/static/media/research.a0164b7c65c4395faeed.png",
     "static/media/elementary-bot.png": "/static/media/elementary-bot.d04c02477a1af0e68140.png",
+    "static/media/bridge-field.png": "/static/media/bridge-field.de6687d20cd3edc8867a.png",
     "static/media/professional.png": "/static/media/professional.0891b085abd062d230d6.png",
     "static/media/basic.png": "/static/media/basic.2dd330b047a81a271a5a.png",
     "static/media/MyriadPro-Semibold.woff": "/static/media/MyriadPro-Semibold.09ef55bc062e015b4f19.woff",
@@ -93,7 +96,10 @@
     "static/media/machines-m-bot.png": "/static/media/machines-m-bot.ad05e125a1df525a0a4f.png",
     "static/media/machines-bot.png": "/static/media/machines-bot.fd4c627553a3dacc9801.png",
     "static/media/preliminary.png": "/static/media/preliminary.d3e69832e74dee958f43.png",
+    "static/media/phone-icon.svg": "/static/media/phone-icon.470728cb40f22491747b.svg",
+    "static/media/order-icon.svg": "/static/media/order-icon.b02025d6eeb8e9195a5c.svg",
     "static/media/basic-pic.png": "/static/media/basic-pic.966c0d39669f02829057.png",
+    "static/media/bridge-products.png": "/static/media/bridge-products.df13408fbe1a4fd5066c.png",
     "static/media/table-bridge.png": "/static/media/table-bridge.2c53ae95c24c9b4f8c7d.png",
     "static/media/preliminary-pic.png": "/static/media/preliminary-pic.dfd1edc622140cfd3446.png",
     "static/media/research-pic.png": "/static/media/research-pic.ad7da24cceb88fba0937.png",
@@ -105,22 +111,22 @@
     "static/media/tr-0152-mp.jpg": "/static/media/tr-0152-mp.a33a317aff5b4d016f35.jpg",
     "static/media/ta-0841-mp.jpg": "/static/media/ta-0841-mp.f5591c6fbc5773c209c3.jpg",
     "static/media/tv-0241-mp.jpg": "/static/media/tv-0241-mp.4bfdb9602823dbbce604.jpg",
+    "static/media/support-icon.svg": "/static/media/support-icon.c8c1abe93a7cb82885c7.svg",
     "static/media/tv-0241-mu1.jpg": "/static/media/tv-0241-mu1.9a2769db7ebcf176c7e8.jpg",
     "static/media/tv-0241-mu2.jpg": "/static/media/tv-0241-mu2.a66070c789c2e8751535.jpg",
     "static/media/tv-0441-m-2.jpg": "/static/media/tv-0441-m-2.cc69c9d9fdedb2d6cedf.jpg",
     "static/media/tv-0441-m-1.jpg": "/static/media/tv-0441-m-1.48b98d18547dc287ed6a.jpg",
     "static/media/icon-professional.svg": "/static/media/icon-professional.37d911afa2d936d37679.svg",
     "static/media/icon-professional-grey.svg": "/static/media/icon-professional-grey.ecb76024f7fac503a028.svg",
+    "static/media/address-icon.svg": "/static/media/address-icon.84b569f43383c5ee6b4e.svg",
     "static/media/professional-pic.png": "/static/media/professional-pic.d529e990b3a69b51fa7a.png",
-    "static/media/about-card-green-triangle.png": "/static/media/about-card-green-triangle.0f2cb71ad4e71e9221ef.png",
     "static/media/logo-mmso.svg": "/static/media/logo-mmso.9f715da5b8ac49c8b824caf43fe23ff3.svg",
     "index.html": "/index.html",
-    "main.ded7912c.css.map": "/static/css/main.ded7912c.css.map",
-    "main.6b08b261.js.map": "/static/js/main.6b08b261.js.map",
-    "787.e3fa5a41.chunk.js.map": "/static/js/787.e3fa5a41.chunk.js.map"
+    "main.3b500c2e.css.map": "/static/css/main.3b500c2e.css.map",
+    "main.085274cb.js.map": "/static/js/main.085274cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.ded7912c.css",
-    "static/js/main.6b08b261.js"
+    "static/css/main.3b500c2e.css",
+    "static/js/main.085274cb.js"
   ]
 }
