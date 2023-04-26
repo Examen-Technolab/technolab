@@ -1,27 +1,51 @@
-@keyframes animate {
+@keyframes greenAnimate {
 
   0% {
     opacity: 0;
     scale: .85;
-    background-image: url(../../images/cards/default-btn.png);
+    background-image: url(../../images/animation/animation-blue-triangle.png);
   }
 
   35% {
     opacity: 1;
     scale: .9;
-    background-image: url(../../images/cards/professional-btn.png);
+    background-image: url(../../images/animation/animation-green-triangle.png);
   }
 
   70% {
     opacity: 1;
     scale: .8;
-    background-image: url(../../images/cards/default-btn.png);
+    background-image: url(../../images/animation/animation-blue-triangle.png);
   }
 
   100% {
     scale: .9;
     opacity: 0;
-    background-image: url(../../images/cards/basic-btn.png);
+    background-image: url(../../images/animation/animation-dark-blue-triangle.png);
+  }
+
+}
+
+@keyframes blueAnimate {
+
+  0% {
+    opacity: 0;
+    scale: .85;
+  }
+
+  35% {
+    opacity: 1;
+    scale: .9;
+  }
+
+  70% {
+    opacity: 0;
+    scale: .8;
+  }
+
+  100% {
+    scale: .9;
+    opacity: 0;
   }
 
 }
@@ -33,11 +57,10 @@
   bottom: 0;
   right: 0;
   overflow: hidden;
-  z-index: 1;
-  border-radius: 0 30px 30px;
+  border-radius: 30px;
 }
 
-.backgroundAnimation__circles li {
+.backgroundAnimation__list li {
   position: absolute;
   display: block;
   list-style: none;
@@ -48,101 +71,97 @@
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-image: url(../../images/cards/default-btn.png);
+  background-image: url(../../images/animation/animation-blue-triangle.png);
   z-index: 1;
-  animation: animate 6s linear infinite;
   animation-fill-mode: both;
 }
 
-.backgroundAnimation__circles li:nth-child(1) {
+.backgroundAnimation__list_color_green li {
+  animation: greenAnimate 6s linear infinite;
+  opacity: 0;
+}
+
+.backgroundAnimation__list_color_blue li {
+  animation: blueAnimate 6s linear infinite;
+  opacity: 0;
+}
+
+.backgroundAnimation__list li:nth-child(1) {
   animation-delay: 5.7s;
 }
 
-.backgroundAnimation__circles li:nth-child(2) {
+.backgroundAnimation__list li:nth-child(2) {
   right: 140px;
   animation-delay: 1s;
 }
 
-.backgroundAnimation__circles li:nth-child(3) {
+.backgroundAnimation__list li:nth-child(3) {
   right: 300px;
   animation-delay: 2s;
 }
 
-.backgroundAnimation__circles li:nth-child(4) {
-  right: 460px;
-  animation-delay: 5s;
+.backgroundAnimation__list li:nth-child(4) {
+  display: none;
 }
 
-.backgroundAnimation__circles li:nth-child(5) {
+.backgroundAnimation__list li:nth-child(5) {
   right: 60px;
   bottom: 5px;
   transform: rotate(180deg);
   animation-delay: .5s;
 }
 
-.backgroundAnimation__circles li:nth-child(6) {
+.backgroundAnimation__list li:nth-child(6) {
   right: 220px;
   bottom: 5px;
   transform: rotate(180deg);
   animation-delay: 3s;
 }
 
-.backgroundAnimation__circles li:nth-child(7) {
-  right: 380px;
-  bottom: 5px;
-  transform: rotate(180deg);
-  animation-delay: 6.5s;
+.backgroundAnimation__list li:nth-child(7) {
+  display: none;
 }
 
-.backgroundAnimation__circles li:nth-child(8) {
+.backgroundAnimation__list li:nth-child(8) {
   right: 60px;
   bottom: 105px;
   animation-delay: 1.5s;
 }
 
-.backgroundAnimation__circles li:nth-child(9) {
+.backgroundAnimation__list li:nth-child(9) {
   right: 220px;
   bottom: 105px;
   animation-delay: 6s;
 }
 
-.backgroundAnimation__circles li:nth-child(10) {
+.backgroundAnimation__list li:nth-child(10) {
   right: -90px;
   bottom: 105px;
   animation-delay: 7.5s;
 }
 
-.backgroundAnimation__circles li:nth-child(11) {
+.backgroundAnimation__list li:nth-child(11) {
   bottom: 130px;
   transform: rotate(180deg);
   animation-delay: 8s;
 }
 
-.backgroundAnimation__circles li:nth-child(12) {
+.backgroundAnimation__list li:nth-child(12) {
   right: 140px;
   bottom: 130px;
   transform: rotate(180deg);
   animation-delay: 4.5s;
 }
 
-.backgroundAnimation__circles li:nth-child(13) {
-  right: 300px;
-  bottom: 130px;
-  transform: rotate(180deg);
-  animation-delay: 2.5s;
+@media (max-width: 850px) {
+  .backgroundAnimation_color_green {
+    display: none;
+  }
 }
-
-
 
 @media (max-width: 750px) {
   .backgroundAnimation {
     bottom: 0;
     height: 100px;
-  }
-}
-
-@media (max-width: 550px) {
-  .backgroundAnimation {
-    display: none;
   }
 }

@@ -1,82 +1,78 @@
 .contacts {
   width: 75%;
-  min-height: 70vh;
   display: grid;
-  grid-template-areas: 'main-text main-text phone'
-    'support order order'
-    'support address address'
-    'support address address';
-  grid-template-columns: 40% auto auto;
+  grid-template-areas: 'main-text main-text phone phone'
+    'support order order order'
+    'support order order order'
+    'support address address address';
+  grid-template-columns: 40% auto 20% 10%;
   gap: 20px;
   box-sizing: border-box;
+  z-index: 5;
 }
 
-.contacts__paragraph {
-  padding: 30px;
-  box-sizing: border-box;
-  margin: 0;
-  border-radius: 30px;
-  height: 100%;
-  text-align: justify;
-  font-size: 18px;
-  background: rgba(241, 240, 240, 0.8);
-  color: #3d3d3d;
+.contacts__tile {
   display: flex;
-  flex-direction: column;
-  font-weight: 600;
+  justify-content: flex-start;
+  background-repeat: no-repeat;
+  background-size: auto 80%;
+  background-position: right bottom;
+  color: #fff;
 }
 
-.contacts__link {
-  font-size: 16px;
-  text-align: right;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  color: #099ad7;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600;
-  transition: color .3s ease-in-out;
-}
-
-.contacts__link:hover {
-  color: #3d3d3d;
+.contacts__tile_type_main {
+  grid-area: main-text;
+  background-color: rgba(9, 153, 215, .8);
+  background-image: url(../../images/contacts/main-background.png);
 }
 
 .contacts__main-text {
-  grid-area: main-text;
-  background: rgba(9, 154, 215, .9);
-  color: rgb(241, 240, 240);
   font-weight: 200;
 }
 
-.contacts__address {
+.contacts__tile_type_address {
   grid-area: address;
+  background-color: rgba(216, 177, 60, .8);
+  background-image: url(../../images/contacts/address-background.png);
+  color: #3d3d3d;
+  background-position: right 350%;
 }
 
-.contacts__support {
+.contacts__tile_type_support {
   grid-area: support;
-  animation: gradient 3s linear infinite;
+  background-color: rgba(9, 153, 215, .8);
+  background-image: url(../../images/contacts/support-background.png);
+  background-position: left center;
+  background-size: 55% auto;
 }
 
-.contacts__order {
+.contacts__tile_type_order {
   grid-area: order;
+  color: var(--technolab-blue);
+  color: var(--grey);
+  background-image: url(../../images/contacts/order-background.png);
+  background-size: 50% auto;
+  background-position: right center;
 }
 
-.contacts__phone {
+.contacts__tile_type_phone {
   grid-area: phone;
+  background-color: rgba(168, 91, 159, .8);
+  background-image: url(../../images/contacts/phone-background.png);
+  background-position: left 350%;
 }
 
-@media (max-width:600px) {
+@media (max-width:850px) {
   .contacts {
+    width: 90%;
     display: flex;
     flex-direction: column;
+    width: 90%;
   }
+}
 
-  .contacts__paragraph {
-    font-size: 16px;
-    width: 100%;
+@media (max-width:450px) {
+  .contacts__tile {
+    background-image: none;
   }
 }

@@ -1,23 +1,24 @@
 .product {
-    display: grid;
-    grid-template-columns: 390px auto;
-    gap: 40px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: 390px auto;
+  grid-template-rows: 550px;
+  gap: 40px;
+  justify-content: center;
 }
 
 @media (max-width: 900px) {
 
-    .product {
-        grid-template-columns: repeat(auto-fit, 90vw);
-        grid-template-rows: repeat(auto-fit, 550px);
-        grid-gap: 20px;
-    }
+  .product {
+    grid-template-columns: repeat(auto-fit, 90vw);
+    grid-template-rows: repeat(auto-fit, 550px);
+    grid-gap: 20px;
+  }
 }
 
 @media (max-width: 500px) {
 
-    .product {
-        grid-template-rows: repeat(auto-fit, 400px);
-        grid-gap: 20px;
-    }
+  .product {
+    grid-template-rows: repeat(auto-fit, 400px);
+    grid-gap: 20px;
+  }
 }

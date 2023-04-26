@@ -1,0 +1,19 @@
+.triangle {
+  background-image: url('../../images/background-triangle.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 750px;
+  height: 500px;
+  position: fixed;
+  right: -250px;
+  bottom: -150px;
+  z-index: 1;
+}
+
+@media (max-width: 1100px) {
+  .triangle {
+    width: 650px;
+    height: 400px;
+  }
+}

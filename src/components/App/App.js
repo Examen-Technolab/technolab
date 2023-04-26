@@ -11,6 +11,9 @@ import Product from '../Product/Product';
 import Downloads from '../Downloads/Downloads';
 import Contacts from '../Contacts/Contacts';
 import About from '../About/About';
+import Events from '../Events/Events';
+import EventPage from '../EventPage/EventPage';
+import Triangle from '../Triangle/Triangle';
 
 function App() {
   return (
@@ -26,37 +29,32 @@ function App() {
           </Route>
           <Route exact path="/catalog">
             <Catalog />
-            <div className="triangle rotation"></div>
           </Route>
           <Route path={`/catalog/:level`}>
-            <Product></Product>
-            <div className="triangle rotation"></div>
+            <Product />
           </Route>
           <Route path="/manuals">
             <Manuals />
-            <div className="triangle rotation"></div>
           </Route>
           <Route path="/downloads">
             <Downloads />
-            <div className="triangle rotation"></div>
           </Route>
           <Route path="/contacts">
             <Contacts />
-            <div className="triangle rotation"></div>
           </Route>
           <Route path="/about">
             <About />
-            <div className="triangle rotation"></div>
           </Route>
           <Route path="/partners">
             <Partners />
-            <div className="triangle rotation"></div>
           </Route>
-          {/*
-          <Route path="/events">
+          <Route exact path="/events">
             <Events />
           </Route>
-          */}
+          <Route path={`/events/:eventPage`}>
+            <EventPage />
+          </Route>
+          <Triangle />
           <Footer />
         </BrowserRouter>
       </div>

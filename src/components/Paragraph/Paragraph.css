@@ -1,0 +1,12 @@
+.paragraph__title {
+  font-size: 18px;
+  text-align: justify;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.paragraph__text {
+  font-size: 17px;
+  text-align: justify;
+  margin: 15px 0 25px;
+}

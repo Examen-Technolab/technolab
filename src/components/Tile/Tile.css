@@ -1,0 +1,26 @@
+.tile {
+  padding: 30px;
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 30px;
+  text-align: justify;
+  font-size: 14px;
+  color: #3d3d3d;
+  background: var(--tile-background);
+  box-shadow: rgba(185, 183, 183, .6) 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.tile_type_link {
+  transition: all .3s linear;
+  text-decoration: none;
+}
+
+.tile_type_link:hover {
+  transform: scale(1.02, 1.02);
+  cursor: pointer;
+}

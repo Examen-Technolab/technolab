@@ -1,9 +1,9 @@
 .card-with-btn__btn {
-    transition: background-image .3s ease-in-out, transform .3s ease-in-out;
-    margin-top: 10px;
+  transition: all .3s linear;
+  margin-top: 10px;
 }
 
 .card-with-btn__btn:hover {
-    background-image: url('../../images/cards/default-btn.png');
-    transform: scale(1.01);
+  background-image: url('../../images/cards/default-btn.png');
+  transform: scale(1.01);
 }

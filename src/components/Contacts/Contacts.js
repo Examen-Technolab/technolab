@@ -1,23 +1,21 @@
+import contacts from "../../utils/contacts";
+import Contact from "../Contact/Contact";
+import Tile from "../Tile/Tile";
+
 function Contacts() {
-    return (
-        <main className="section contacts">
-        <h1 className="title">Контакты</h1>
-        <p className="text contacts__paragraph contacts__main-text"> ООО &laquo;ЭКЗАМЕН-ТЕХНОЛАБ&raquo; &mdash;&thinsp; Авторизованный дистрибьютор на&nbsp;территории
-            Российской Федерации, Республики Беларусь и&nbsp;Казахстана</p>
-        <p className="text contacts__paragraph contacts__address">Адрес:
-        <a className="link contacts__link" href="https://yandex.ru/maps/-/CCUCfDUPGC" target="__blank">
-        Россия, 107045, г. Москва, ул. Сретенка д.24/2, стр.1.</a> </p>
-        <p className="text contacts__paragraph contacts__support">Тех. поддержка:
-        <a className="link contacts__link" href="mailto:support@examen-technolab.ru" target="__blank">
-            support@examen-technolab.ru</a></p>
-        <p className="text contacts__paragraph contacts__order">Заказ продукции:
-        <a className="link contacts__link" href="mailto:zakaz@examen-technolab.ru" target="__blank">
-        zakaz@examen-technolab.ru</a>
-        </p>
-        <p className="text contacts__paragraph contacts__phone">Телефон:
-        <a className="link contacts__link" href="tel:+74956410023" target="__blank">
-        +7 (495) 641-00-23</a></p>
-      </main>
-    );
+  return (
+    <main className="section contacts">
+      <h1 className="hidden">Контакты</h1>
+      <Tile tileClass="text text_uppercase contacts__tile contacts__tile_type_main">
+        <p className="text text_uppercase contacts__main-text"> ООО &laquo;Экзамен-Технолаб&raquo; &mdash;&thinsp; один из&nbsp;ведущих российских
+          разработчиков и&nbsp;поставщиков комплексных решений в&nbsp;сфере образования.</p>
+      </Tile>
+      {
+        contacts.map(item => {
+          return <Contact type={item.type} linkTitle={item.linkTitle} tileClass={`contacts__tile contacts__tile_type_${item.type}`} link={item.link} text={item.text} title={item.title} />
+        })
+      }
+    </main>
+  );
 }
 export default Contacts;

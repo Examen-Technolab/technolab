@@ -1,3 +1,22 @@
+:root {
+  --technolab-blue: #099ad7;
+  --grey: #3d3d3d;
+  --dark-grey: #030303;
+  --aero-color: #BE312A;
+  --basic-color: #509ADB;
+  --elementary-color: #63BD4C;
+  --preliminary-color: #D8B13C;
+  --professional-color: #3776C5;
+  --research-color: #A85B9F;
+  --machines-color: #C63332;
+  --tile-background: rgba(241, 240, 240, .65);
+  --header-background: rgba(241, 240, 240, .9);
+  --scrollbar-color: #E9E9E9;
+  --banner-navbar-height-big: 140px;
+  --banner-navbar-height-medium: 120px;
+  --banner-navbar-height-small: 100px;
+}
+
 @keyframes rotation {
   from {
     transform: rotate(0deg);
@@ -8,21 +27,12 @@
   }
 }
 
-.rotation {
-  animation: rotation linear infinite 60s;
+html {
+  scroll-behavior: smooth
 }
 
-.triangle {
-  background-image: url('../../images/background-triangle.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-  width: 750px;
-  height: 500px;
-  position: fixed;
-  right: -250px;
-  bottom: -150px;
-  z-index: 1;
+.rotation {
+  animation: rotation linear infinite 60s;
 }
 
 .background {
@@ -40,6 +50,7 @@
   word-wrap: break-word;
   width: 100%;
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 
 .section {
@@ -49,96 +60,89 @@
   justify-items: stretch;
   align-items: flex-start;
   max-width: 1280px;
-  width: 90%;
+  width: 75%;
   margin-top: 130px;
   box-sizing: border-box;
+  position: relative;
+  z-index: 20;
 }
 
-.title {
+.hidden {
   display: none;
 }
 
 .text {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 13px;
+  text-align: justify;
+  font-size: 20px;
   font-weight: normal;
   line-height: 1.5;
   z-index: 5;
-}
-
-.list {
-  list-style: none;
   margin: 0;
   padding: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+}
+
+.text_uppercase {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .link {
-  color: #3d3d3d;
+  color: var(--grey);
   text-decoration: none;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 600;
-  transition: color .3s ease-in-out;
+  transition: color .3s linear;
 }
 
 .link:hover {
-  color: #099ad7;
+  color: var(--technolab-blue)
 }
 
-/* Выделение текста цыетом модуля */
+/* Выделение текста цветом модуля */
 
 .highlighted-text {
-  color: #099ad7;
+  color: var(--technolab-blue)
 }
 
 .highlighted-text_level_aero {
-  color: #BE312A;
+  color: var(--aero-color)
 }
 
 .highlighted-text_level_basic {
-  color: #509ADB;
+  color: var(--basic-color)
 }
 
 .highlighted-text_level_elementary {
-  color: #63BD4C;
-}
-
-.highlighted-text_level_machines {
-  color: #C63332;
+  color: var(--elementary-color)
 }
 
 .highlighted-text_level_preliminary {
-  color: #D8B13C;
+  color: var(--preliminary-color)
 }
 
 .highlighted-text_level_professional {
-  color: #3776C5;
+  color: var(--professional-color)
 }
 
 .highlighted-text_level_research {
-  color: #A85B9F;
+  color: var(--research-color)
 }
 
-@media (max-width: 1100px) {
-  .triangle {
-    width: 650px;
-    height: 400px;
+.highlighted-text_level_machines {
+  color: var(--machines-color)
+}
+
+@media (max-width: 1200px) {
+  .section {
+    margin-top: 160px;
   }
 }
 
 @media (max-width: 1050px) {
-  .link {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 950px) {
   .section {
+    width: 90%;
     margin-top: 140px;
   }
 }
@@ -146,7 +150,11 @@
 @media (max-width: 850px) {
 
   .text {
-    font-size: 12px;
+    font-size: 17px;
+  }
+
+  .link {
+    font-size: 16px;
   }
 
 }

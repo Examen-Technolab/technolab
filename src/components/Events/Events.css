@@ -1,0 +1,61 @@
+.events {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 60vh;
+}
+
+.events__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.events__title-tile {
+  min-height: 150px;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+.events__title {
+  margin: 0;
+  text-align: left;
+  font-size: 24px;
+  position: relative;
+  z-index: 5;
+  background: none;
+  color: var(--technolab-blue);
+  font-weight: bold;
+}
+
+@media (max-width: 950px) {
+
+  .events__title {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .events__title-tile {
+    min-height: 100px;
+  }
+
+  .events__title-tile {
+    background: rgba(0, 118, 189, .9);
+  }
+}
+
+@media (max-width: 830px) {
+
+  .events__title {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .events__title-tile {
+    min-height: 100px;
+  }
+}

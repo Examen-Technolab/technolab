@@ -1,0 +1,47 @@
+.contact__title {
+  margin-bottom: 10px;
+}
+
+.contact__icon {
+  width: 200px;
+  height: 150px;
+  margin-top: 5px;
+  align-self: end;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contact__icon_type_address {
+  background-image: url(../../images/contacts/address-icon.svg);
+  width: 150px;
+  height: 100px;
+  margin-right: 40px;
+  align-self: flex-start;
+}
+
+.contact__icon_type_order {
+  background-image: url(../../images/contacts/order-icon.svg);
+  width: 250px;
+  height: 150px;
+
+}
+
+.contact__icon_type_support {
+  background-image: url(../../images/contacts/support-icon.svg);
+  align-self: start;
+  width: 150px;
+  height: 250px;
+
+}
+
+.contact__icon_type_phone {
+  background-image: url(../../images/contacts/phone-icon.svg);
+  height: 100px;
+}
+
+@media (max-width:900px) {
+  .contact__icon {
+    display: none;
+  }
+}

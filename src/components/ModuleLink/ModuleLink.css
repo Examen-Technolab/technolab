@@ -1,0 +1,131 @@
+.module-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.module-link__text {
+  text-align: justify;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.module-link__icon {
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  transition: all .3s linear;
+}
+
+.module-link__icon_level_aero {
+  background-image: url(../../images/icons/icon-aero-grey.svg);
+}
+
+.module-link__icon_level_basic {
+  background-image: url(../../images/icons/icon-basic-grey.svg);
+}
+
+.module-link__icon_level_elementary {
+  background-image: url(../../images/icons/icon-elementary-grey.svg);
+}
+
+.module-link__icon_level_preliminary {
+  background-image: url(../../images/icons/icon-preliminary-grey.svg);
+}
+
+.module-link__icon_level_professional {
+  background-image: url(../../images/icons/icon-professional-grey.svg);
+}
+
+.module-link__icon_level_research {
+  background-image: url(../../images/icons/icon-research-grey.svg);
+}
+
+/*  При наведении */
+
+.module-link_level_aero:hover {
+  color: var(--aero-color);
+}
+
+.module-link_level_basic:hover {
+  color: var(--basic-color);
+}
+
+.module-link_level_elementary:hover {
+  color: var(--elementary-color);
+}
+
+.module-link_level_preliminary:hover {
+  color: var(--preliminary-color);
+}
+
+.module-link_level_professional:hover {
+  color: var(--professional-color);
+}
+
+.module-link_level_research:hover {
+  color: var(--research-color);
+}
+
+.module-link:hover .module-link__icon_level_aero {
+  background-image: url(../../images/icons/icon-aero.svg);
+}
+
+.module-link:hover .module-link__icon_level_aero {
+  background-image: url(../../images/icons/icon-aero.svg);
+}
+
+.module-link:hover .module-link__icon_level_basic {
+  background-image: url(../../images/icons/icon-basic.svg);
+}
+
+.module-link:hover .module-link__icon_level_elementary {
+  background-image: url(../../images/icons/icon-elementary.svg);
+}
+
+.module-link:hover .module-link__icon_level_preliminary {
+  background-image: url(../../images/icons/icon-preliminary.svg);
+}
+
+.module-link:hover .module-link__icon_level_professional {
+  background-image: url(../../images/icons/icon-professional.svg);
+}
+
+.module-link:hover .module-link__icon_level_research {
+  background-image: url(../../images/icons/icon-research.svg);
+}
+
+
+@media (max-width: 1050px) {
+
+  .module-link__text {
+    font-size: 16px;
+  }
+
+
+  .module-link__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .module-link__text {
+    font-size: 15px;
+  }
+
+
+  .module-link__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+}

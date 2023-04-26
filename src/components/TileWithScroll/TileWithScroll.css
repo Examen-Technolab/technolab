@@ -1,0 +1,202 @@
+.tile-with-scroll {
+  padding: 30px 0 30px 30px;
+}
+
+.tile-with-scroll__container {
+  padding: 0 20px 0 0;
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 10px;
+  text-align: justify;
+  font-size: 14px;
+  color: #3d3d3d;
+  overflow-y: scroll;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.tile-with-scroll__container {
+  scrollbar-color: var(--technolab-blue) var(--scrollbar-color);
+  scrollbar-width: thin;
+}
+
+.tile-with-scroll__container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.tile-with-scroll__container::-webkit-scrollbar-track {
+  background: var(--scrollbar-color);
+  border-radius: 15px;
+}
+
+.tile-with-scroll__container::-webkit-scrollbar-thumb {
+  background-color: var(--technolab-blue);
+  border-radius: 15px;
+  padding-right: 30px;
+  border: 3px solid var(--scrollbar-color);
+}
+
+
+/* СКРОЛЛБАР КАРТОЧКИ research */
+
+.tile-with-scroll__container_level_research {
+  scrollbar-color: var(--research-color) var(--scrollbar-color);
+  scrollbar-width: thin;
+}
+
+.tile-with-scroll__container_level_research::-webkit-scrollbar {
+  width: 10px;
+}
+
+.tile-with-scroll__container_level_research::-webkit-scrollbar-track {
+  background: var(--scrollbar-color);
+  border-radius: 15px;
+}
+
+.tile-with-scroll__container_level_research::-webkit-scrollbar-thumb {
+  background-color: var(--research-color);
+  border-radius: 15px;
+  padding-right: 30px;
+  border: 3px solid var(--scrollbar-color);
+}
+
+/* СКРОЛЛБАР КАРТОЧКИ professional */
+
+.tile-with-scroll__container_level_professional {
+  scrollbar-color: var(--professional-color) var(--scrollbar-color);
+  scrollbar-width: thin;
+}
+
+.tile-with-scroll__container_level_professional::-webkit-scrollbar {
+  width: 10px;
+}
+
+.tile-with-scroll__container_level_professional::-webkit-scrollbar-track {
+  background: var(--scrollbar-color);
+  border-radius: 15px;
+}
+
+.tile-with-scroll__container_level_professional::-webkit-scrollbar-thumb {
+  background-color: var(--professional-color);
+  border-radius: 15px;
+  padding-right: 30px;
+  border: 3px solid var(--scrollbar-color);
+}
+
+/* СКРОЛЛБАР КАРТОЧКИ preliminary */
+
+.tile-with-scroll__container_level_preliminary {
+  scrollbar-color: var(--preliminary-color) var(--scrollbar-color);
+  scrollbar-width: thin;
+}
+
+.tile-with-scroll__container_level_preliminary::-webkit-scrollbar {
+  width: 10px;
+}
+
+.tile-with-scroll__container_level_preliminary::-webkit-scrollbar-track {
+  background: var(--scrollbar-color);
+  border-radius: 15px;
+}
+
+.tile-with-scroll__container_level_preliminary::-webkit-scrollbar-thumb {
+  background-color: var(--preliminary-color);
+  border-radius: 15px;
+  padding-right: 30px;
+  border: 3px solid var(--scrollbar-color);
+}
+
+/* СКРОЛЛБАР КАРТОЧКИ machines */
+
+.tile-with-scroll__container_level_machines {
+  scrollbar-color: var(--machines-color) var(--scrollbar-color);
+  scrollbar-width: thin;
+}
+
+.tile-with-scroll__container_level_machines::-webkit-scrollbar {
+  width: 10px;
+}
+
+.tile-with-scroll__container_level_machines::-webkit-scrollbar-track {
+  background: var(--scrollbar-color);
+  border-radius: 15px;
+}
+
+.tile-with-scroll__container_level_machines::-webkit-scrollbar-thumb {
+  background-color: var(--machines-color);
+  border-radius: 15px;
+  padding-right: 30px;
+  border: 3px solid var(--scrollbar-color);
+}
+
+/* СКРОЛЛБАР КАРТОЧКИ elementary */
+
+.tile-with-scroll__container_level_elementary {
+  scrollbar-color: var(--elementary-color) var(--scrollbar-color);
+  scrollbar-width: thin;
+}
+
+.tile-with-scroll__container_level_elementary::-webkit-scrollbar {
+  width: 10px;
+}
+
+.tile-with-scroll__container_level_elementary::-webkit-scrollbar-track {
+  background: var(--scrollbar-color);
+  border-radius: 15px;
+}
+
+.tile-with-scroll__container_level_elementary::-webkit-scrollbar-thumb {
+  background-color: var(--elementary-color);
+  border-radius: 15px;
+  padding-right: 30px;
+  border: 3px solid var(--scrollbar-color);
+}
+
+/* СКРОЛЛБАР КАРТОЧКИ basic */
+
+.tile-with-scroll__container_level_basic {
+  scrollbar-color: var(--basic-color) var(--scrollbar-color);
+  scrollbar-width: thin;
+}
+
+.tile-with-scroll__container_level_basic::-webkit-scrollbar {
+  width: 10px;
+}
+
+.tile-with-scroll__container_level_basic::-webkit-scrollbar-track {
+  background: var(--scrollbar-color);
+  border-radius: 15px;
+}
+
+.tile-with-scroll__container_level_basic::-webkit-scrollbar-thumb {
+  background-color: var(--basic-color);
+  border-radius: 15px;
+  padding-right: 30px;
+  border: 3px solid var(--scrollbar-color);
+}
+
+/* СКРОЛЛБАР КАРТОЧКИ aero */
+
+.tile-with-scroll__container_level_aero {
+  scrollbar-color: var(--aero-color) var(--scrollbar-color);
+  scrollbar-width: thin;
+}
+
+.tile-with-scroll__container_level_aero::-webkit-scrollbar {
+  width: 10px;
+}
+
+.tile-with-scroll__container_level_aero::-webkit-scrollbar-track {
+  background: var(--scrollbar-color);
+  border-radius: 15px;
+}
+
+.tile-with-scroll__container_level_aero::-webkit-scrollbar-thumb {
+  background-color: var(--aero-color);
+  border-radius: 15px;
+  padding-right: 30px;
+  border: 3px solid var(--scrollbar-color);
+}

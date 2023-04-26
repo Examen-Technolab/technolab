@@ -1,0 +1,20 @@
+.brand-link {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+  margin: 0;
+  transition: all .3s linear;
+}
+
+.brand-link__img {
+  height: auto;
+  width: 100%;
+}
+
+.brand-link:hover {
+  transform: scale(1.02);
+}

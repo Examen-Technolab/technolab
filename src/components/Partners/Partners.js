@@ -1,20 +1,12 @@
-import FileLink from "./../FileLink/FileLink";
 import partners from '../../utils/partners'
+import Files from "../Files/Files";
 
 function Partners() {
-    return (
-        <main className="section">
-            <h1 className="title">Партнерам</h1>
-            <ul className="list">
-                {
-                    partners.map((item, index) => {
-                        return (
-                            <FileLink key={'Partners' + index.toString()} item={item} index={index} />
-                        )
-                    })
-                }
-            </ul>
-        </main>
-    );
+  return (
+    <main className="section">
+      <h1 className="hidden">Партнерам</h1>
+      <Files key="Partners" list={partners} />
+    </main>
+  );
 }
 export default Partners;

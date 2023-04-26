@@ -1,20 +1,12 @@
-import software from '../../utils/software'
-import FileLink from '../FileLink/FileLink';
+import downloads from '../../utils/downloads'
+import Files from '../Files/Files';
 
 function Downloads() {
-    return (
-        <main className="section">
-            <h1 className="title">Загрузки</h1>
-            <ul className="list">
-                {
-                    software.map((item, index) => {
-                        return (
-                            <FileLink key={'Downloads' + index.toString()} item={item} index={index} />
-                        )
-                    })
-                }
-            </ul>
-        </main>
-    );
+  return (
+    <main className="section">
+      <h1 className="hidden">Загрузки</h1>
+      <Files key="Downloads" list={downloads} />
+    </main>
+  );
 }
 export default Downloads;
