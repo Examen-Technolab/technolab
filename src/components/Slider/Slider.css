@@ -5,8 +5,6 @@
   justify-self: end;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: relative;
   margin: 10px 10px 40px 10px;
 }
@@ -135,4 +133,12 @@
 
 .slider_big .slider__btn {
   display: none;
+}
+
+@media (max-width: 500px) {
+  .slider {
+    width: 180px;
+    height: auto;
+    margin: 0 10px 10px 0;
+  }
 }

@@ -15,7 +15,6 @@ function DoubleTile(props) {
         <ul className="double-tile__links-container">
           {
             props.links.map(item => {
-              console.log(item)
               return (
                 <LinkButton color={item.color} link={item.link} target={item.target || '_self'} title={item.linkTitle}>{item.title}</LinkButton>
               )
