@@ -72,3 +72,10 @@ export const modules = [
     title: 'Аэро'
   },
 ]
+
+export const vkLink = {
+  text: 'Результаты',
+  link: 'https://vk.com/examen_technolab',
+  type: 'highlighted',
+  linkTitle: 'Открыть ВК.'
+}

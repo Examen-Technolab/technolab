@@ -1,0 +1,28 @@
+.file-link-with-img__img {
+  height: auto;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+  border-radius: 5px;
+}
+
+.file-link-with-img__title {
+  margin: 0;
+  padding: 0 0 10px 0;
+  text-align: left;
+}
+
+.file-link-with-img__subtitle {
+  font-weight: 700;
+  opacity: .8;
+  padding: 0 0 10px;
+  text-align: left;
+}
+
+.file-link-with-img__about {
+  font-size: 18px;
+  margin: 0;
+  padding: 0 0 15px;
+  text-align: justify;
+  text-transform: none;
+}

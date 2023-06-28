@@ -5,7 +5,7 @@
   background-size: 160px auto;
   background-image: url('../../images/cards/default-background.png');
   width: 390px;
-  height: 430px;
+  height: 460px;
   border-radius: 30px;
   position: relative;
   z-index: 3;
@@ -18,15 +18,15 @@
   border-radius: 30px;
   display: -ms-grid;
   display: grid;
-  grid-template-areas: 'kit kit kit'
+  grid-template-areas: 'slider slider slider'
     '. title pic'
     '. article pic'
     '. price pic'
     'navbar navbar navbar';
   -ms-grid-columns: 40px auto 40px;
   grid-template-columns: 40px auto 40px;
-  -ms-grid-rows: 240px auto;
-  grid-template-rows: 240px auto;
+  -ms-grid-rows: 280px auto;
+  grid-template-rows: 280px auto;
   justify-items: start;
   overflow: hidden;
   height: 550px;
@@ -35,27 +35,21 @@
 .card_type_with-btn {
   display: -ms-grid;
   display: grid;
-  grid-template-areas: 'kit kit kit'
+  grid-template-areas: 'slider slider slider'
     '. title title'
     '. article btn'
     '. price btn';
   column-gap: 38px;
   -ms-grid-columns: 0 1.8fr 2fr;
   grid-template-columns: 0 1.8fr 2fr;
-  -ms-grid-rows: 240px auto;
-  grid-template-rows: 240px 70px auto;
+  -ms-grid-rows: 280px 70px auto;
+  grid-template-rows: 280px 70px auto;
   justify-items: start;
-  -webkit-transition: -webkit-transform .3s ease-in-out;
-  transition: -webkit-transform .3s ease-in-out;
+  -webslider-transition: -webslider-transform .3s ease-in-out;
+  transition: -webslider-transform .3s ease-in-out;
   -o-transition: transform .3s ease-in-out;
   transition: transform .3s ease-in-out;
-  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
-}
-
-.card_type_with-btn:hover {
-  -webkit-transform: scale(1.01, 1.01);
-  -ms-transform: scale(1.01, 1.01);
-  transform: scale(1.01, 1.01);
+  transition: transform .3s ease-in-out, -webslider-transform .3s ease-in-out;
 }
 
 /* МОДИФИКАТОРЫ КАРТОЧКИ ПО СОДЕРЖИМОМУ(ФОН) */
@@ -117,15 +111,9 @@
   font-weight: bold;
 }
 
-.card__img {
-  grid-area: kit;
-  height: 220px;
-  width: 280px;
-  -ms-grid-column-align: end;
-  justify-self: end;
-  -o-object-fit: contain;
-  object-fit: contain;
-  margin: 10px;
+.card__slider {
+  grid-area: slider;
+  margin-bottom: 50px;
 }
 
 /* ССЫЛКА-КНОПКА КАРТОЧКИ */
@@ -214,7 +202,7 @@
     grid-template-columns: 15px auto;
     -ms-grid-rows: 180px auto;
     grid-template-rows: 180px auto;
-    grid-template-areas: 'kit kit'
+    grid-template-areas: 'slider slider'
       '. title'
       '. article'
       '. price'

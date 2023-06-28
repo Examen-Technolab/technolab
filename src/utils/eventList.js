@@ -12,30 +12,37 @@ const eventList = [
       month: 5,
       day: 12,
     },
-    registration: 'https://docs.google.com/forms/d/e/1FAIpQLSdJXCHtw-rzVG71lp1Kfi3i0Ck3mGj_mPFMWuQJUjTQyMtq6A/closedform',
+    registration:
+    {
+      title: 'Регистрация',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSdJXCHtw-rzVG71lp1Kfi3i0Ck3mGj_mPFMWuQJUjTQyMtq6A/closedform',
+      type: 'highlighted',
+      linkTitle: 'Перейти к регистрации.'
+    },
+    results:
+    {
+      title: 'Результаты',
+      link: 'https://vk.com/wall-125119296_422',
+      type: 'highlighted',
+      linkTitle: 'Открыть страницу ВК.'
+    },
     about: 'Соревнования по робототехнике для младшего и среднего школьных возрастов на основе регламентов соревнований VEX IQ Challenge crossover.',
     cardTitle: '«Bridge» (2023-2024)',
     links: [
       {
-        text: 'Регистрация',
-        link: 'https://docs.google.com/forms/d/e/1FAIpQLSdJXCHtw-rzVG71lp1Kfi3i0Ck3mGj_mPFMWuQJUjTQyMtq6A/closedform',
-        type: 'registration',
-        linkTitle: 'Перейти к регистрации.'
-      },
-      {
-        text: 'Соревновательная продукция',
+        title: 'Соревновательная продукция',
         link: 'https://examen-technolab.ru/catalog/elementary/kit',
         linkTitle: 'Перейти на страницу товара.',
         type: 'products',
       },
       {
-        text: 'Руководство по игре',
+        title: 'Руководство по игре',
         link: 'https://examen-technolab.ru/events/technolab_bridge/technolab_bridge_rules.pdf',
         linkTitle: 'Открыть pdf-файл.',
         type: 'guide',
       },
       {
-        text: 'Описание поля',
+        title: 'Описание поля',
         link: 'https://examen-technolab.ru/events/technolab_bridge/bridge_field.pdf',
         linkTitle: 'Открыть pdf-файл.',
         type: 'field',
@@ -59,15 +66,20 @@ const eventList = [
     ],
     table: {
       title: 'Начисление очков:',
-
     }
-
   },
   {
     eventPage: '',
     logo: logoMmso,
     title: 'ММСО.EXPO-2023',
     date: 'Четверг-пятница, 23-24 марта.',
+    results:
+    {
+      title: 'Фотоотчет',
+      link: 'https://vk.com/wall-125119296_418',
+      type: 'highlighted',
+      linkTitle: 'Открыть страницу ВК.'
+    },
     lastDay: {
       year: 2023,
       month: 3,
@@ -75,6 +87,7 @@ const eventList = [
     },
     about: 'Выставочное пространство ММСО.EXPO-2023 объединит самые передовые решения как для учреждений образования, так и для индивидуальных потребителей – педагогов, учащихся и их родителей.'
   },
+
 ];
 
 export default eventList;

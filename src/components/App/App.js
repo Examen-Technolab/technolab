@@ -1,21 +1,36 @@
 import React from 'react';
 import { BrowserRouter, Route, Redirect } from 'react-router-dom';
+import { useState } from 'react';
 
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Catalog from '../Catalog/Catalog';
-import Manuals from '../Manuals/Manuals';
-import Partners from '../Partners/Partners';
 import Product from '../Product/Product';
-import Downloads from '../Downloads/Downloads';
 import Contacts from '../Contacts/Contacts';
 import About from '../About/About';
 import Events from '../Events/Events';
 import EventPage from '../EventPage/EventPage';
 import Triangle from '../Triangle/Triangle';
+import Popup from '../Popup/Popup';
+import Files from '../Files/Files';
+import FilesWithFilter from '../FilesWithFilter/FilesWithFilter';
+
+import manuals from '../../utils/manuals';
+import downloads from '../../utils/downloads';
+import partners from '../../utils/partners';
+import filterForManuals from '../../utils/filterForManuals';
 
 function App() {
+
+  const [popupIsVisibel, setPopupIsVIsible] = useState(false);
+  const [popupContent, setPopupContent] = useState('');
+
+  function closePopup() {
+    setPopupIsVIsible(false);
+    setPopupContent('');
+  }
+
   return (
     <div className="background">
       <div className="page">
@@ -28,16 +43,16 @@ function App() {
             <Main />
           </Route>
           <Route exact path="/catalog">
-            <Catalog />
+            <Catalog setPopupIsVIsible={setPopupIsVIsible} setPopupContent={setPopupContent} />
           </Route>
           <Route path={`/catalog/:level`}>
-            <Product />
+            <Product setPopupIsVIsible={setPopupIsVIsible} setPopupContent={setPopupContent} />
           </Route>
           <Route path="/manuals">
-            <Manuals />
+            <FilesWithFilter options={filterForManuals} list={manuals} title="Обучение" />
           </Route>
           <Route path="/downloads">
-            <Downloads />
+            <Files isSimple={true} list={downloads} title="Загрузки" />
           </Route>
           <Route path="/contacts">
             <Contacts />
@@ -46,15 +61,16 @@ function App() {
             <About />
           </Route>
           <Route path="/partners">
-            <Partners />
+            <Files list={partners} title="Партнерам" />
           </Route>
           <Route exact path="/events">
             <Events />
           </Route>
-          <Route path={`/events/:eventPage`}>
+          <Route path={`/events/:eventUrl`}>
             <EventPage />
           </Route>
           <Triangle />
+          <Popup closePopup={closePopup} isVisible={popupIsVisibel} children={popupContent} />
           <Footer />
         </BrowserRouter>
       </div>

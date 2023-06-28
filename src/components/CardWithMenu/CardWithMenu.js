@@ -22,7 +22,7 @@ function CardWithMenu(props) {
           <p className="card-with-menu__back-btn-text">Назад</p>
         </button>
       </div>
-      <Card type="with-menu" link={props.link} level={props.level} img={props.img} title={props.title}
+      <Card setPopupIsVIsible={props.setPopupIsVIsible} setPopupContent={props.setPopupContent} type="with-menu" link={props.link} level={props.level} img={props.img} title={props.title}
         article={props.article} price={props.price}
         children={
           <>

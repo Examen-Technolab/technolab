@@ -22,7 +22,6 @@
 
 .about__tile_type_main {
   grid-area: main;
-  justify-content: center;
 }
 
 .about__tile_type_provider {

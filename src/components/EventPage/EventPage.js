@@ -8,8 +8,11 @@ import Paragraph from '../Paragraph/Paragraph';
 import table from '../../images/events/table-bridge.png'
 
 function EventPage(props) {
-  const { eventPage } = useParams();
-  const eventData = eventList.find(item => item.eventPage === eventPage.toString());
+  const { eventUrl } = useParams();
+  const eventPage = eventUrl.replace("-archive", "");
+  const eventData = eventList.find(item => item.eventPage === eventPage);
+  eventData.links.unshift(eventUrl === eventPage ? eventData.registration : eventData.results);
+  console.log(eventData.links)
   const history = useHistory();
 
   function handleClick() {
@@ -35,7 +38,7 @@ function EventPage(props) {
           return (
             <li key={item.title}>
               <Tile tileClass={`event-page__link event-page__link_type_${item.type}`} link={item.link} linkTitle={item.linkTitle}>
-                <p className="text text_uppercase event-page__link-text">{item.text}</p>
+                <p className="text text_uppercase event-page__link-text">{item.title}</p>
               </Tile>
             </li>
           )

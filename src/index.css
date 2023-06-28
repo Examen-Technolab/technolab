@@ -25,9 +25,12 @@
 @import url(./components/Contact/Contact.css);
 @import url(./components/Events/Events.css);
 @import url(./components/Event/Event.css);
-@import url(./components/EventContent/EventContent.css);
 @import url(./components/EventPage/EventPage.css);
-@import url(./components/TileLink/TileLink.css);
 @import url(./components/TileWithScroll/TileWithScroll.css);
 @import url(./components/Paragraph/Paragraph.css);
 @import url(./components/Files/Files.css);
+@import url(./components/Slider/Slider.css);
+@import url(./components/Popup/Popup.css);
+@import url(./components/Select/Select.css);
+@import url(./components/DoubleTile/DoubleTile.css);
+@import url(./components/FileLinkWithImg/FileLinkWithImg.css);

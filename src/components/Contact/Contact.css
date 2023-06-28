@@ -16,28 +16,28 @@
   background-image: url(../../images/contacts/address-icon.svg);
   width: 150px;
   height: 100px;
-  margin-right: 40px;
-  align-self: flex-start;
+  margin-right: 0px;
+  align-self: flex-end;
 }
 
 .contact__icon_type_order {
   background-image: url(../../images/contacts/order-icon.svg);
   width: 250px;
   height: 150px;
-
+  align-self: flex-start;
 }
 
 .contact__icon_type_support {
   background-image: url(../../images/contacts/support-icon.svg);
   align-self: start;
-  width: 150px;
-  height: 250px;
-
+  width: 140px;
+  height: 100%;
+  background-position: 0 80%;
 }
 
 .contact__icon_type_phone {
   background-image: url(../../images/contacts/phone-icon.svg);
-  height: 100px;
+  height: 80px;
 }
 
 @media (max-width:900px) {

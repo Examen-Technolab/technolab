@@ -19,6 +19,8 @@
   width: 100%;
   position: relative;
   z-index: 5;
+  color: var(--technolab-blue);
+  justify-content: flex-start;
 }
 
 .events__title {
@@ -28,7 +30,6 @@
   position: relative;
   z-index: 5;
   background: none;
-  color: var(--technolab-blue);
   font-weight: bold;
 }
 

@@ -4,7 +4,7 @@ import CardWithMenu from '../CardWithMenu/CardWithMenu';
 import CardWithText from '../CardWithText/CardWithText';
 import cards from '../../utils/cards';
 
-function Product() {
+function Product(props) {
   let { level } = useParams();
   let card = cards.find(card => card.level === level.toString());
   const { url, path } = useRouteMatch();
@@ -13,7 +13,7 @@ function Product() {
   return (
     <section className="section product">
       <h1 className="hidden"> {card.title} </h1>
-      <CardWithMenu url={url} link={level} level={cardLevel} img={card.img} title={card.title} article={card.article} price={card.price} />
+      <CardWithMenu setPopupIsVIsible={props.setPopupIsVIsible} setPopupContent={props.setPopupContent} url={url} link={level} level={cardLevel} img={card.img} title={card.title} article={card.article} price={card.price} />
       <Switch>
         <Route exact path={`${path}/kit`}>
           <CardWithText list={card.kit} level={cardLevel} imgTop={card.imgTop} imgBot={card.imgBot} />

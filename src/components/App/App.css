@@ -69,7 +69,14 @@ html {
 
 .hidden {
   display: none;
+  visibility: hidden;
 }
+
+
+.grayscale {
+  filter: grayscale(80%);
+}
+
 
 .text {
   text-align: justify;
