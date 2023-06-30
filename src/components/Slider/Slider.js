@@ -7,24 +7,17 @@ function Slider(props) {
 
   function handleLeftButtonClick() {
     const newIndex = (imgIndex > 0) ? imgIndex - 1 : maxImgIndex;
-    if (props.setMainImgIndex) {
-      props.setMainImgIndex(newIndex)
-    }
     setImgIndex(newIndex);
   }
 
   function handleRightButtonClick() {
     const newIndex = (imgIndex < maxImgIndex) ? imgIndex + 1 : 0;
-    if (props.setMainImgIndex) {
-      props.setMainImgIndex(newIndex)
-    }
     setImgIndex(newIndex);
   }
 
   function openImgPopup() {
     props.setPopupIsVIsible(true);
-    props.setPopupContent(<Slider setMainImgIndex={setImgIndex} initIndex={imgIndex} title={props.title} img={props.img} />);
-    //setMainImgIndex - картинка основного слайдера, т.е. не попапа
+    props.setPopupContent(<Slider initIndex={imgIndex} title={props.title} img={props.img} />);
   }
 
   return (
