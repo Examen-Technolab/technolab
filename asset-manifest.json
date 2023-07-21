@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c4e76540.css",
-    "main.js": "/static/js/main.e8c3497b.js",
+    "main.css": "/static/css/main.c6f8609d.css",
+    "main.js": "/static/js/main.bfaa95f7.js",
     "static/media/elementary-1.png": "/static/media/elementary-1.397f3aef94eee5d6ba0d.png",
     "static/media/basic-b5-tc.png": "/static/media/basic-b5-tc.4272d4900d8ab99c214d.png",
     "static/media/basic-b5.png": "/static/media/basic-b5.b8095577879769263ad6.png",
@@ -9,6 +9,7 @@
     "static/media/tv-0241-mu1.png": "/static/media/tv-0241-mu1.b819220419932874cf64.png",
     "static/media/ta-0841-mp.png": "/static/media/ta-0841-mp.f56e92c07209e3b4fa1c.png",
     "static/media/tv-0441-m-2.png": "/static/media/tv-0441-m-2.55d0c711f9b0ea0fa7fe.png",
+    "static/media/arduino-v5.png": "/static/media/arduino-v5.ee6dc8f6c6308f08faf5.png",
     "static/media/tv-0441-m-1.png": "/static/media/tv-0441-m-1.5108cdbeb928843fc489.png",
     "static/media/tv-0241-mp.png": "/static/media/tv-0241-mp.b09db050d8597743437b.png",
     "static/media/ts-61d-m10.png": "/static/media/ts-61d-m10.3dcafc1430d25ce4d557.png",
@@ -111,6 +112,7 @@
     "static/media/logo-bridge.svg": "/static/media/logo-bridge.ec1457442ca952288f63f5ef322be249.svg",
     "static/media/dobot-icon-hover.svg": "/static/media/dobot-icon-hover.2795e2b0f3292bf11014fe3e57bb9b47.svg",
     "static/media/ittle-bits-icon-hover.svg": "/static/media/ittle-bits-icon-hover.29d099e813b81e36cd796b55562072ce.svg",
+    "static/media/courses.png": "/static/media/courses.93d8440868a9540687c1.png",
     "static/media/icon-research-grey.svg": "/static/media/icon-research-grey.3bb715c81d7139b02f5d.svg",
     "static/media/icon-research.svg": "/static/media/icon-research.53bb484dd474a4fb1faf.svg",
     "static/media/competition-background.png": "/static/media/competition-background.c050e26544ec83935242.png",
@@ -136,12 +138,14 @@
     "static/media/preliminary-pic.png": "/static/media/preliminary-pic.dfd1edc622140cfd3446.png",
     "static/media/research-pic.png": "/static/media/research-pic.ad7da24cceb88fba0937.png",
     "static/media/bridge-guide.png": "/static/media/bridge-guide.93ec37b1605c7edc00ff.png",
+    "static/media/manuals.png": "/static/media/manuals.aa07a46a2e1cf81b43a2.png",
     "static/media/bridge-registration.png": "/static/media/bridge-registration.ed5aaed09a03f6af8080.png",
     "static/media/background-triangle.png": "/static/media/background-triangle.e2d7753968aadd063e54.png",
     "static/media/icon-preliminary.svg": "/static/media/icon-preliminary.a2787bb81652dd6b3a27.svg",
     "static/media/icon-preliminary-grey.svg": "/static/media/icon-preliminary-grey.da97dac08fb18c4b9ef0.svg",
     "static/media/bridge-field.png": "/static/media/bridge-field.075a64547766ea3ff01a.png",
     "static/media/support-icon.svg": "/static/media/support-icon.c755d0fff09ad32f3a06.svg",
+    "static/media/academy.png": "/static/media/academy.b6daac834cdc47d116af.png",
     "static/media/icon-professional.svg": "/static/media/icon-professional.9a830b038a6fa7e0586a.svg",
     "static/media/icon-professional-grey.svg": "/static/media/icon-professional-grey.674c771419ff4f349fed.svg",
     "static/media/address-icon.svg": "/static/media/address-icon.9c1542ecd2c833acc24b.svg",
@@ -149,11 +153,11 @@
     "static/media/professional-pic.png": "/static/media/professional-pic.d529e990b3a69b51fa7a.png",
     "static/media/logo-mmso.svg": "/static/media/logo-mmso.fe15c1a72759ac61486b4c84ecedca5a.svg",
     "index.html": "/index.html",
-    "main.c4e76540.css.map": "/static/css/main.c4e76540.css.map",
-    "main.e8c3497b.js.map": "/static/js/main.e8c3497b.js.map"
+    "main.c6f8609d.css.map": "/static/css/main.c6f8609d.css.map",
+    "main.bfaa95f7.js.map": "/static/js/main.bfaa95f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4e76540.css",
-    "static/js/main.e8c3497b.js"
+    "static/css/main.c6f8609d.css",
+    "static/js/main.bfaa95f7.js"
   ]
 }
