@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.1b8e179a.css",
-    "main.js": "/static/js/main.5040f9c7.js",
+    "main.css": "/static/css/main.74a4b8ea.css",
+    "main.js": "/static/js/main.0ee6c76f.js",
     "static/media/elementary-1.png": "/static/media/elementary-1.397f3aef94eee5d6ba0d.png",
+    "static/media/technobot.mp4": "/static/media/technobot.40621c25c826a0144061.mp4",
     "static/media/basic-b5-tc.png": "/static/media/basic-b5-tc.4272d4900d8ab99c214d.png",
     "static/media/basic-b5.png": "/static/media/basic-b5.b8095577879769263ad6.png",
+    "static/media/technobot-promo.mp4": "/static/media/technobot-promo.e3ef08a51935d9715359.mp4",
     "static/media/tv-0241-mu2.png": "/static/media/tv-0241-mu2.92b34dba0df3f58f488c.png",
     "static/media/tv-0241-mu1.png": "/static/media/tv-0241-mu1.b819220419932874cf64.png",
     "static/media/ta-0841-mp.png": "/static/media/ta-0841-mp.f56e92c07209e3b4fa1c.png",
@@ -52,13 +54,14 @@
     "static/media/basic-b5-tc-4.png": "/static/media/basic-b5-tc-4.0c6cfbd7aa1e22365aab.png",
     "static/media/elementary.png": "/static/media/elementary.dad47a6a1d090b4b25d5.png",
     "static/media/research-2.png": "/static/media/research-2.ad8d4ed95f26a52bbf35.png",
+    "static/media/technobot-poster.PNG": "/static/media/technobot-poster.d2ed63945a34e4366cf5.PNG",
     "static/media/basic.png": "/static/media/basic.ebdbb2775c3f86e4344e.png",
     "static/media/aero-track.png": "/static/media/aero-track.a60d38dc85707e7d6710.png",
     "static/media/main-banner.png": "/static/media/main-banner.dfade4ba5d244fb6e39a.png",
     "static/media/basic-b5-1.png": "/static/media/basic-b5-1.1dc627659a912bca5136.png",
     "static/media/research-1.png": "/static/media/research-1.9911b18a3cdb89208997.png",
     "static/media/aero-sport-2.png": "/static/media/aero-sport-2.78eba50c7db09ca4898e.png",
-    "static/media/main-board.png": "/static/media/main-board.ddad02ff05904db3b2a6.png",
+    "static/media/main-modules.png": "/static/media/main-modules.ddad02ff05904db3b2a6.png",
     "static/media/machines-m-1.png": "/static/media/machines-m-1.b8de7984a60e429d5a47.png",
     "static/media/preliminary-1.png": "/static/media/preliminary-1.cc0c4fd19ffb24f3fd31.png",
     "static/media/machines.png": "/static/media/machines.67c1625ad8651bc30e72.png",
@@ -156,11 +159,11 @@
     "static/media/professional-pic.png": "/static/media/professional-pic.d529e990b3a69b51fa7a.png",
     "static/media/logo-mmso.svg": "/static/media/logo-mmso.fe15c1a72759ac61486b4c84ecedca5a.svg",
     "index.html": "/index.html",
-    "main.1b8e179a.css.map": "/static/css/main.1b8e179a.css.map",
-    "main.5040f9c7.js.map": "/static/js/main.5040f9c7.js.map"
+    "main.74a4b8ea.css.map": "/static/css/main.74a4b8ea.css.map",
+    "main.0ee6c76f.js.map": "/static/js/main.0ee6c76f.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b8e179a.css",
-    "static/js/main.5040f9c7.js"
+    "static/css/main.74a4b8ea.css",
+    "static/js/main.0ee6c76f.js"
   ]
 }
