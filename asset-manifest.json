@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.74a4b8ea.css",
-    "main.js": "/static/js/main.a1476653.js",
+    "main.js": "/static/js/main.88e689b3.js",
     "static/media/elementary-1.png": "/static/media/elementary-1.397f3aef94eee5d6ba0d.png",
     "static/media/technobot.mp4": "/static/media/technobot.40621c25c826a0144061.mp4",
     "static/media/basic-b5-tc.png": "/static/media/basic-b5-tc.4272d4900d8ab99c214d.png",
@@ -85,7 +85,10 @@
     "static/media/machines-r-1.png": "/static/media/machines-r-1.2dfe4c46f3b1d3bb3bab.png",
     "static/media/elementary-3.png": "/static/media/elementary-3.227f9436811c54404f9a.png",
     "static/media/bits_book_new.jpeg": "/static/media/bits_book_new.8343396ca7b73ea4b701.jpeg",
+    "static/media/bio.png": "/static/media/bio.fd74085343663ce50ee3.png",
     "static/media/sphero-icon.svg": "/static/media/sphero-icon.5894677537de8540295265c05a64452e.svg",
+    "static/media/phys.png": "/static/media/phys.fca3c93440cfe2de7362.png",
+    "static/media/chem.png": "/static/media/chem.4b6bca1690ab869036fc.png",
     "static/media/basic-b5-5.png": "/static/media/basic-b5-5.93230db022bbf0d9e43d.png",
     "static/media/basic-start-1.png": "/static/media/basic-start-1.afc29c157faa0746f12b.png",
     "static/media/elementary-2.png": "/static/media/elementary-2.e204de3ebdce0f9ab86d.png",
@@ -160,10 +163,10 @@
     "static/media/logo-mmso.svg": "/static/media/logo-mmso.fe15c1a72759ac61486b4c84ecedca5a.svg",
     "index.html": "/index.html",
     "main.74a4b8ea.css.map": "/static/css/main.74a4b8ea.css.map",
-    "main.a1476653.js.map": "/static/js/main.a1476653.js.map"
+    "main.88e689b3.js.map": "/static/js/main.88e689b3.js.map"
   },
   "entrypoints": [
     "static/css/main.74a4b8ea.css",
-    "static/js/main.a1476653.js"
+    "static/js/main.88e689b3.js"
   ]
 }

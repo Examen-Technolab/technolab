@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /catalog/lab*/
+Sitemap: https://smesite.com/sitemap.xml
