@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6f489fab.css",
-    "main.js": "/static/js/main.962c9c9f.js",
+    "main.css": "/static/css/main.b66ad409.css",
+    "main.js": "/static/js/main.19e2963b.js",
     "static/media/technobot.mp4": "/static/media/technobot.40621c25c826a0144061.mp4",
     "static/media/technobot-promo.mp4": "/static/media/technobot-promo.e3ef08a51935d9715359.mp4",
     "static/media/technobot-poster.PNG": "/static/media/technobot-poster.d2ed63945a34e4366cf5.PNG",
@@ -23,7 +23,6 @@
     "static/media/courses.png": "/static/media/courses.93d8440868a9540687c1.png",
     "static/media/icon-research-grey.svg": "/static/media/icon-research-grey.3bb715c81d7139b02f5d.svg",
     "static/media/icon-research.svg": "/static/media/icon-research.53bb484dd474a4fb1faf.svg",
-    "static/media/competition-background.png": "/static/media/competition-background.c050e26544ec83935242.png",
     "static/media/logo.svg": "/static/media/logo.1226ce116cc704d64002c270bce4c82e.svg",
     "static/media/logo-preliminary.svg": "/static/media/logo-preliminary.0c430ec22675cd6406b57513136a48a9.svg",
     "static/media/logo-elementary.svg": "/static/media/logo-elementary.664103b8ef0fba112e3fbba41c7236f1.svg",
@@ -61,11 +60,11 @@
     "static/media/professional-pic.png": "/static/media/professional-pic.d529e990b3a69b51fa7a.png",
     "static/media/logo-mmso.svg": "/static/media/logo-mmso.fe15c1a72759ac61486b4c84ecedca5a.svg",
     "index.html": "/index.html",
-    "main.6f489fab.css.map": "/static/css/main.6f489fab.css.map",
-    "main.962c9c9f.js.map": "/static/js/main.962c9c9f.js.map"
+    "main.b66ad409.css.map": "/static/css/main.b66ad409.css.map",
+    "main.19e2963b.js.map": "/static/js/main.19e2963b.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f489fab.css",
-    "static/js/main.962c9c9f.js"
+    "static/css/main.b66ad409.css",
+    "static/js/main.19e2963b.js"
   ]
 }
