@@ -1,13 +1,14 @@
 :root {
+  --background-color: #d5d4d4;
   --technolab-blue: #099ad7;
   --grey: #3d3d3d;
   --dark-grey: #030303;
-  --aero-color: #BE312A;
-  --basic-color: #509ADB;
-  --elementary-color: #63BD4C;
-  --preliminary-color: #D8B13C;
-  --professional-color: #3776C5;
-  --research-color: #A85B9F;
+  --aero-color: #be312ae8;
+  --basic-color: #509ADBe8;
+  --elementary-color: #63BD4Ce8;
+  --preliminary-color: #D8B13Ce8;
+  --professional-color: #3776C5e8;
+  --research-color: #A85B9Fe8;
   --machines-color: #C63332;
   --tile-background: rgba(241, 240, 240, .65);
   --header-background: rgba(241, 240, 240, .9);
@@ -16,6 +17,9 @@
   --banner-navbar-height-medium: 120px;
   --banner-navbar-height-small: 100px;
 }
+
+
+/* Кадры */
 
 @keyframes rotation {
   from {
@@ -27,16 +31,34 @@
   }
 }
 
+@keyframes disappear-opacity {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes appear-opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Страница */
+
 html {
   scroll-behavior: smooth
 }
 
-.rotation {
-  animation: rotation linear infinite 60s;
-}
-
 .background {
-  background-color: #d5d4d4;
+  background-color: var(--background-color);
 }
 
 .page {
@@ -53,6 +75,24 @@ html {
   scroll-behavior: smooth;
 }
 
+
+/* Анимации */
+
+.rotation {
+  animation: rotation linear infinite 60s;
+}
+
+.disappear-opacity {
+  animation: disappear-opacity .3s linear forwards;
+}
+
+.appear-opacity {
+  animation: appear-opacity .3s linear forwards;
+}
+
+
+/* Стандартная секция */
+
 .section {
   flex-grow: 1;
   display: flex;
@@ -67,16 +107,23 @@ html {
   z-index: 20;
 }
 
+
+/* Скрытый элемент */
+
 .hidden {
   display: none;
   visibility: hidden;
 }
 
 
+/* Фильтры изображений */
+
 .grayscale {
   filter: grayscale(80%);
 }
 
+
+/* Стандартный текст */
 
 .text {
   text-align: justify;
@@ -94,6 +141,9 @@ html {
   font-weight: bold;
 }
 
+
+/* Стандартные ссылки */
+
 .link {
   color: var(--grey);
   text-decoration: none;
@@ -106,6 +156,7 @@ html {
 .link:hover {
   color: var(--technolab-blue)
 }
+
 
 /* Выделение текста цветом модуля */
 
@@ -141,15 +192,17 @@ html {
   color: var(--machines-color)
 }
 
+/* Адаптивность */
+
 @media (max-width: 1200px) {
   .section {
+    width: 90%;
     margin-top: 160px;
   }
 }
 
 @media (max-width: 1050px) {
   .section {
-    width: 90%;
     margin-top: 140px;
   }
 }

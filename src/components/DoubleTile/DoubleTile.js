@@ -5,7 +5,7 @@ import LinkButton from "../LinkButton/LinkButton";
 function DoubleTile(props) {
   return (
     <div className="double-tile">
-      <Tile tileClass={`double-tile__item double-tile__item_type_promo double-tile__item_type_${props.type}`}>
+      <Tile tileClass={`double-tile__item double-tile__item_type_promo double-tile__item_type_${props.type} ${props.promoClass || ''}`}>
         {props.promo}
       </Tile>
       <div className="double-tile__item double-tile__item_type_about">
@@ -14,9 +14,9 @@ function DoubleTile(props) {
         </TileWithScroll>
         <ul className="double-tile__links-container">
           {
-            props.links.map(item => {
+            props.links.map((item, index) => {
               return (
-                <LinkButton color={item.color} link={item.link} target={item.target || '_self'} title={item.linkTitle}>{item.title}</LinkButton>
+                <LinkButton key={"linkBtn" + index} color={item.color} link={item.link} target={item.target || '_self'} title={item.linkTitle || 'Перейти'}>{item.title || 'Перейти'}</LinkButton>
               )
             })
           }

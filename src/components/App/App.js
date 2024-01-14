@@ -1,67 +1,112 @@
 import React from 'react';
 import { BrowserRouter, Route, Redirect } from 'react-router-dom';
 import { useState } from 'react';
+import { useEffect } from 'react';
 
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
-import Catalog from '../Catalog/Catalog';
 import Product from '../Product/Product';
 import Contacts from '../Contacts/Contacts';
 import About from '../About/About';
 import Events from '../Events/Events';
 import EventPage from '../EventPage/EventPage';
 import Triangle from '../Triangle/Triangle';
-import Popup from '../Popup/Popup';
 import Files from '../Files/Files';
 import FilesWithFilter from '../FilesWithFilter/FilesWithFilter';
+import Education from '../Education/Education';
+import UpButton from '../UpButton/UpButton';
 
-import manuals from '../../utils/manuals';
-import downloads from '../../utils/downloads';
-import partners from '../../utils/partners';
 import filterForManuals from '../../utils/filterForManuals';
+
+
+import { Admin } from '../Admin/Admin';
+
+import { Catalog } from '../Catalog/Catalog';
+
+
+import { Popup } from '../Popup/Popup';
+import { appStore } from '../../stores/AppStore';
+import { ProfileBtn } from '../ProfileBtn/ProfileBtn';
+import { Preloader } from '../Preloader/Preloader';
+
+
 
 function App() {
 
-  const [popupIsVisibel, setPopupIsVIsible] = useState(false);
-  const [popupContent, setPopupContent] = useState('');
+  const [education, setEducation] = useState([]);
+  const [manuals, setManuals] = useState([]);
+  const [partners, setPartners] = useState([]);
+  const [downloads, setDownloads] = useState([]);
+  const [contacts, setContacts] = useState([]);
+  const [about, setAbout] = useState([]);
+  //const [upBtnClass, setUpBtnClass] = useState('hidden');
 
-  function closePopup() {
-    setPopupIsVIsible(false);
-    setPopupContent('');
+
+  const [scrollY, setScrollY] = useState(false);
+
+  function handleScroll() {
+    setScrollY(window.scrollY);
   }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    appStore.checkUser();
+  }, [])
+
+  // function onUpButtonClick() {
+  //   window.scrollTo(0, 0);
+  // }
+
+  // function handleScroll() {
+  //   setUpBtnClass((window.scrollY < window.innerHeight / 2) ? 'hidden' : '');
+  //   animateMain(firstMainSectionRef, .5, setFirstMainSectionClass);
+  //   animateMain(mainMediaRef, 1.5, setMainMediaClass);
+  // }
+
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleScroll);
+  // }, [])
+
+
+
 
   return (
     <div className="background">
       <div className="page">
         <BrowserRouter>
+          <Preloader />
           <Header />
+          <ProfileBtn />
           <Route exact path="/">
             <Redirect to="/main" />
           </Route>
           <Route path="/main">
-            <Main />
+            <Main scrollY={scrollY} />
           </Route>
           <Route exact path="/catalog">
-            <Catalog setPopupIsVIsible={setPopupIsVIsible} setPopupContent={setPopupContent} />
+            <Catalog />
           </Route>
-          <Route path={`/catalog/:level`}>
-            <Product setPopupIsVIsible={setPopupIsVIsible} setPopupContent={setPopupContent} />
+          <Route path={`/catalog/:id`}>
+            <Product />
           </Route>
-          <Route path="/manuals">
-            <FilesWithFilter options={filterForManuals} list={manuals} title="Обучение" />
+          <Route path="/education/manuals">
+            <FilesWithFilter options={filterForManuals} list={manuals} setList={setManuals} title="Пособия" />
+          </Route>
+          <Route exact path="/education">
+            <Education list={education} setList={setEducation} title="Обучение" />
           </Route>
           <Route path="/downloads">
-            <Files isSimple={true} list={downloads} title="Загрузки" />
+            <Files list={downloads} setList={setDownloads} isSimple={true} title="Загрузки" />
           </Route>
           <Route path="/contacts">
-            <Contacts />
+            <Contacts list={contacts} setList={setContacts} />
           </Route>
           <Route path="/about">
-            <About />
+            <About list={about} setList={setAbout} />
           </Route>
           <Route path="/partners">
-            <Files list={partners} title="Партнерам" />
+            <Files list={partners} setList={setPartners} title="Партнерам" />
           </Route>
           <Route exact path="/events">
             <Events />
@@ -69,8 +114,12 @@ function App() {
           <Route path={`/events/:eventUrl`}>
             <EventPage />
           </Route>
+          <Route exact path="/admin">
+            <Admin />
+          </Route>
+          {/* <UpButton onButtonClick={onUpButtonClick} upBtnClass={upBtnClass} /> */}
           <Triangle />
-          <Popup closePopup={closePopup} isVisible={popupIsVisibel} children={popupContent} />
+          <Popup />
           <Footer />
         </BrowserRouter>
       </div>
@@ -79,3 +128,4 @@ function App() {
 }
 
 export default App;
+

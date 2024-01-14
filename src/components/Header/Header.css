@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.header_no-back {
+  background: none;
+}
+
 .header__container {
   width: 1200px;
   margin: 20px 0;

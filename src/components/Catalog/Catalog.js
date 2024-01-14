@@ -1,23 +1,38 @@
 import React from 'react';
 import CardWithBtn from '../CardWithBtn/CardWithBtn';
-import cards from '../../utils/cards';
 
+import PlusButton from '../PlusButton/PlusButton';
+import { appStore } from '../../stores/AppStore';
+import { observer } from 'mobx-react-lite';
+import { FormAddCard } from '../FormAddCard/FormAddCard';
+import { cardsStore } from '../../stores/CardsStore';
 
-function Catalog(props) {
+export const Catalog = observer((props) => {
+
+  React.useEffect(() => {
+
+    if (!cardsStore.checkIsLoaded()) {
+      cardsStore.getInitialCards();
+    }
+  }, []);
+
   return (
     <main className="section catalog">
       <h1 className="hidden"> Каталог </h1>
       <ul className="catalog__list">
         {
-          cards.map((item, index) => {
-            const level = item.level.split('-')[0];
+          appStore.isLoggedIn ?
+            <PlusButton title="Добавить карточку."
+              popupContent={<FormAddCard />} /> : <></>
+        }
+        {
+          cardsStore.cards.map((card, index) => {
             return (
-              <CardWithBtn setPopupIsVIsible={props.setPopupIsVIsible} setPopupContent={props.setPopupContent} key={'Card' + index.toString()} link={item.level} index={index} level={level} img={item.img} title={item.title} article={item.article} price={item.price} />
+              <CardWithBtn key={'Card' + index.toString()} card={card} />
             )
           })
         }
       </ul>
     </main>
   );
-}
-export default Catalog;
+});

@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Card from '../Card/Card';
+import { Card } from '../Card/Card';
 
 function CardWithBtn(props) {
   return (
-    <Card setPopupIsVIsible={props.setPopupIsVIsible} setPopupContent={props.setPopupContent} type="with-btn" link={props.link} level={props.level} img={props.img}
-      title={props.title} article={props.article} price={props.price}
+    <Card type="with-btn" card={props.card}
       children={
-        <Link to={`/catalog/${props.link}/kit`} className={`card__link-btn card__link-btn_level_${props.level} card-with-btn__btn`}>Узнать больше</Link>
+        <Link to={`/catalog/${props.card.id}/kit`} className={`card__link-btn card__link-btn_level_${props.card.type} card-with-btn__btn`}>Узнать больше</Link>
       }
     />
   );

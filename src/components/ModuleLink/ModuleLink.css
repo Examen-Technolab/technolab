@@ -2,11 +2,45 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
 }
+
+/*  По уровням */
+
+.module-link {
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.module-link_level_aero {
+  background-color: var(--aero-color);
+}
+
+.module-link_level_basic {
+  background-color: var(--basic-color);
+}
+
+.module-link_level_elementary {
+  background-color: var(--elementary-color);
+}
+
+.module-link_level_preliminary {
+  background-color: var(--preliminary-color);
+}
+
+.module-link_level_professional {
+  background-color: var(--professional-color);
+}
+
+.module-link_level_research {
+  background-color: var(--research-color);
+}
+
 
 .module-link__text {
   text-align: justify;
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,6 +82,10 @@
 }
 
 /*  При наведении */
+
+.module-link:hover {
+  background-color: rgba(255, 255, 255, .9);
+}
 
 .module-link_level_aero:hover {
   color: var(--aero-color);
@@ -102,7 +140,7 @@
 }
 
 
-@media (max-width: 1050px) {
+@media (max-width: 1200px) {
 
   .module-link__text {
     font-size: 16px;
@@ -116,7 +154,7 @@
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 750px) {
 
   .module-link__text {
     font-size: 15px;

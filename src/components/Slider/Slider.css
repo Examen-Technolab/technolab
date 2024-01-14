@@ -10,11 +10,13 @@
 }
 
 .slider_big {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 65vh;
   padding: 40px 30px;
   box-sizing: border-box;
   border-radius: 30px;
+  margin: 0;
+  justify-content: center;
 }
 
 .slider__img {
@@ -143,11 +145,8 @@
   }
 
   .slider_big {
-    width: 100%;
-    height: 100%;
-    padding: 40px 30px;
-    box-sizing: border-box;
-    border-radius: 30px;
+    padding: 10px;
+    width: 90%;
   }
 
   .slider__big-btn {

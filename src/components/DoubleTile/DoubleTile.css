@@ -3,7 +3,7 @@
   flex-direction: row;
   width: 100%;
   height: 300px;
-  margin: 20px 0 0 0;
+  margin: 0;
 }
 
 .double-tile__item {
@@ -63,10 +63,6 @@
 }
 
 @media (max-width: 900px) {
-
-  .double-tile {
-    height: 350px;
-  }
 
   .double-tile__item_type_promo {
     margin-right: 20px;

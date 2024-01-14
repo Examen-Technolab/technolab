@@ -1,0 +1,57 @@
+.education__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 100%;
+  gap: 45px;
+}
+
+.education__title {
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  color: var(--technolab-blue);
+}
+
+.education__promo {
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 70%;
+}
+
+.education__promo_type_manuals {
+  background-image: url(../../images/education/manuals.png);
+}
+
+.education__promo_type_academy {
+  background-image: url(../../images/education/academy.png);
+  background-position: right bottom;
+}
+
+.education__promo_type_courses {
+  background-image: url(../../images/education/courses.png);
+  background-position: right bottom;
+}
+
+
+
+@media (max-width: 1000px) {
+
+  .education__title {
+    font-size: 26px;
+  }
+
+}
+
+
+
+@media (max-width: 550px) {
+
+  .education__title {
+    font-size: 20px;
+  }
+
+}

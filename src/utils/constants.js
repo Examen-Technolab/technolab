@@ -73,9 +73,29 @@ export const modules = [
   },
 ]
 
+export const technobot = [
+  {
+    level: 'aero',
+    title: 'Мощный',
+    text: 'Встроенный микроконтроллер позволяет обрабатывать информацию без дополнительных устройств;'
+  },
+  {
+    level: 'research',
+    title: 'Компактный',
+    text: 'Размеры модуля технического зрения позволяют с лёгкостью установить его в любой части конструкции робота;'
+  },
+  {
+    level: 'elementary',
+    title: 'Простой в освоении',
+    text: 'Благодаря специальному ПО, первоначальная настройка модуля не будет занимать много времени.'
+  },
+]
+
 export const vkLink = {
   text: 'Результаты',
   link: 'https://vk.com/examen_technolab',
   type: 'highlighted',
   linkTitle: 'Открыть ВК.'
 }
+
+const basicLink = "https://examen-technolab.ru/images/"

@@ -7,7 +7,7 @@ function FileLinkWithImg(props) {
       type='img'
       promo={
         <>
-          <img className="file-link-with-img__img" alt="Обложка" src={props.file.img} />
+          <img className="file-link-with-img__img" alt="Обложка" src={props.startImg + props.file.img} />
         </>
       }
       about={
@@ -20,7 +20,7 @@ function FileLinkWithImg(props) {
       links={[
         {
           color: '',
-          link: props.file.link,
+          link: props.startLink + props.file.link,
           linkTitle: 'Скачать файл',
           title: 'Скачать',
           target: '__blank',

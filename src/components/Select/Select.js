@@ -20,12 +20,12 @@ function Select(props) {
 
   return (
     <div className="select-wrapper">
-      <button onClick={handleSelectClick} className="select text text_uppercase" name="manuals" id="type-select">{selectedData}</button>
+      <button type="button" onClick={handleSelectClick} className="select text text_uppercase" name="manuals" id="type-select">{selectedData}</button>
       <TileWithScroll tileClass={isOpen ? 'select__list-container' : 'hidden'} >
         {
           props.options.map((option) => {
             return (
-              <button key={'select' + option.value} onClick={handleOptionClick} value={JSON.stringify(option)} className={`text select__list-item ${selectedData === option.title ? 'select__list-item_active' : ' '}`}>
+              <button type="button" key={'select' + option.value} onClick={handleOptionClick} value={JSON.stringify(option)} className={`text select__list-item ${selectedData === option.title ? 'select__list-item_active' : ' '}`}>
                 {option.title}
               </button>
             )

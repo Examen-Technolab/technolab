@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding-bottom: 15px;
+  padding: 15px 0;
   box-sizing: border-box;
   margin: 0;
   transition: all .3s linear;
@@ -17,4 +17,17 @@
 
 .brand-link:hover {
   transform: scale(1.02);
+}
+
+@media (max-width: 700px) {
+
+  .brand-link {
+    padding: 0 15px;
+    height: 100%;
+  }
+
+  .brand-link__img {
+    height: 50px;
+    width: auto;
+  }
 }

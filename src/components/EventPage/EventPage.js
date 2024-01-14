@@ -6,23 +6,27 @@ import TileWithScroll from '../TileWithScroll/TileWithScroll';
 import Paragraph from '../Paragraph/Paragraph';
 
 import table from '../../images/events/table-bridge.png'
+import { useEffect } from 'react';
 
 function EventPage(props) {
   const { eventUrl } = useParams();
   const eventPage = eventUrl.replace("-archive", "");
   const eventData = eventList.find(item => item.eventPage === eventPage);
-  eventData.links.unshift(eventUrl === eventPage ? eventData.registration : eventData.results);
-  console.log(eventData.links)
+
   const history = useHistory();
 
   function handleClick() {
     history.goBack();
   }
 
+  useEffect(() => {
+    eventData.links.unshift(eventUrl === eventPage ? eventData.registration : eventData.results);
+  }, [])
+
   return (
     <main className="section event-page">
       <h1 className="hidden">{eventPage}</h1>
-      <button onClick={handleClick} className="event-page__back-btn">
+      <button type="button" onClick={handleClick} className="event-page__back-btn">
         <Tile>
           <p className="text text_uppercase event-page__back-btn-text">
             &#9668; Назад

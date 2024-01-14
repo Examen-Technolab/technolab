@@ -7,12 +7,47 @@
   font-size: 14px;
   color: #3d3d3d;
   background: var(--tile-background);
-  box-shadow: rgba(185, 183, 183, .6) 0 0 10px;
+  box-shadow: rgba(185, 183, 183, .2) 0 0 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   height: 100%;
   width: 100%;
+}
+
+.tile_level_aero {
+  background-color: var(--aero-color);
+  color: #fff;
+}
+
+.tile_level_basic {
+  background-color: var(--basic-color);
+  color: #fff;
+}
+
+.tile_level_elementary {
+  background-color: var(--elementary-color);
+  color: #fff;
+}
+
+.tile_level_preliminary {
+  background-color: var(--preliminary-color);
+  color: #fff;
+}
+
+.tile_level_professional {
+  background-color: var(--professional-color);
+  color: #fff;
+}
+
+.tile_level_research {
+  background-color: var(--research-color);
+  color: #fff;
+}
+
+.tile_level_machines {
+  background-color: var(--machines-color);
+  color: #fff;
 }
 
 .tile_type_link {

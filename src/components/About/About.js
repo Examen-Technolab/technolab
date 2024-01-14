@@ -1,8 +1,19 @@
-import about from '../../utils/about';
+import React from 'react';
+
+import api from '../../utils/Api';
 import BackgroundAnimation from '../BackgroundAnimation/BackgroundAnimation';
 import Tile from '../Tile/Tile';
+import { appStore } from '../../stores/AppStore';
 
-function About() {
+function About(props) {
+
+  React.useEffect(() => {
+    appStore.setLoading(true);
+    api.getList(props.list, props.setList, 'about', () => {
+      appStore.setLoading(false);
+    });
+  }, []);
+
   return (
     <main className="section about">
       <h1 className="hidden">О нас</h1>
@@ -12,14 +23,14 @@ function About() {
         </p>
       </Tile>
       {
-        about.map(item => {
+        props.list.map((item, index) => {
           return (
-            <Tile tileClass={`about__tile about__tile_type_${item.type}`}>
+            <Tile key={"about" + index} tileClass={`about__tile about__tile_type_${item.type}`}>
               <h2 className={`text text_uppercase about__title about__title_type_${item.type}`}>{item.title}</h2>
               <p className={`text about__text about__text_type_${item.type}`}>{item.text}</p>
-              {item.children ? <Tile tileClass={`about__tile about__tile_type_${item.children.type}`}>
-                <h3 className={`text text_uppercase about__title about__title_type_${item.children.type}`}>{item.children.title}</h3>
-                <p className={`text about__text about__text_type_${item.children.type}`}>{item.children.text}</p>
+              {item.children_type ? <Tile tileClass={`about__tile about__tile_type_${item.children_type}`}>
+                <h3 className={`text text_uppercase about__title about__title_type_${item.children_type}`}>{item.children_title}</h3>
+                <p className={`text about__text about__text_type_${item.children_type}`}>{item.children_text}</p>
               </Tile> : <></>}
             </Tile>
           )
