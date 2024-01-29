@@ -34,7 +34,7 @@ function FormInput(props) {
       {/* <input disabled={props.disabled} value={props.value} pattern={regex} onChange={handleChange} required={props.required} className={props.class} id={`${props.type ? props.type : "name"}-input`} type={`${props.type ? props.type : "text"}`} name={`${props.type ? props.type : "userName"}`}
         placeholder={props.text} />  как было*/}
 
-      <input value={props.value} onChange={props.handleChange ? props.handleChange : handleChange} required={props.required}
+      <input disabled={props.disabled} value={props.value} onChange={props.handleChange ? props.handleChange : handleChange} required={props.required}
         className='form-input__input' id={props.name} type={`${props.type ? props.type : "text"}`} name={props.name}
         placeholder={props.text} multiple accept="image/*,image/jpeg" />
 

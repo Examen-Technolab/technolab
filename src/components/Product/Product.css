@@ -12,6 +12,7 @@
     grid-template-columns: repeat(auto-fit, 90vw);
     grid-template-rows: repeat(auto-fit, 550px);
     grid-gap: 20px;
+    padding-top: 20px;
   }
 }
 

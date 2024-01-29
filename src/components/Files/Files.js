@@ -9,7 +9,11 @@ import { appStore } from '../../stores/AppStore';
 function Files(props) {
 
   const pathname = window.location.pathname.split('/');
-  const param = pathname[pathname.length - 1];
+  let param = '';
+  for (let i = pathname.length - 1; i >= 0; i--) {
+    param = pathname[i];
+    if (param) break;
+  }
   let startLink, startImg;
 
   switch (param) {

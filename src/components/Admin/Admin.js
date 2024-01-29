@@ -3,7 +3,6 @@ import Form from "../Form/Form";
 import FormInput from "../FormInput/FormInput";
 import { appStore } from "../../stores/AppStore";
 import { InputStore } from "../../stores/InputStore";
-import { useEffect } from "react";
 
 
 
@@ -31,8 +30,8 @@ export const Admin = observer(() => {
           appStore.isLoggedIn ?
             <>
               <h2 className="text text_uppercase">Вы авторизованы</h2>
-              <p className="text">{`Логин: ${appStore.user}`}</p>
-              <p className="text">{`Права: ${appStore.isAdmin ? 'админ' : 'нет'}`}</p>
+              <FormInput disabled={true} value={appStore.user} text="Логин" />
+              <FormInput disabled={true} value={appStore.isAdmin ? 'админ' : 'нет'} text="Права" />
             </> :
             <>
               <FormInput {...stores.login} text="Имя пользователя" />

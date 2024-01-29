@@ -1,10 +1,11 @@
-import React from 'react';
-import { popupStore } from '../../stores/PopupStore';
-
+/*пропсы:
+title- всплывающая подсказка
+onClick - обоработчик клика
+*/
 function PlusButton(props) {
 
   return (
-    <button type="button" title={props.title} onClick={() => { popupStore.open(props.popupContent) }} className="plus-btn" />
+    <button type="button" title={props.title} onClick={props.onClick} className="plus-btn" />
   );
 }
 export default PlusButton;

@@ -35,8 +35,8 @@ export const FormSelect = (props) => {
 
   return (
     <div className="form-select-wrapper">
-      <label className="form-select__title">Тип</label>
-      <button type="button" onClick={handleFormSelectClick} className="form-select" name="manuals" id="type-form-select">{formSelectedData}</button>
+      <label htmlFor="form-select" className="form-select__title">Тип</label>
+      <button type="button" onClick={handleFormSelectClick} className="form-select" name="form-select" id="form-select">{formSelectedData}</button>
       <TileWithScroll tileClass={isOpen ? 'form-select__list-container' : 'hidden'} >
         {
           props.options.map((option) => {

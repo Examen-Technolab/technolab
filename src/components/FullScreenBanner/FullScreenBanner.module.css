@@ -1,0 +1,55 @@
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--technolab-blue);
+  object-fit: cover;
+  object-position: left center;
+  z-index: 30;
+}
+
+@media (max-width: 1200px) {
+  .banner {
+    object-fit: contain;
+    object-position: center 70px;
+  }
+}
+
+@media (max-width: 800px) {
+  .banner {
+    object-position: center 100px;
+  }
+}
+
+@media (max-width: 450px) {
+  .banner {
+    object-position: center 120px;
+  }
+}
+
+@media (max-height: 1000px) {
+  .banner {
+    object-position: center 40px;
+    object-fit: contain;
+  }
+
+  @media (max-width: 1200px) {
+    .banner {
+      object-position: center 70px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .banner {
+      object-position: left 100px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .banner {
+      object-position: center 120px;
+    }
+  }
+}

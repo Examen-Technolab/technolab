@@ -3,10 +3,12 @@ import { BrowserRouter, Route, Redirect } from 'react-router-dom';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
+import image404 from '../../images/404.svg';
+
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
-import Product from '../Product/Product';
+import { Product } from '../Product/Product';
 import Contacts from '../Contacts/Contacts';
 import About from '../About/About';
 import Events from '../Events/Events';
@@ -29,6 +31,8 @@ import { Popup } from '../Popup/Popup';
 import { appStore } from '../../stores/AppStore';
 import { ProfileBtn } from '../ProfileBtn/ProfileBtn';
 import { Preloader } from '../Preloader/Preloader';
+import { Switch } from 'react-router-dom/cjs/react-router-dom.min';
+import { FullScreenBanner } from '../FullScreenBanner/FullScreenBanner';
 
 
 
@@ -78,49 +82,58 @@ function App() {
           <Preloader />
           <Header />
           <ProfileBtn />
-          <Route exact path="/">
-            <Redirect to="/main" />
-          </Route>
-          <Route path="/main">
-            <Main scrollY={scrollY} />
-          </Route>
-          <Route exact path="/catalog">
-            <Catalog />
-          </Route>
-          <Route path={`/catalog/:id`}>
-            <Product />
-          </Route>
-          <Route path="/education/manuals">
-            <FilesWithFilter options={filterForManuals} list={manuals} setList={setManuals} title="Пособия" />
-          </Route>
-          <Route exact path="/education">
-            <Education list={education} setList={setEducation} title="Обучение" />
-          </Route>
-          <Route path="/downloads">
-            <Files list={downloads} setList={setDownloads} isSimple={true} title="Загрузки" />
-          </Route>
-          <Route path="/contacts">
-            <Contacts list={contacts} setList={setContacts} />
-          </Route>
-          <Route path="/about">
-            <About list={about} setList={setAbout} />
-          </Route>
-          <Route path="/partners">
-            <Files list={partners} setList={setPartners} title="Партнерам" />
-          </Route>
-          <Route exact path="/events">
-            <Events />
-          </Route>
-          <Route path={`/events/:eventUrl`}>
-            <EventPage />
-          </Route>
-          <Route exact path="/admin">
-            <Admin />
-          </Route>
+          <Switch>
+            <Route exact path="/">
+              <Redirect to="/main" />
+            </Route>
+            <Route path="/main">
+              <Main scrollY={scrollY} />
+            </Route>
+            <Route exact path="/catalog">
+              <Catalog />
+            </Route>
+            <Route path={`/catalog/:id`}>
+              <Product />
+            </Route>
+            <Route exact path="/education">
+              <Education list={education} setList={setEducation} title="Обучение" />
+            </Route>
+            <Route path="/education/manuals">
+              <FilesWithFilter options={filterForManuals} list={manuals} setList={setManuals} title="Пособия" />
+            </Route>
+            <Route path="/downloads">
+              <Files list={downloads} setList={setDownloads} isSimple={true} title="Загрузки" />
+            </Route>
+            <Route path="/contacts">
+              <Contacts list={contacts} setList={setContacts} />
+            </Route>
+            <Route path="/about">
+              <About list={about} setList={setAbout} />
+            </Route>
+            <Route path="/partners">
+              <Files list={partners} setList={setPartners} title="Партнерам" />
+            </Route>
+            <Route exact path="/events">
+              <Events />
+            </Route>
+            <Route path={`/events/:eventUrl`}>
+              <EventPage />
+            </Route>
+            <Route exact path="/admin">
+              <Admin />
+            </Route>
+            <Route path="/manuals">
+            </Route>
+            <Route path="*">
+              <FullScreenBanner src={image404} alt="Страница не найдена" />
+            </Route>
+          </Switch>
+
           {/* <UpButton onButtonClick={onUpButtonClick} upBtnClass={upBtnClass} /> */}
           <Triangle />
           <Popup />
           <Footer />
+
         </BrowserRouter>
       </div>
     </div>

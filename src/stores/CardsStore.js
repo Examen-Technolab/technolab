@@ -6,6 +6,8 @@ class CardsStore {
 
   cards = [];
 
+  currentCard = {};
+
   types = [
     { title: 'Выберите тип карточки', value: 'default' }
   ];
@@ -18,8 +20,18 @@ class CardsStore {
     return !!this.cards.length;
   }
 
-  setCards = (cardsData) => {
+  _setCards = (cardsData) => {
     this.cards = cardsData;
+  }
+
+  _setCard = (card, newCardData) => {
+    for (let key in newCardData) {
+      card[key] = newCardData[key];
+    }
+  }
+
+  setCurrentCard = (card) => {
+    this.currentCard = card;
   }
 
   setTypes = (newTypes) => {
@@ -47,7 +59,7 @@ class CardsStore {
     appStore.setLoading(true);
     api.getInitialCards()
       .then((cardsData) => {
-        this.setCards(cardsData);
+        this._setCards(cardsData);
       })
       .catch((err) => {
         console.log(err);
@@ -61,7 +73,7 @@ class CardsStore {
     appStore.setLoading(true);
     api.postCard(cardData)
       .then((data) => {
-        this.cards.unshift(cardData);
+        this._setCards([cardData, ...this.cards]);
       })
       .catch((err) => {
         console.log(err);
@@ -72,11 +84,10 @@ class CardsStore {
   }
 
   editCard = (card, newCardData) => {
+    appStore.setLoading(true);
     api.patchCard(card.id, newCardData)
       .then((data) => {
-        for (let key in newCardData) {
-          card[key] = newCardData[key];
-        }
+        this._setCard(card, newCardData);
       })
       .catch((err) => {
         console.log(err);
@@ -96,8 +107,10 @@ class CardsStore {
     appStore.setLoading(true);
     api.deleteCard(cardID)
       .then((data) => {
-        const index = this.cards.findIndex(item => item.id === cardID);
-        this.cards.splice(index, 1);
+        let newList = [...this.cards];
+        const index = newList.findIndex(item => item.id === cardID);
+        newList.splice(index, 1);
+        this._setCards(newList);
       })
       .catch((err) => {
         console.log(err);
@@ -110,13 +123,14 @@ class CardsStore {
 
   setCardInfo = (cardID, listName, list) => {
     const card = this.cards.find(item => item.id == cardID);
-    card[listName] = list;
+    if (card) {
+      card[listName] = list;
+    } else this.currentCard[listName] = list;
   }
 
-  getCardInfo = (cardID, listName) => {
-    const card = this.cards.find(item => item.id == cardID);
-    if (card && (listName in card)) {
-      return card[listName];
+  getCardInfo = (listName) => {
+    if (this.currentCard && (listName in this.currentCard)) {
+      return this.currentCard[listName];
     } else return [];
   }
 

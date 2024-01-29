@@ -83,7 +83,8 @@ class AppStore {
     this.setLoading(true);
     api.getCheck()
       .then((data) => {
-        this.setStates({ ...data, isLoggedIn: true });
+        if (!data.message)
+          this.setStates({ ...data, isLoggedIn: true });
       })
       .catch((err) => {
         console.log(err);

@@ -61,7 +61,11 @@
   padding-bottom: 20px;
 }
 
-
+@media (max-width: 650px) {
+  .form {
+    width: auto;
+  }
+}
 
 @media(max-width: 500px) {
 

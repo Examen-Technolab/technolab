@@ -1,8 +1,9 @@
 import React from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
 import { Card } from '../Card/Card';
+import { observer } from 'mobx-react-lite';
 
-function CardWithMenu(props) {
+export const CardWithMenu = observer((props) => {
   const history = useHistory();
   const [stepBack, setStepBack] = React.useState(1);
 
@@ -39,5 +40,4 @@ function CardWithMenu(props) {
         } />
     </div>
   );
-}
-export default CardWithMenu;
+})

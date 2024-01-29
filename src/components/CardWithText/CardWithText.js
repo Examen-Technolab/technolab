@@ -7,15 +7,21 @@ import api from '../../utils/Api';
 import PlusButton from '../PlusButton/PlusButton';
 import { appStore } from '../../stores/AppStore';
 import { cardsStore } from '../../stores/CardsStore';
+import { observer } from 'mobx-react-lite';
+import { popupStore } from '../../stores/PopupStore';
 
-function CardWithText(props) {
+export const CardWithText = observer((props) => {
   let { tab } = useParams();
 
   const [list, setList] = useState([]);
 
+  function onPlusBtnClick() {
+    popupStore.open(props.popupContent)
+  }
+
   React.useEffect(() => {
     let newList = [];
-    newList = cardsStore.getCardInfo(props.cardId, tab);
+    newList = cardsStore.getCardInfo(tab);
     if (newList.length) {
       setList(newList);
     } else {
@@ -52,10 +58,9 @@ function CardWithText(props) {
               )
             })
           }
-          {/* <PlusButton /> */}
+          {appStore.isAdmin ? <PlusButton onClick={onPlusBtnClick} title='Добавить запись' /> : <></>}
         </>
       }
     </TileWithScroll >
   );
-}
-export default CardWithText;
+})
