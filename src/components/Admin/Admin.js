@@ -1,6 +1,6 @@
 import { observer } from "mobx-react-lite";
-import Form from "../Form/Form";
-import FormInput from "../FormInput/FormInput";
+import Form from "../forms/Form/Form";
+import FormInput from '../forms/FormInput/FormInput';
 import { appStore } from "../../stores/AppStore";
 import { InputStore } from "../../stores/InputStore";
 

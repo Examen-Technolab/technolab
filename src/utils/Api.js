@@ -144,7 +144,7 @@ class Api {
 
 }
 const api = new Api({
-  baseUrl: 'https://api.examen-technolab.ru/',
+  baseUrl: "http://localhost:80/technolab",// 'https://api.examen-technolab.ru/',
   headers: {
     'Content-Type': 'application/json; charset=utf-8',
   },

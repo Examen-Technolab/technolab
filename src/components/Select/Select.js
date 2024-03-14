@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import TileWithScroll from "../TileWithScroll/TileWithScroll";
+import TileWithScroll from "../tiles/TileWithScroll/TileWithScroll";
 
 function Select(props) {
 

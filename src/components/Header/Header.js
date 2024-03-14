@@ -1,23 +1,15 @@
-import { NavLink, Switch, Route } from 'react-router-dom';
+import style from './Header.module.css';
 
-import Logo from '../Logo/Logo';
-import Navbar from '../Navbar/Navbar';
+import Logo from './Logo/Logo';
+import Navbar from './Navbar/Navbar';
 
 function Header() {
 
   return (
-    <header className={`header`}>
-      <div className="header__container">
-        <Switch>
-          <Route path="/catalog/:level">
-            <Logo />
-            <Navbar />
-          </Route>
-          <Route path="/">
-            <Logo />
-            <Navbar />
-          </Route>
-        </Switch>
+    <header className={style.header}>
+      <div className={style.container}>
+        <Logo />
+        <Navbar />
       </div>
     </header>
   );

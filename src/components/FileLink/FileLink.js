@@ -1,4 +1,4 @@
-import Tile from "../Tile/Tile";
+import Tile from "../tiles/Tile/Tile";
 
 function FileLink(props) {
   return (

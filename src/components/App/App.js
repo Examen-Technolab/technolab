@@ -1,22 +1,28 @@
 import React from 'react';
 import { BrowserRouter, Route, Redirect } from 'react-router-dom';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { Switch } from 'react-router-dom/cjs/react-router-dom.min';
+import { useState, useEffect } from 'react';
 
 import image404 from '../../images/404.svg';
 
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
-import Main from '../Main/Main';
-import { Product } from '../Product/Product';
-import Contacts from '../Contacts/Contacts';
-import About from '../About/About';
-import Events from '../Events/Events';
-import EventPage from '../EventPage/EventPage';
 import Triangle from '../Triangle/Triangle';
+import { ProfileBtn } from '../generic/ProfileBtn/ProfileBtn';
+import { Preloader } from '../generic/Preloader/Preloader';
+
+import { FullScreenBanner } from '../FullScreenBanner/FullScreenBanner';
+import BackgroundAnimation from '../BackgroundAnimation/BackgroundAnimation';
+
+import Main from '../pages/Main/Main';
+import { Product } from '../pages/Product/Product';
+import Contacts from '../pages/Contacts/Contacts';
+import About from '../pages/About/About';
+import Events from '../pages/Events/Events';
+import EventPage from '../pages/EventPage/EventPage';
 import Files from '../Files/Files';
 import FilesWithFilter from '../FilesWithFilter/FilesWithFilter';
-import Education from '../Education/Education';
+import Education from '../pages/Education/Education';
 import UpButton from '../UpButton/UpButton';
 
 import filterForManuals from '../../utils/filterForManuals';
@@ -24,15 +30,14 @@ import filterForManuals from '../../utils/filterForManuals';
 
 import { Admin } from '../Admin/Admin';
 
-import { Catalog } from '../Catalog/Catalog';
+import { Catalog } from '../pages/Catalog/Catalog';
 
 
 import { Popup } from '../Popup/Popup';
+
 import { appStore } from '../../stores/AppStore';
-import { ProfileBtn } from '../ProfileBtn/ProfileBtn';
-import { Preloader } from '../Preloader/Preloader';
-import { Switch } from 'react-router-dom/cjs/react-router-dom.min';
-import { FullScreenBanner } from '../FullScreenBanner/FullScreenBanner';
+
+
 
 
 
@@ -121,8 +126,6 @@ function App() {
             </Route>
             <Route exact path="/admin">
               <Admin />
-            </Route>
-            <Route path="/manuals">
             </Route>
             <Route path="*">
               <FullScreenBanner src={image404} alt="Страница не найдена" />
