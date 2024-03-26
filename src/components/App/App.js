@@ -113,12 +113,12 @@ function App() {
             <Route path="/partners">
               <Files list={partners} setList={setPartners} title="Партнерам" />
             </Route>
-            <Route exact path="/events">
+            {/* <Route exact path="/events">
               <Events />
-            </Route>
-            <Route path={`/events/:eventUrl`}>
+            </Route> */}
+            {/* <Route path={`/events/:eventUrl`}>
               <EventPage />
-            </Route>
+            </Route> */}
             <Route exact path="/admin">
               <Admin />
             </Route>
