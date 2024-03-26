@@ -1,10 +1,10 @@
 import React from 'react';
 
-import FileLink from '../FileLink/FileLink';
-import FileLinkWithImg from '../FileLinkWithImg/FileLinkWithImg';
+import FileLink from './FileLink/FileLink';
+import FileLinkWithImg from './FileLinkWithImg/FileLinkWithImg';
 
-import api from '../../utils/Api';
-import { appStore } from '../../stores/AppStore';
+import api from '../../../utils/Api';
+import { appStore } from '../../../stores/AppStore';
 
 function Files(props) {
 

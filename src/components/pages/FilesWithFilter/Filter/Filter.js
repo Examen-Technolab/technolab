@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 
-import Select from "../Select/Select";
+import Select from "../../../generic/Select/Select";
 
 function Filter(props) {
 

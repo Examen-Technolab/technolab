@@ -1,6 +1,6 @@
 import Tile from "../Tile/Tile";
 import TileWithScroll from "../TileWithScroll/TileWithScroll";
-import LinkButton from "../../LinkButton/LinkButton";
+import LinkButton from "./LinkButton/LinkButton";
 
 function DoubleTile(props) {
   return (

@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 
 import TileWithScroll from '../../tiles/TileWithScroll/TileWithScroll';
-import Description from "../../Description/Description";
+import Description from "./Description/Description";
 import api from '../../../utils/Api';
-import PlusButton from '../../PlusButton/PlusButton';
+import PlusButton from '../../generic/PlusButton/PlusButton';
 import { FormEditDescription } from '../../forms/FormEditDescription/FormEditDescription';
 
 

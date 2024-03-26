@@ -1,5 +1,5 @@
 import { observer } from 'mobx-react-lite';
-import { Slider } from '../../Slider/Slider';
+import { Slider } from '../../generic/Slider/Slider';
 import { appStore } from '../../../stores/AppStore';
 import { popupStore } from '../../../stores/PopupStore';
 import { FormAddCard } from '../../forms/FormAddCard/FormAddCard';

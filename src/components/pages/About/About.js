@@ -1,7 +1,7 @@
 import React from 'react';
 
 import api from '../../../utils/Api';
-import BackgroundAnimation from '../../BackgroundAnimation/BackgroundAnimation';
+import BackgroundAnimation from '../../generic/BackgroundAnimation/BackgroundAnimation';
 import Tile from '../../tiles/Tile/Tile';
 import { appStore } from '../../../stores/AppStore';
 

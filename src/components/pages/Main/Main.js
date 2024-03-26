@@ -6,10 +6,10 @@ import technobotVideo from '../../../video/technobot.mp4';
 import { modules, technobot, externalLinks } from '../../../utils/constants';
 
 import Tile from '../../tiles/Tile/Tile';
-import BrandLink from '../../BrandLink/BrandLink';
-import ModuleLink from '../../ModuleLink/ModuleLink';
-import StickySection from '../../StickySection/StickySection';
-import Banner from '../../Banner/Banner';
+import BrandLink from './BrandLink/BrandLink';
+import ModuleLink from './ModuleLink/ModuleLink';
+import StickySection from './StickySection/StickySection';
+import Banner from './Banner/Banner';
 
 import video from '../../../video/technobot-promo.mp4';
 

@@ -1,7 +1,7 @@
 import style from './Logo.module.css';
 import { Link, useParams } from 'react-router-dom';
 
-import { logosObject } from '../../../utils/constants';
+import { logosObject } from '../../../../utils/constants';
 
 function Logo() {
   let { level } = useParams();

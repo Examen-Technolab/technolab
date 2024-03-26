@@ -1,4 +1,4 @@
-import DoubleTile from "../tiles/DoubleTile/DoubleTile";
+import DoubleTile from "../../../generic/DoubleTile/DoubleTile";
 
 
 function FileLinkWithImg(props) {

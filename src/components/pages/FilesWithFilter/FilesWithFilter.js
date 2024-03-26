@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import Filter from "../Filter/Filter";
+import Filter from "./Filter/Filter";
 import Files from "../Files/Files";
 
 

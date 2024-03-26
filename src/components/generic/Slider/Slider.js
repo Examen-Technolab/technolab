@@ -1,6 +1,6 @@
 import { observer } from 'mobx-react-lite';
 import { useState } from 'react';
-import { popupStore } from '../../stores/PopupStore';
+import { popupStore } from '../../../stores/PopupStore';
 import { useEffect } from 'react';
 
 export const Slider = observer((props) => {

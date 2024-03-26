@@ -5,30 +5,31 @@ import { useState, useEffect } from 'react';
 
 import image404 from '../../images/404.svg';
 
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
-import Triangle from '../Triangle/Triangle';
-import { ProfileBtn } from '../generic/ProfileBtn/ProfileBtn';
-import { Preloader } from '../generic/Preloader/Preloader';
+import Footer from './Footer/Footer';
+import Header from './Header/Header';
+import Triangle from './Triangle/Triangle';
+import { ProfileBtn } from './ProfileBtn/ProfileBtn';
+import { Preloader } from './Preloader/Preloader';
 
-import { FullScreenBanner } from '../FullScreenBanner/FullScreenBanner';
-import BackgroundAnimation from '../BackgroundAnimation/BackgroundAnimation';
+import { FullScreenBanner } from '../pages/FullScreenBanner/FullScreenBanner';
+import BackgroundAnimation from '../generic/BackgroundAnimation/BackgroundAnimation';
 
 import Main from '../pages/Main/Main';
 import { Product } from '../pages/Product/Product';
 import Contacts from '../pages/Contacts/Contacts';
+import Files from '../pages/Files/Files';
 import About from '../pages/About/About';
 import Events from '../pages/Events/Events';
 import EventPage from '../pages/EventPage/EventPage';
-import Files from '../Files/Files';
-import FilesWithFilter from '../FilesWithFilter/FilesWithFilter';
+
+import FilesWithFilter from '../pages/FilesWithFilter/FilesWithFilter';
 import Education from '../pages/Education/Education';
-import UpButton from '../UpButton/UpButton';
+import UpButton from './UpButton/UpButton';
 
 import filterForManuals from '../../utils/filterForManuals';
 
 
-import { Admin } from '../Admin/Admin';
+import { Admin } from '../pages/Admin/Admin';
 
 import { Catalog } from '../pages/Catalog/Catalog';
 

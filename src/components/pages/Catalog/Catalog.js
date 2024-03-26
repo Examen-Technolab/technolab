@@ -2,7 +2,7 @@ import React from 'react';
 import { observer } from 'mobx-react-lite';
 
 import CardWithBtn from '../../cards/CardWithBtn/CardWithBtn';
-import PlusButton from '../../PlusButton/PlusButton';
+import PlusButton from '../../generic/PlusButton/PlusButton';
 import { FormAddCard } from '../../forms/FormAddCard/FormAddCard';
 
 import { appStore } from '../../../stores/AppStore';

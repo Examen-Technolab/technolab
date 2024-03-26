@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import TileWithScroll from "../tiles/TileWithScroll/TileWithScroll";
+import TileWithScroll from "../../../generic/TileWithScroll/TileWithScroll";
 import { useState } from "react";
 import { useRef } from "react";
-import Tile from "../tiles/Tile/Tile";
+import Tile from "../../../generic/Tile/Tile";
 
 function StickySection(props) {
 

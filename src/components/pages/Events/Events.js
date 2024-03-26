@@ -1,8 +1,8 @@
 import React from 'react';
 
-import BackgroundAnimation from '../../BackgroundAnimation/BackgroundAnimation';
-import Event from '../../Event/Event';
-import Tile from '../../tiles/Tile/Tile';
+import BackgroundAnimation from '../../generic/BackgroundAnimation/BackgroundAnimation';
+import Event from './Event/Event';
+import Tile from '../../generic/Tile/Tile';
 
 import banner from '../../../images/events.svg';
 
@@ -10,7 +10,7 @@ import eventList from '../../../utils/eventList';
 import { vkLink } from '../../../utils/constants';
 
 
-import { FullScreenBanner } from '../../FullScreenBanner/FullScreenBanner';
+import { FullScreenBanner } from '../FullScreenBanner/FullScreenBanner';
 
 function Events() {
 

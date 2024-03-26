@@ -1,5 +1,5 @@
 import React from "react";
-import DoubleTile from "../../tiles/DoubleTile/DoubleTile";
+import DoubleTile from "../../generic/DoubleTile/DoubleTile";
 import api from "../../../utils/Api";
 import { appStore } from "../../../stores/AppStore";
 

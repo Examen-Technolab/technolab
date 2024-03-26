@@ -6,9 +6,9 @@ import { useEffect, useState } from "react";
 import Form from "../Form/Form";
 import FormInput from "../FormInput/FormInput";
 
-import PlusButton from "../../PlusButton/PlusButton";
+import PlusButton from "../../generic/PlusButton/PlusButton";
 import FormTextarea from "../FormTextarea/FormTextarea";
-import { LiInput } from '../../LiInput/LiInput';
+import { LiInput } from '../LiInput/LiInput';
 
 import { InputStore } from "../../../stores/InputStore";
 
