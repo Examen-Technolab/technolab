@@ -3,6 +3,7 @@ import { NavLink, useHistory } from 'react-router-dom';
 import { observer } from 'mobx-react-lite';
 
 import { Card } from '../Card/Card';
+import { cardsStore } from '../../../stores/CardsStore';
 
 export const CardWithMenu = observer((props) => {
   const history = useHistory();
@@ -13,6 +14,7 @@ export const CardWithMenu = observer((props) => {
   }
 
   function handleBackClick() {
+    cardsStore.deleteCurrentCard();
     history.go(-stepBack);
   }
 

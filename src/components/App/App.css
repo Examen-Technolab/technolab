@@ -51,6 +51,10 @@
   }
 }
 
+#hidden {
+  display: hidden;
+}
+
 /* Страница */
 
 html {

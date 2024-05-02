@@ -62,8 +62,8 @@ export const Card = observer((props) => {
       }
       <Slider sliderClass="card__slider" title={card.title} img={previews} />
       <h2 className="text text_uppercase card__title">{card.title}</h2>
-      <p className="text text_uppercase card__article">Артикул: {card.article}</p>
-      <p className={`text text_uppercase card__price highlighted-text highlighted-text_level_${card.type}`}>Цена: {card.price} руб.</p>
+      <p hidden={!card.article ? true : false} className="text text_uppercase card__article">Артикул: {card.article}</p>
+      <p hidden={!card.price ? true : false} className={`text text_uppercase card__price highlighted-text highlighted-text_level_${card.type}`}>Цена: {card.price} руб.</p>
       {props.children}
     </div>
   );

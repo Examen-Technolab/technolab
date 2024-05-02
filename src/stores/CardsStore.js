@@ -34,6 +34,10 @@ class CardsStore {
     this.currentCard = card;
   }
 
+  deleteCurrentCard = () => {
+    this.currentCard = {};
+  }
+
   setTypes = (newTypes) => {
     this.types = [];
     newTypes.forEach(newType => {
