@@ -6,12 +6,15 @@ import TileWithScroll from '../TileWithScroll/TileWithScroll';
 import Paragraph from '../Paragraph/Paragraph';
 
 import table from '../../images/events/table-bridge.png'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { appStore } from '../../stores/AppStore';
 
 function EventPage(props) {
   const { eventUrl } = useParams();
   const eventPage = eventUrl.replace("-archive", "");
   const eventData = eventList.find(item => item.eventPage === eventPage);
+
+  const [links, setLinks] = useState([]);
 
   const history = useHistory();
 
@@ -20,8 +23,13 @@ function EventPage(props) {
   }
 
   useEffect(() => {
-    eventData.links.unshift(eventUrl === eventPage ? eventData.registration : eventData.results);
+    appStore.setLoading(true);
+    setLinks([eventUrl === eventPage ? eventData.registration : eventData.results, ...eventData.links]);
   }, [])
+
+  useEffect(() => {
+    if (links.length) appStore.setLoading(false);
+  }, [links])
 
   return (
     <main className="section event-page">
@@ -38,7 +46,7 @@ function EventPage(props) {
         <h1 className="event-page__title">{eventData.cardTitle}</h1>
       </Tile>
       <ul className="event-page__list">
-        {eventData.links.map(item => {
+        {links.map(item => {
           return (
             <li key={item.title}>
               <Tile tileClass={`event-page__link event-page__link_type_${item.type}`} link={item.link} linkTitle={item.linkTitle}>
@@ -58,7 +66,7 @@ function EventPage(props) {
           })
         }
         <h3 className="paragraph__title highlighted-text event-page__scores">{eventData.table.title}</h3>
-        <img className="event-page__table" src={table} alt="Таблица начислений очков" />
+        <img className="event-page__table" src={eventData.table.src} alt="Таблица начислений очков" />
       </TileWithScroll>
     </main >
   );
