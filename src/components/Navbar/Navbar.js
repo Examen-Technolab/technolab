@@ -19,7 +19,9 @@ function Navbar() {
       <NavLink onClick={scrollToTop} to="/contacts" activeClassName={`highlighted-text highlighted-text_level_${level}`} className="link navbar__link"> Контакты </NavLink>
       <NavLink onClick={scrollToTop} to="/about" activeClassName={`highlighted-text highlighted-text_level_${level}`} className="link navbar__link"> О нас </NavLink>
       <NavLink onClick={scrollToTop} to="/partners" activeClassName={`highlighted-text highlighted-text_level_${level}`} className="link navbar__link"> Партнерам </NavLink>
+      {/*
       <NavLink onClick={scrollToTop} to="/events" activeClassName={`highlighted-text highlighted-text_level_${level}`} className="link navbar__link"> Мероприятия </NavLink>
+     */}
     </nav>
   );
 }
