@@ -10,9 +10,9 @@ import Header from './Header/Header';
 import Triangle from './Triangle/Triangle';
 import { ProfileBtn } from './ProfileBtn/ProfileBtn';
 import { Preloader } from './Preloader/Preloader';
+import { Popup } from './Popup/Popup';
 
 import { FullScreenBanner } from '../pages/FullScreenBanner/FullScreenBanner';
-import BackgroundAnimation from '../generic/BackgroundAnimation/BackgroundAnimation';
 
 import Main from '../pages/Main/Main';
 import { Product } from '../pages/Product/Product';
@@ -24,7 +24,6 @@ import EventPage from '../pages/EventPage/EventPage';
 
 import FilesWithFilter from '../pages/FilesWithFilter/FilesWithFilter';
 import Education from '../pages/Education/Education';
-import UpButton from './UpButton/UpButton';
 
 import filterForManuals from '../../utils/filterForManuals';
 
@@ -34,7 +33,6 @@ import { Admin } from '../pages/Admin/Admin';
 import { Catalog } from '../pages/Catalog/Catalog';
 
 
-import { Popup } from '../Popup/Popup';
 
 import { appStore } from '../../stores/AppStore';
 

@@ -1,4 +1,4 @@
-import Tile from "../tiles/Tile/Tile";
+import Tile from "../../../generic/Tile/Tile";
 
 function Contact(props) {
   return (

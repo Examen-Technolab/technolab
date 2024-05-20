@@ -21,15 +21,6 @@
 
 /* Кадры */
 
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(-360deg);
-  }
-}
 
 @keyframes disappear-opacity {
   0% {
@@ -52,13 +43,87 @@
 }
 
 #hidden {
-  display: hidden;
+  display: hidden !important;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 27px;
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color .3s linear;
+}
+
+a:hover {
+  color: var(--technolab-blue)
+}
+
+
+/* Адаптивность */
+
+@media (max-width: 1050px) {
+
+  p,
+  a {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 54px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+}
+
+@media (max-width: 750px) {
+
+  p,
+  a {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 21px;
+  }
+
 }
 
 /* Страница */
 
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 .background {
@@ -81,10 +146,6 @@ html {
 
 
 /* Анимации */
-
-.rotation {
-  animation: rotation linear infinite 60s;
-}
 
 .disappear-opacity {
   animation: disappear-opacity .3s linear forwards;
@@ -148,7 +209,7 @@ html {
 
 /* Стандартные ссылки */
 
-.link {
+/* .link {
   color: var(--grey);
   text-decoration: none;
   text-transform: uppercase;
@@ -159,7 +220,7 @@ html {
 
 .link:hover {
   color: var(--technolab-blue)
-}
+} */
 
 
 /* Выделение текста цветом модуля */

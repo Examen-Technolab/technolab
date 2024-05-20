@@ -22,7 +22,7 @@ export const logosObject = {
   "research": research,
   "aero": aero,
   "machines": machines,
-  "undefined": defaultLogo
+  "default": defaultLogo
 }
 
 export const externalLinks = [

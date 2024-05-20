@@ -1,30 +1,36 @@
 import { observer } from "mobx-react-lite";
 import { useEffect, useState } from "react";
-import { popupStore } from "../../stores/PopupStore";
+
+import { popupStore } from "../../../stores/PopupStore";
+
+import style from "./Popup.module.css"
 
 export const Popup = observer(() => {
 
+  //обработка клавиш для попапа
   useEffect(() => {
     if (popupStore.isVisible) {
       document.addEventListener('keydown', popupStore.handleKeydown);
     } else {
       document.removeEventListener('keydown', popupStore.handleKeydown);
     }
-  }, [popupStore.isVisible])
+  })
 
-  const [popupClass, setPopupClass] = useState('');
+  const [isHover, setIshover] = useState(false);
 
   function handleEnter() {
-    setPopupClass('popup_hover')
+    setIshover(true);
   }
 
   function handleLeave() {
-    setPopupClass('')
+    setIshover(false);
   }
 
   return (
-    <div onMouseEnter={handleEnter} onMouseLeave={handleLeave} onClick={popupStore.close} className={popupStore.isVisible ? `popup ${popupClass}` : 'hidden'}>
-      <div onMouseLeave={handleEnter} onMouseEnter={handleLeave} onClick={(evt) => { evt.stopPropagation(); }} className={`popup__container`}>
+    <div onMouseEnter={handleEnter} onMouseLeave={handleLeave} onClick={popupStore.close}
+      className={popupStore.isVisible ? style.popup + ` ${isHover ? style.popup_hover : ''}` : ''}
+      hidden={!popupStore.isVisible} >
+      <div onMouseLeave={handleEnter} onMouseEnter={handleLeave} onClick={(evt) => { evt.stopPropagation(); }} className={style.container}>
         {popupStore.content}
       </div>
     </div>

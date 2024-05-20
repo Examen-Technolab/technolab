@@ -1,9 +1,11 @@
+import style from './Footer.module.css';
+
 function Footer() {
-    return (
-        <footer className="footer">
-            <p className="footer__copyright">&copy; экзамен-технолаб {new Date().getFullYear()}</p>
-        </footer>
-    );
+  return (
+    <footer className={style.footer}>
+      <p className={style.copyright}>&copy; экзамен-технолаб {new Date().getFullYear()}</p>
+    </footer>
+  );
 }
 
 export default Footer;

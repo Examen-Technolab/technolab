@@ -8,6 +8,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  border-radius: 20px;
+  border: none;
   z-index: 120;
   opacity: 1;
   transition: all .3s linear;
@@ -19,6 +21,5 @@
 }
 
 .btn_active {
-  background-color: var(--technolab-blue);
-  border-radius: 20px;
+  border: 2px solid var(--technolab-blue);
 }

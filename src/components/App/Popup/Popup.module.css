@@ -15,7 +15,7 @@
   background-color: rgba(0, 0, 0, .1);
 }
 
-.popup__container {
+.container {
   width: 50%;
   height: min-content;
   max-height: 70%;
@@ -31,23 +31,20 @@
   overflow: hidden auto;
   margin-top: 79.5px;
   padding: 40px 10px;
-}
-
-.popup__container {
   scrollbar-color: var(--technolab-blue) var(--scrollbar-color);
   scrollbar-width: thin;
 }
 
-.popup__container::-webkit-scrollbar {
+.container::-webkit-scrollbar {
   width: 8px;
 }
 
-.popup__container::-webkit-scrollbar-track {
+.container::-webkit-scrollbar-track {
   background: none;
   margin: 40px;
 }
 
-.popup__container::-webkit-scrollbar-thumb {
+.container::-webkit-scrollbar-thumb {
   background-color: var(--technolab-blue);
   border-radius: 15px;
   padding-right: 0px;
@@ -55,13 +52,13 @@
 }
 
 @media(max-width:1100px) {
-  .popup__container {
+  .container {
     width: 70%;
   }
 }
 
 @media(max-width:500px) {
-  .popup__container {
+  .container {
     height: auto;
   }
 }

@@ -5,7 +5,7 @@ import technobotImg from '../../../images/main/technobot-poster.jpg';
 import technobotVideo from '../../../video/technobot.mp4';
 import { modules, technobot, externalLinks } from '../../../utils/constants';
 
-import Tile from '../../tiles/Tile/Tile';
+import Tile from '../../generic/Tile/Tile';
 import BrandLink from './BrandLink/BrandLink';
 import ModuleLink from './ModuleLink/ModuleLink';
 import StickySection from './StickySection/StickySection';

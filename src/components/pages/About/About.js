@@ -2,7 +2,7 @@ import React from 'react';
 
 import api from '../../../utils/Api';
 import BackgroundAnimation from '../../generic/BackgroundAnimation/BackgroundAnimation';
-import Tile from '../../tiles/Tile/Tile';
+import Tile from '../../generic/Tile/Tile';
 import { appStore } from '../../../stores/AppStore';
 
 function About(props) {

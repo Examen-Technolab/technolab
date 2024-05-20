@@ -1,6 +1,8 @@
+import style from './Triangle.module.css'
+
 function Triangle() {
   return (
-    <div className="triangle rotation"></div>
+    <div className={style.triangle}></div>
   );
 }
 

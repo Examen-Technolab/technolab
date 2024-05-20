@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import TileWithScroll from "../../tiles/TileWithScroll/TileWithScroll";
+import TileWithScroll from "../../generic/TileWithScroll/TileWithScroll";
 
 export const FormSelect = (props) => {
 

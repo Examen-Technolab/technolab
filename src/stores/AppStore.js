@@ -12,6 +12,8 @@ class AppStore {
 
   isAdmin = false; //права пользователя
 
+  level = 'default'; // уровень (цвет)
+
   _countLoad = 0; //счетчик загрузок
 
   constructor() {
@@ -39,6 +41,10 @@ class AppStore {
 
   _setIsAdmin = (value) => {
     this.isAdmin = value;
+  }
+
+  setLevel = (level = 'default') => {
+    this.level = level.includes('-') ? level.substring(0, level.indexOf('-')) : level;
   }
 
   //задает стейты, связанные с пользователем
@@ -93,6 +99,7 @@ class AppStore {
         this.setLoading(false);
       })
   }
+
 }
 
 export const appStore = new AppStore();

@@ -1,7 +1,7 @@
 import React from "react";
 
-import Contact from "../../Contact/Contact";
-import Tile from "../../tiles/Tile/Tile";
+import Contact from "./Contact/Contact";
+import Tile from "../../generic/Tile/Tile";
 
 import api from "../../../utils/Api";
 import { appStore } from "../../../stores/AppStore";

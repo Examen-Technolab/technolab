@@ -1,9 +1,11 @@
 import { observer } from 'mobx-react-lite';
+
 import { Slider } from '../../generic/Slider/Slider';
-import { appStore } from '../../../stores/AppStore';
-import { popupStore } from '../../../stores/PopupStore';
 import { FormAddCard } from '../../forms/FormAddCard/FormAddCard';
 import Form from '../../forms/Form/Form';
+
+import { appStore } from '../../../stores/AppStore';
+import { popupStore } from '../../../stores/PopupStore';
 import { cardsStore } from '../../../stores/CardsStore';
 
 export const Card = observer((props) => {

@@ -8,7 +8,7 @@ import { appStore } from '../../../stores/AppStore';
 
 export const ProfileBtn = observer(() => {
 
-  if (appStore.isLoggedIn)
+  if (!appStore.isLoggedIn)
     return (
       <NavLink to="/admin" activeClassName={style.btn_active} className={style.btn} />
     );

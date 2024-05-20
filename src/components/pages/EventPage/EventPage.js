@@ -1,9 +1,9 @@
 import { useHistory, useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 
-import Tile from '../../tiles/Tile/Tile';
+import Tile from '../../generic/Tile/Tile';
 import eventList from '../../../utils/eventList';
-import TileWithScroll from '../../tiles/TileWithScroll/TileWithScroll';
+import TileWithScroll from '../../generic/TileWithScroll/TileWithScroll';
 import Paragraph from './Paragraph/Paragraph';
 
 import table from '../../../images/events/table-bridge.png'

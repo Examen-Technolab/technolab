@@ -1,14 +1,11 @@
 import style from './Logo.module.css';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { logosObject } from '../../../../utils/constants';
+import { appStore } from '../../../../stores/AppStore';
 
 function Logo() {
-  let { level } = useParams();
-  if (level) {
-    level = level.includes('-') ? level.substring(0, level.indexOf('-')) : level;
-  }
-  let headerLogo = logosObject[level] || logosObject["undefined"];
+  let headerLogo = logosObject[appStore.level];
   return (
     <Link to="/main" className="link">
       <img src={headerLogo} alt="Логотип Экзамен-Технолаб." className={style.logo} />

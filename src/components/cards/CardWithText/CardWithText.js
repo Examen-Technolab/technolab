@@ -2,7 +2,7 @@ import { observer } from 'mobx-react-lite';
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 
-import TileWithScroll from '../../tiles/TileWithScroll/TileWithScroll';
+import TileWithScroll from '../../generic/TileWithScroll/TileWithScroll';
 import Description from "./Description/Description";
 import api from '../../../utils/Api';
 import PlusButton from '../../generic/PlusButton/PlusButton';

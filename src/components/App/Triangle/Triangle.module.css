@@ -1,5 +1,18 @@
+/* Кадры */
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
 .triangle {
-  background-image: url('../../images/background-triangle.png');
+  animation: rotation linear infinite 60s;
+  background-image: url('../../../images/background-triangle.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
