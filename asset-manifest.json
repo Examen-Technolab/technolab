@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.239dd7d6.css",
-    "main.js": "/static/js/main.0e18cd4b.js",
+    "main.js": "/static/js/main.6dcaa82b.js",
     "static/media/technobot.mp4": "/static/media/technobot.8827de7c75bcaf944c7a.mp4",
     "static/media/technobot-promo.mp4": "/static/media/technobot-promo.e3ef08a51935d9715359.mp4",
     "static/media/technobot-poster.jpg": "/static/media/technobot-poster.37fca189aa55bfa46471.jpg",
@@ -20,7 +20,7 @@
     "static/media/icon-aero-grey.svg": "/static/media/icon-aero-grey.29979057c8fecd473923.svg",
     "static/media/icon-aero.svg": "/static/media/icon-aero.9fa097b4d8ffd6511a21.svg",
     "static/media/logo-bridge.svg": "/static/media/logo-bridge.ec1457442ca952288f63f5ef322be249.svg",
-    "static/media/logo-pitching.svg": "/static/media/logo-pitching.d292ba4cda128bd9ed3cc296f493c801.svg",
+    "static/media/logo-pitching.svg": "/static/media/logo-pitching.e6bcd817f63aee6e657489a0ed5fbea1.svg",
     "static/media/dobot-icon-hover.svg": "/static/media/dobot-icon-hover.2795e2b0f3292bf11014fe3e57bb9b47.svg",
     "static/media/ittle-bits-icon-hover.svg": "/static/media/ittle-bits-icon-hover.29d099e813b81e36cd796b55562072ce.svg",
     "static/media/courses.png": "/static/media/courses.93d8440868a9540687c1.png",
@@ -69,10 +69,10 @@
     "static/media/btn-edit.svg": "/static/media/btn-edit.8667ac4a523e8fc42e59.svg",
     "static/media/btn-add.svg": "/static/media/btn-add.136676119fb8aadb1bfa.svg",
     "main.239dd7d6.css.map": "/static/css/main.239dd7d6.css.map",
-    "main.0e18cd4b.js.map": "/static/js/main.0e18cd4b.js.map"
+    "main.6dcaa82b.js.map": "/static/js/main.6dcaa82b.js.map"
   },
   "entrypoints": [
     "static/css/main.239dd7d6.css",
-    "static/js/main.0e18cd4b.js"
+    "static/js/main.6dcaa82b.js"
   ]
 }
