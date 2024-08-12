@@ -1,6 +1,6 @@
 .plus-btn {
   background: var(--tile-background);
-  background-image: url(../../images/btn-add.svg);
+  background-image: url(../../../images/btn-add.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 30% 30%;

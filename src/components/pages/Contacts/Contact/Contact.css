@@ -13,7 +13,7 @@
 }
 
 .contact__icon_type_address {
-  background-image: url(../../images/contacts/address-icon.svg);
+  background-image: url(../../../../images/contacts/address-icon.svg);
   width: 150px;
   height: 100px;
   margin-right: 0px;
@@ -21,14 +21,14 @@
 }
 
 .contact__icon_type_order {
-  background-image: url(../../images/contacts/order-icon.svg);
+  background-image: url(../../../../images/contacts/order-icon.svg);
   width: 250px;
   height: 150px;
   align-self: flex-start;
 }
 
 .contact__icon_type_support {
-  background-image: url(../../images/contacts/support-icon.svg);
+  background-image: url(../../../../images/contacts/support-icon.svg);
   align-self: start;
   width: 140px;
   height: 100%;
@@ -36,7 +36,7 @@
 }
 
 .contact__icon_type_phone {
-  background-image: url(../../images/contacts/phone-icon.svg);
+  background-image: url(../../../../images/contacts/phone-icon.svg);
   height: 80px;
 }
 

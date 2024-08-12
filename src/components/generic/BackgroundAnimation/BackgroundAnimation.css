@@ -3,25 +3,25 @@
   0% {
     opacity: 0;
     scale: .85;
-    background-image: url(../../images/animation/animation-blue-triangle.png);
+    background-image: url(../../../images/animation/animation-blue-triangle.png);
   }
 
   35% {
     opacity: 1;
     scale: .9;
-    background-image: url(../../images/animation/animation-green-triangle.png);
+    background-image: url(../../../images/animation/animation-green-triangle.png);
   }
 
   70% {
     opacity: 1;
     scale: .8;
-    background-image: url(../../images/animation/animation-blue-triangle.png);
+    background-image: url(../../../images/animation/animation-blue-triangle.png);
   }
 
   100% {
     scale: .9;
     opacity: 0;
-    background-image: url(../../images/animation/animation-dark-blue-triangle.png);
+    background-image: url(../../../images/animation/animation-dark-blue-triangle.png);
   }
 
 }
@@ -71,7 +71,7 @@
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-image: url(../../images/animation/animation-blue-triangle.png);
+  background-image: url(../../../images/animation/animation-blue-triangle.png);
   z-index: 1;
   animation-fill-mode: both;
 }

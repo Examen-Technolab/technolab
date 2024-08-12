@@ -1,3 +1,41 @@
 @import url(./vendor/normalize.css);
 @import url(./fonts/fonts.css);
 @import url(./components/App/App.css);
+
+/* заменить */
+@import url(./components/cards/Card/Card.css);
+@import url(./components/cards/CardWithMenu/CardWithMenu.css);
+@import url(./components/cards/CardWithText/Description/Description.css);
+@import url(./components/cards/CardWithText/CardWithText.css);
+@import url(./components/forms/FormButton/FormButton.css);
+@import url(./components/forms/FormButton/FormButton.css);
+@import url(./components/forms/FormImageLoader/FormImageLoader.css);
+@import url(./components/forms/FormInput/FormInput.css);
+@import url(./components/generic/BackgroundAnimation/BackgroundAnimation.css);
+@import url(./components/generic/DoubleTile/DoubleTile.css);
+@import url(./components/generic/DoubleTile/LinkButton/LinkButton.css);
+@import url(./components/generic/PlusButton/PlusButton.css);
+@import url(./components/generic/Select/Select.css);
+@import url(./components/generic/Tile/Tile.css);
+@import url(./components/generic/TileWithScroll/TileWithScroll.css);
+
+@import url(./components/pages/About/About.css);
+@import url(./components/pages/Admin/Admin.css);
+@import url(./components/pages/Contacts/Contacts.css);
+@import url(./components/pages/Contacts/Contact/Contact.css);
+@import url(./components/pages/Education/Education.css);
+@import url(./components/pages/EventPage/EventPage.css);
+@import url(./components/pages/EventPage/Paragraph/Paragraph.css);
+@import url(./components/pages/Events/Event/Event.css);
+@import url(./components/pages/Events/Events.css);
+@import url(./components/pages/Files/FileLink/FileLink.css);
+@import url(./components/pages/Files/FileLinkWithImg/FileLinkWithImg.css);
+@import url(./components/pages/Files/Files.css);
+@import url(./components/pages/FilesWithFilter/FilesWithFilter.css);
+@import url(./components/pages/FullScreenBanner/FullScreenBanner.module.css);
+@import url(./components/pages/Main/Banner/Banner.css);
+@import url(./components/pages/Main/BrandLink/BrandLink.css);
+@import url(./components/pages/Main/ModuleLink/ModuleLink.css);
+@import url(./components/pages/Main/StickySection/StickySection.css);
+@import url(./components/pages/Main/Main.css);
+@import url(./components/pages/Product/Product.css);

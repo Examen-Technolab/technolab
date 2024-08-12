@@ -49,7 +49,7 @@
   padding: 0;
   position: absolute;
   top: 0;
-  background-image: url('../../images/cards/default-btn.png');
+  background-image: url('../../../images/cards/default-btn.png');
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: 140px 88px;
@@ -73,7 +73,7 @@
 
 .card-with-menu__mini-back-btn {
   background-color: rgba(255, 255, 255, 0);
-  background-image: url('../../images/cards/back-btn.png');
+  background-image: url('../../../images/cards/back-btn.png');
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: 40px auto;
@@ -110,7 +110,7 @@
 
 .card-with-menu__link-btn::after {
   content: '';
-  background-image: url('../../images/cards/default-btn-inactive.png');
+  background-image: url('../../../images/cards/default-btn-inactive.png');
   background-position: center 15px;
   width: 130px;
   height: 90px;
@@ -159,31 +159,31 @@
 }
 
 .card-with-menu__pic_level_research {
-  background-image: url('../../images/cards/research-pic.png');
+  background-image: url('../../../images/cards/research-pic.png');
 }
 
 .card-with-menu__pic_level_professional {
-  background-image: url('../../images/cards/professional-pic.png');
+  background-image: url('../../../images/cards/professional-pic.png');
 }
 
 .card-with-menu__pic_level_preliminary {
-  background-image: url('../../images/cards/preliminary-pic.png');
+  background-image: url('../../../images/cards/preliminary-pic.png');
 }
 
 .card-with-menu__pic_level_machines {
-  background-image: url('../../images/cards/machines-pic.png');
+  background-image: url('../../../images/cards/machines-pic.png');
 }
 
 .card-with-menu__pic_level_elementary {
-  background-image: url('../../images/cards/elementary-pic.png');
+  background-image: url('../../../images/cards/elementary-pic.png');
 }
 
 .card-with-menu__pic_level_basic {
-  background-image: url('../../images/cards/basic-pic.png');
+  background-image: url('../../../images/cards/basic-pic.png');
 }
 
 .card-with-menu__pic_level_aero {
-  background-image: url('../../images/cards/aero-pic.png');
+  background-image: url('../../../images/cards/aero-pic.png');
 }
 
 @media (max-width: 1000px) {

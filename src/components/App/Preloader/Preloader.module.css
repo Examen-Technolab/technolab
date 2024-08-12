@@ -43,6 +43,7 @@
 }
 
 .preloader {
+  cursor: progress;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,7 +55,7 @@
   box-sizing: border-box;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(0, 0, 0, .3);
 }
 
 .container {
@@ -69,7 +70,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(255, 255, 255, .8);
+  background: rgba(0, 0, 0, .3);
   border-radius: 100px;
 }
 
@@ -91,6 +92,6 @@
 
 .round::before {
   z-index: 10;
-  background: rgba(255, 255, 255, .8);
+  background: rgba(0, 0, 0, .3);
   animation: preloader-inside-red 1s ease-in-out infinite;
 }

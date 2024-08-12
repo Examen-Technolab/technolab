@@ -72,19 +72,19 @@
   background-color: var(--technolab-blue);
   color: #f1f0f0;
   transition: all .4s linear;
-  background-image: url(../../images/events/bridge-registration.png);
+  background-image: url(../../../images/events/bridge-registration.png);
 }
 
 .event-page__link_type_field {
-  background-image: url(../../images/events/bridge-field.png);
+  background-image: url(../../../images/events/bridge-field.png);
 }
 
 .event-page__link_type_guide {
-  background-image: url(../../images/events/bridge-guide.png);
+  background-image: url(../../../images/events/bridge-guide.png);
 }
 
 .event-page__link_type_products {
-  background-image: url(../../images/events/bridge-products.png);
+  background-image: url(../../../images/events/bridge-products.png);
 }
 
 .event-page__link-text {

@@ -27,7 +27,7 @@
 .about__tile_type_provider {
   grid-area: provider;
   background-color: rgba(0, 118, 189, .8);
-  background-image: url(../../images/about/provider-background.png);
+  background-image: url(../../../images/about/provider-background.png);
   background-size: 100% auto;
   background-position: 220px -50px;
 }
@@ -38,7 +38,7 @@
 }
 
 .about__tile_type_project-objective {
-  background-image: url(../../images/about/project-objective-background.png);
+  background-image: url(../../../images/about/project-objective-background.png);
   background-position: right top;
   background-size: 40% auto;
   margin-top: 15px;
@@ -46,14 +46,14 @@
 
 .about__tile_type_competition {
   grid-area: competition;
-  background-image: url(../../images/about/competition-background.png);
+  background-image: url(../../../images/about/competition-background.png);
   background-size: 80% auto;
 }
 
 .about__tile_type_distributor {
   grid-area: distributor;
   background-color: var(--technolab-blue);
-  background-image: url(../../images/about/distributor-background.png);
+  background-image: url(../../../images/about/distributor-background.png);
   background-size: 60% auto;
 }
 

@@ -23,7 +23,7 @@
 .contacts__tile_type_main {
   grid-area: main-text;
   background-color: rgba(9, 153, 215, .8);
-  background-image: url(../../images/contacts/main-background.png);
+  background-image: url(../../../images/contacts/main-background.png);
 }
 
 .contacts__main-text {
@@ -33,7 +33,7 @@
 .contacts__tile_type_address {
   grid-area: address;
   background-color: rgba(216, 177, 60, .8);
-  background-image: url(../../images/contacts/address-background.png);
+  background-image: url(../../../images/contacts/address-background.png);
   color: #3d3d3d;
   background-position: right 300%;
 }
@@ -41,7 +41,7 @@
 .contacts__tile_type_support {
   grid-area: support;
   background-color: rgba(9, 153, 215, .8);
-  background-image: url(../../images/contacts/support-background.png);
+  background-image: url(../../../images/contacts/support-background.png);
   background-position: left center;
   background-size: 55% auto;
 }
@@ -50,7 +50,7 @@
   grid-area: order;
   color: var(--technolab-blue);
   color: var(--grey);
-  background-image: url(../../images/contacts/order-background.png);
+  background-image: url(../../../images/contacts/order-background.png);
   background-size: 50% auto;
   background-position: right center;
 }
@@ -58,7 +58,7 @@
 .contacts__tile_type_phone {
   grid-area: phone;
   background-color: rgba(168, 91, 159, .8);
-  background-image: url(../../images/contacts/phone-background.png);
+  background-image: url(../../../images/contacts/phone-background.png);
   background-position: -30% 150%;
   background-size: auto 60%;
 }

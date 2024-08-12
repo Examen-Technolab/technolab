@@ -23,16 +23,16 @@
 }
 
 .education__promo_type_manuals {
-  background-image: url(../../images/education/manuals.png);
+  background-image: url(../../../images/education/manuals.png);
 }
 
 .education__promo_type_academy {
-  background-image: url(../../images/education/academy.png);
+  background-image: url(../../../images/education/academy.png);
   background-position: right bottom;
 }
 
 .education__promo_type_courses {
-  background-image: url(../../images/education/courses.png);
+  background-image: url(../../../images/education/courses.png);
   background-position: right bottom;
 }
 

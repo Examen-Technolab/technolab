@@ -58,27 +58,27 @@
 }
 
 .module-link__icon_level_aero {
-  background-image: url(../../images/icons/icon-aero-grey.svg);
+  background-image: url(../../../../images/icons/icon-aero-grey.svg);
 }
 
 .module-link__icon_level_basic {
-  background-image: url(../../images/icons/icon-basic-grey.svg);
+  background-image: url(../../../../images/icons/icon-basic-grey.svg);
 }
 
 .module-link__icon_level_elementary {
-  background-image: url(../../images/icons/icon-elementary-grey.svg);
+  background-image: url(../../../../images/icons/icon-elementary-grey.svg);
 }
 
 .module-link__icon_level_preliminary {
-  background-image: url(../../images/icons/icon-preliminary-grey.svg);
+  background-image: url(../../../../images/icons/icon-preliminary-grey.svg);
 }
 
 .module-link__icon_level_professional {
-  background-image: url(../../images/icons/icon-professional-grey.svg);
+  background-image: url(../../../../images/icons/icon-professional-grey.svg);
 }
 
 .module-link__icon_level_research {
-  background-image: url(../../images/icons/icon-research-grey.svg);
+  background-image: url(../../../../images/icons/icon-research-grey.svg);
 }
 
 /*  При наведении */
@@ -112,31 +112,31 @@
 }
 
 .module-link:hover .module-link__icon_level_aero {
-  background-image: url(../../images/icons/icon-aero.svg);
+  background-image: url(../../../../images/icons/icon-aero.svg);
 }
 
 .module-link:hover .module-link__icon_level_aero {
-  background-image: url(../../images/icons/icon-aero.svg);
+  background-image: url(../../../../images/icons/icon-aero.svg);
 }
 
 .module-link:hover .module-link__icon_level_basic {
-  background-image: url(../../images/icons/icon-basic.svg);
+  background-image: url(../../../../images/icons/icon-basic.svg);
 }
 
 .module-link:hover .module-link__icon_level_elementary {
-  background-image: url(../../images/icons/icon-elementary.svg);
+  background-image: url(../../../../images/icons/icon-elementary.svg);
 }
 
 .module-link:hover .module-link__icon_level_preliminary {
-  background-image: url(../../images/icons/icon-preliminary.svg);
+  background-image: url(../../../../images/icons/icon-preliminary.svg);
 }
 
 .module-link:hover .module-link__icon_level_professional {
-  background-image: url(../../images/icons/icon-professional.svg);
+  background-image: url(../../../../images/icons/icon-professional.svg);
 }
 
 .module-link:hover .module-link__icon_level_research {
-  background-image: url(../../images/icons/icon-research.svg);
+  background-image: url(../../../../images/icons/icon-research.svg);
 }
 
 
