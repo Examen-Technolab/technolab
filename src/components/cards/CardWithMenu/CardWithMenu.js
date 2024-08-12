@@ -1,10 +1,9 @@
 import React from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
 import { observer } from 'mobx-react-lite';
-import { cardsStore } from '../../stores/CardsStore';
+import { cardsStore } from '../../../stores/CardsStore';
 
 import { Card } from '../Card/Card';
-import { cardsStore } from '../../../stores/CardsStore';
 
 export const CardWithMenu = observer((props) => {
   const history = useHistory();

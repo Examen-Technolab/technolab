@@ -1,5 +1,5 @@
 import { useHistory, useParams } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import Tile from '../../generic/Tile/Tile';
 import eventList from '../../../utils/eventList';
@@ -8,8 +8,7 @@ import Paragraph from './Paragraph/Paragraph';
 
 import table from '../../../images/events/table-bridge.png'
 
-import { useEffect, useState } from 'react';
-import { appStore } from '../../stores/AppStore';
+import { appStore } from '../../../stores/AppStore';
 
 
 function EventPage(props) {
