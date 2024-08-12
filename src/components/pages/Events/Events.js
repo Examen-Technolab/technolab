@@ -89,30 +89,27 @@ function Events() {
 
   return (
     <main className="section events">
-      {
-        list.length ? <>
-          <Tile tileClass="events__title-tile">
-            <BackgroundAnimation color="blue" />
-            <h1 className="text text_uppercase events__title">Мероприятия {new Date().getFullYear()} год</h1>
-          </Tile>
-          <ul className="events__list">
-            {
-              upcoming.map(item => {
-                return (
-                  <Event isArchived={false} link={item.registration} key={item.title} eventPage={item.eventPage} logo={item.logo} title={item.title} date={item.date} about={item.about} />
-                )
-              })
-            }
-            {
-              archive.map(item => {
-                return (
-                  <Event eventPage={item.eventPage} link={item.results || vkLink} isArchived={true} key={item.title} logo={item.logo} title={item.title} date={item.date} about={item.about} />
-                )
-              })
-            }
-          </ul></> :
-          <FullScreenBanner src={banner} alt="Актуальных мероприятий нет" />
-      }
+
+      <Tile tileClass="events__title-tile">
+        <BackgroundAnimation color="blue" />
+        <h1 className="text text_uppercase events__title">Мероприятия {new Date().getFullYear()} год</h1>
+      </Tile>
+      <ul className="events__list">
+        {
+          upcoming.map(item => {
+            return (
+              <Event isArchived={false} link={item.registration} key={item.title} eventPage={item.eventPage} logo={item.logo} title={item.title} date={item.date} about={item.about} />
+            )
+          })
+        }
+        {
+          archive.map(item => {
+            return (
+              <Event eventPage={item.eventPage} link={item.results || vkLink} isArchived={true} key={item.title} logo={item.logo} title={item.title} date={item.date} about={item.about} />
+            )
+          })
+        }
+      </ul>
     </main>
   );
 }

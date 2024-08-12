@@ -26,10 +26,11 @@ const navLinks = [
   }, {
     link: '/partners',
     title: 'Партнерам'
-  }, {
-    link: '/events',
-    title: 'Мероприятия'
   },
+  // {
+  //   link: '/events',
+  //   title: 'Мероприятия'
+  // },
 ]
 
 function Header() {
