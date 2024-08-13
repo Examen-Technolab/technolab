@@ -37,6 +37,8 @@
   background-color: var(--tile-background);
   outline: none;
   color: var(--technolab-blue);
+  text-align: start;
+  font-size: 18px;
 }
 
 .select:hover {
@@ -67,9 +69,11 @@
   background: none;
   border: none;
   color: var(--technolab-blue);
-  padding: 5px;
+  padding: 10px 5px;
   box-sizing: border-box;
   border-radius: 5px;
+  text-align: start;
+  font-size: 18px;
 }
 
 .select__list-item:hover {

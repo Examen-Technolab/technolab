@@ -71,10 +71,10 @@ export const FormEditDescription = observer((props) => {
       onFormSubmit={handleSubmit}
       formElements={
         <>
-          <h2 className="text text_uppercase">Добавить блок описания</h2>
+          <h2 className="text_uppercase">Добавить блок описания</h2>
           <FormTextarea  {...stores.title} name="title" text="Заголовок" />
           <div>
-            <h3 className="text text_uppercase">Список</h3>
+            <h3 className="text_uppercase">Список</h3>
             <ul>
               {
                 newList.map((li, index) => {

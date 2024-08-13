@@ -8,6 +8,10 @@
   margin-right: 14px
 }
 
+.link:hover {
+  color: var(--technolab-blue);
+}
+
 @media (max-width: 1200px) {
   .navbar {
     margin-right: 0;

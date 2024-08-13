@@ -8,13 +8,13 @@ function Event(props) {
           <>
             <img src={props.logo} className={`event__logo ${props.isArchived ? 'grayscale' : ''}`} alt={`Логотип ${props.title}`} />
             <h2 className={`text text_uppercase event__title ${props.isArchived ? 'grayscale' : ''}`}>{props.title}</h2>
-            <p className="text event__date">{props.date}</p>
+            <p className="event__date">{props.date}</p>
             <p className={props.isArchived ? 'text event__archive' : 'hidden'}>архив</p>
           </>
         }
         about={
           <>
-            <p className="text event__about">{props.about}</p>
+            <p className="event__about">{props.about}</p>
           </>
         }
         links={

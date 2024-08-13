@@ -12,12 +12,14 @@
 @import url(./components/forms/FormImageLoader/FormImageLoader.css);
 @import url(./components/forms/FormInput/FormInput.css);
 @import url(./components/generic/BackgroundAnimation/BackgroundAnimation.css);
-@import url(./components/generic/DoubleTile/DoubleTile.css);
-@import url(./components/generic/DoubleTile/LinkButton/LinkButton.css);
 @import url(./components/generic/PlusButton/PlusButton.css);
-@import url(./components/generic/Select/Select.css);
 @import url(./components/generic/Tile/Tile.css);
 @import url(./components/generic/TileWithScroll/TileWithScroll.css);
+@import url(./components/generic/DoubleTile/DoubleTile.css);
+@import url(./components/generic/DoubleTile/LinkButton/LinkButton.css);
+@import url(./components/generic/Slider/Slider.css);
+@import url(./components/generic/Select/Select.css);
+@import url(./components/forms/Form/Form.css);
 
 @import url(./components/pages/About/About.css);
 @import url(./components/pages/Admin/Admin.css);
@@ -39,3 +41,4 @@
 @import url(./components/pages/Main/StickySection/StickySection.css);
 @import url(./components/pages/Main/Main.css);
 @import url(./components/pages/Product/Product.css);
+@import url(./components/pages/Catalog/Catalog.css);

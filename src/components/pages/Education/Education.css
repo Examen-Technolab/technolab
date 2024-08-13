@@ -13,7 +13,7 @@
   width: 100%;
   height: 100%;
   font-size: 30px;
-  color: var(--technolab-blue);
+  color: #fff;
 }
 
 .education__promo {
@@ -23,15 +23,18 @@
 }
 
 .education__promo_type_manuals {
+  background-color: var(--preliminary-color);
   background-image: url(../../../images/education/manuals.png);
 }
 
 .education__promo_type_academy {
+  background-color: var(--elementary-color);
   background-image: url(../../../images/education/academy.png);
   background-position: right bottom;
 }
 
 .education__promo_type_courses {
+  background-color: var(--basic-color);
   background-image: url(../../../images/education/courses.png);
   background-position: right bottom;
 }

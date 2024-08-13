@@ -24,13 +24,13 @@ function Education(props) {
                 promoClass={`education__promo education__promo_type_${item.type}`}
                 promo={
                   <>
-                    <h2 className="text text_uppercase education__title">{item.title}</h2>
+                    <h2 className="text_uppercase education__title">{item.title}</h2>
                   </>
                 }
 
                 about={
                   <>
-                    <p className="text education__about">{item.about}</p>
+                    <p className="education__about">{item.about}</p>
                   </>
                 }
 

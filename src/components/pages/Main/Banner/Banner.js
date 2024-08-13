@@ -80,7 +80,7 @@ function Banner(props) {
     <section className="banner">
       <div className={`banner__text-container ${textContainerClass}`}>
         <h2 className="banner__title">{props.list[currentIndex].title}</h2>
-        <p className="text text_uppercase banner__text">{props.list[currentIndex].about}</p>
+        <p className="text_uppercase banner__text">{props.list[currentIndex].about}</p>
         <a href={props.list[currentIndex].link.link} className="link banner__link">{props.list[currentIndex].link.text} &#10230;</a>
       </div>
       {

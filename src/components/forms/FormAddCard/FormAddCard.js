@@ -65,7 +65,7 @@ export const FormAddCard = observer((props) => {
       onFormSubmit={handleSubmit}
       formElements={
         <>
-          <h2 className="text text_uppercase">{props.isEdit ? 'Редактировать' : 'Добавить карточку'}</h2>
+          <h2 className="text_uppercase">{props.isEdit ? 'Редактировать' : 'Добавить карточку'}</h2>
           <FormSelect options={cardsStore.types} {...stores.type} />
           <FormInput req={true} {...stores.title} name="title" text="Название" />
           <FormInput {...stores.article} name="article" text="Артикул" />

@@ -76,9 +76,6 @@ function App() {
   //   window.addEventListener('scroll', handleScroll);
   // }, [])
 
-
-
-
   return (
     <div className="background">
       <div className="page">

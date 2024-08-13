@@ -1,12 +1,11 @@
 import React from 'react';
-import { NavLink, useHistory } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { observer } from 'mobx-react-lite';
 import { cardsStore } from '../../../stores/CardsStore';
 
 import { Card } from '../Card/Card';
 
 export const CardWithMenu = observer((props) => {
-  const history = useHistory();
   const [stepBack, setStepBack] = React.useState(1);
 
   function handleNavClick() {
@@ -14,9 +13,10 @@ export const CardWithMenu = observer((props) => {
   }
 
   function handleBackClick() {
-    cardsStore.deleteCurrentCard();
-    history.go(-stepBack);
-    //window.location.replace('/catalog');
+    setTimeout(() => {
+      cardsStore.deleteCurrentCard();
+    }, 1000)
+    window.location.replace('/catalog');
   }
 
   return (

@@ -29,7 +29,7 @@ export const Admin = observer(() => {
         formElements={
           appStore.isLoggedIn ?
             <>
-              <h2 className="text text_uppercase">Вы авторизованы</h2>
+              <h2 className="text_uppercase">Вы авторизованы</h2>
               <FormInput disabled={true} value={appStore.user} text="Логин" />
               <FormInput disabled={true} value={appStore.isAdmin ? 'админ' : 'нет'} text="Права" />
             </> :

@@ -1,9 +1,8 @@
 .btn {
   transition: all .3s linear;
-  margin-top: 10px;
 }
 
 .btn:hover {
-  background-image: url('../../../images/cards/default-btn.png');
   transform: scale(1.01);
+  color: #f1f1f1;
 }

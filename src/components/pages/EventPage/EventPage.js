@@ -38,7 +38,7 @@ function EventPage(props) {
       <h1 className="hidden">{eventPage}</h1>
       <button type="button" onClick={handleClick} className="event-page__back-btn">
         <Tile>
-          <p className="text text_uppercase event-page__back-btn-text">
+          <p className="text_uppercase event-page__back-btn-text">
             &#9668; Назад
           </p>
         </Tile>
@@ -52,7 +52,7 @@ function EventPage(props) {
           return (
             <li key={item.title}>
               <Tile tileClass={`event-page__link event-page__link_type_${item.type}`} link={item.link} linkTitle={item.linkTitle}>
-                <p className="text text_uppercase event-page__link-text">{item.title}</p>
+                <p className="text_uppercase event-page__link-text">{item.title}</p>
               </Tile>
             </li>
           )

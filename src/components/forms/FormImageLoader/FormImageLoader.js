@@ -96,7 +96,7 @@ function FormImageLoader(props) {
 
   return (
     <div className="image-loader">
-      <h3 className="text image-loader__title">{props.title}</h3>
+      <h3 className="image-loader__title">{props.title}</h3>
       <h3 className={`text text_uppercase image-loader__result ${messageClass}`}>{message}</h3>
       <FormInput setValue={props.setValue} value={props.value} name="product" text="Продукт/имя папки с картинками" />
       {

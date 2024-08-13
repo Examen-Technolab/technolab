@@ -12,9 +12,9 @@ function FileLinkWithImg(props) {
       }
       about={
         <>
-          <h2 className="text text_uppercase highlighted-text file-link-with-img__title">{props.file.title}</h2>
-          <h3 className="text text_uppercase file-link-with-img__subtitle">{props.file.subtitle}</h3>
-          <p className="text file-link-with-img__about">{props.file.text}</p>
+          <h2 className="text_uppercase highlighted-text file-link-with-img__title">{props.file.title}</h2>
+          <h3 className="text_uppercase file-link-with-img__subtitle">{props.file.subtitle}</h3>
+          <p className="file-link-with-img__about">{props.file.text}</p>
         </>
       }
       links={[

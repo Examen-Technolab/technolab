@@ -61,6 +61,27 @@ class Api {
       .then(this._checkResponse)
   }
 
+  //отправляем get запрос для получения дополнительных данных карточки по id и вкладке
+  patchCardInfo(id, data) {
+    return fetch(`${this._baseUrl}/info?id=${id}`, {
+      method: 'PATCH',
+      credentials: 'include',
+      headers: this._headers,
+      body: JSON.stringify(data)
+    })
+      .then(this._checkResponse)
+  }
+
+  //отправляем get запрос для получения дополнительных данных карточки по id и вкладке
+  deleteCardInfo(id) {
+    return fetch(`${this._baseUrl}/info?id=${id}`, {
+      method: 'DELETE',
+      credentials: 'include',
+      headers: this._headers,
+    })
+      .then(this._checkResponse)
+  }
+
   //отправляем get запрос для получения всех карточек
   getInitialCards() {
     return fetch(`${this._baseUrl}/cards`, {
@@ -144,7 +165,7 @@ class Api {
 
 }
 const api = new Api({
-  baseUrl: "http://localhost:80/technolab",// 'https://api.examen-technolab.ru/',
+  baseUrl: 'https://api.examen-technolab.ru/',
   headers: {
     'Content-Type': 'application/json; charset=utf-8',
   },

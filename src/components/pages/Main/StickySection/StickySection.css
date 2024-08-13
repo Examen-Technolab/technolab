@@ -163,7 +163,7 @@
   }
 
   .sticky-section__media {
-    max-width: 100%;
+    display: none;
   }
 
 }

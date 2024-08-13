@@ -98,13 +98,21 @@
 
 .card-with-menu__link-btn {
   color: #E9E9E9;
-  position: relative;
+  position: static;
   opacity: .7;
   transition: all .3s ease-in-out;
+  font-size: 12px;
+  padding-bottom: 15px;
 }
 
+
+.card-with-menu__link-btn a,
+.card-with-menu__link-btn p {
+  font-size: 12px;
+}
+
+
 .card-with-menu__link-btn:hover {
-  position: relative;
   opacity: 1;
 }
 

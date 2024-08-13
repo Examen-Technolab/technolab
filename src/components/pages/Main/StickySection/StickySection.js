@@ -47,14 +47,14 @@ function StickySection(props) {
       <div className="sticky-section__container">
         {props.listTitle ?
           <Tile tileClass="sticky-section__title-tile" level="elementary">
-            <h3 className="text text_uppercase">{props.listTitle.title}</h3>
+            <h3 className="text_uppercase">{props.listTitle.title}</h3>
           </Tile> : <></>}
         <ul className="sticky-section__grid sticky-section__list">
           {props.list}
         </ul>
         {props.listLink ?
           <Tile tileClass="sticky-section__title-tile" level="preliminary" link={props.listLink.link} linkTitle={props.listLink.linkTitle} target='_self'>
-            <h3 className="text text_uppercase">{props.listLink.title} &#10230;</h3>
+            <h3 className="text_uppercase">{props.listLink.title} &#10230;</h3>
           </Tile> : <></>}
 
       </div>

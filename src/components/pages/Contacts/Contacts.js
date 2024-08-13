@@ -19,8 +19,8 @@ function Contacts(props) {
   return (
     <main className="section contacts">
       <h1 className="hidden">Контакты</h1>
-      <Tile tileClass="text text_uppercase contacts__tile contacts__tile_type_main">
-        <p className="text text_uppercase contacts__main-text"> ООО &laquo;Экзамен-Технолаб&raquo; &mdash;&thinsp; один из&nbsp;ведущих российских
+      <Tile tileClass="text_uppercase contacts__tile contacts__tile_type_main">
+        <p className="text_uppercase contacts__main-text"> ООО &laquo;Экзамен-Технолаб&raquo; &mdash;&thinsp; один из&nbsp;ведущих российских
           разработчиков и&nbsp;поставщиков комплексных решений в&nbsp;сфере образования.</p>
       </Tile>
       {

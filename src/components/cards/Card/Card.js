@@ -22,7 +22,7 @@ export const Card = observer((props) => {
         window.location.replace('/catalog')
     }
     popupStore.open(<>
-      <p className="text">Вы уверены? Это действие нельзя отменить</p>
+      <p>Вы уверены? Это действие нельзя отменить</p>
       <Form btn="Удалить"
         onFormSubmit={handleSubmit} />
     </>);
@@ -63,9 +63,9 @@ export const Card = observer((props) => {
           </div> : <></>
       }
       <Slider sliderClass="card__slider" title={card.title} img={previews} />
-      <h2 className="text text_uppercase card__title">{card.title}</h2>
-      <p hidden={!card.article ? true : false} className="text text_uppercase card__article">Артикул: {card.article}</p>
-      <p hidden={!card.price ? true : false} className={`text text_uppercase card__price highlighted-text highlighted-text_level_${card.type}`}>Цена: {card.price} руб.</p>
+      <h2 className="text_uppercase card__title">{card.title}</h2>
+      <p hidden={!card.article ? true : false} className="text_uppercase card__article">Артикул: {card.article}</p>
+      <p hidden={!card.price ? true : false} className={`text_uppercase card__price highlighted-text highlighted-text_level_${card.type}`}>Цена: {card.price} руб.</p>
       {props.children}
     </div>
   );

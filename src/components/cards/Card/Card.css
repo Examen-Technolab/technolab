@@ -51,6 +51,7 @@
   -o-transition: transform .3s ease-in-out;
   transition: transform .3s ease-in-out;
   transition: transform .3s ease-in-out, -webslider-transform .3s ease-in-out;
+  position: relative;
 }
 
 /* МОДИФИКАТОРЫ КАРТОЧКИ ПО СОДЕРЖИМОМУ(ФОН) */
@@ -181,14 +182,24 @@
   font-size: 13.5px;
   text-align: center;
   margin: 0;
-  padding: 0 0 14px 0;
+  padding: 0 0 20px 0;
+
   color: #fff;
-  text-decoration: none;
   text-transform: uppercase;
+
   opacity: 1;
   grid-area: btn;
   box-sizing: border-box;
   transition: all .3s linear;
+
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+}
+
+
+.card__link-btn:hover {
+  color: #fff;
 }
 
 .card__link-btn_level_machines {
@@ -279,7 +290,7 @@
   .card__link-btn {
     width: 110px;
     height: 70px;
-    font-size: 11px;
-    padding-bottom: 3px;
+    font-size: 10px;
+    padding-bottom: 15px;
   }
 }

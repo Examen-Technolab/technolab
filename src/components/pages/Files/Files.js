@@ -5,6 +5,7 @@ import FileLinkWithImg from './FileLinkWithImg/FileLinkWithImg';
 
 import api from '../../../utils/Api';
 import { appStore } from '../../../stores/AppStore';
+import { levels } from '../../../utils/constants';
 
 function Files(props) {
 
@@ -41,13 +42,19 @@ function Files(props) {
       <ul className="files">
         {
           props.list.map((file, index) => {
+
+            const maxInd = levels.length - 1; //не учитываем станки
+
+            const ind = (index < maxInd) ? index : (index % maxInd)
+
+            const level = levels[ind]
             return (
               file.img ?
                 <li key={"file" + index}>
                   <FileLinkWithImg startLink={startLink} startImg={startImg} file={file} />
                 </li> :
                 <li key={"file" + index}>
-                  <FileLink startLink={startLink} linkTitle={props.linkTitle} item={file} index={index} />
+                  <FileLink level={level} startLink={startLink} linkTitle={props.linkTitle} item={file} index={index} />
                 </li>
             )
           })

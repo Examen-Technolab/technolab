@@ -1,9 +1,11 @@
 .description {
   border-bottom: solid 3px var(--technolab-blue);
+  margin-bottom: 15px;
 }
 
 .description:last-of-type {
   border-bottom-width: 0;
+  margin-bottom: 0;
 }
 
 .description_level_aero {
@@ -43,7 +45,7 @@
 }
 
 .description__list {
-  margin: 0 0 20px 0;
+  margin: 0;
   padding: 0 20px;
   list-style: disc;
   color: var(--grey);
@@ -58,6 +60,7 @@
   padding-left: 0px;
   text-transform: none;
   font-size: 18px;
+  line-height: 1.5;
   font-weight: 400;
 }
 
@@ -65,9 +68,9 @@
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 200;
-  margin: 0 0 5px;
+  margin: 10px 0 5px;
   opacity: .7;
-  padding: 0 20px 20px 0;
+  padding: 0 20px 10px 0;
   text-align: justify;
   line-height: 1.5;
 }

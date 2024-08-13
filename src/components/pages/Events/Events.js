@@ -92,7 +92,7 @@ function Events() {
 
       <Tile tileClass="events__title-tile">
         <BackgroundAnimation color="blue" />
-        <h1 className="text text_uppercase events__title">Мероприятия {new Date().getFullYear()} год</h1>
+        <h1 className="text_uppercase events__title">Мероприятия {new Date().getFullYear()} год</h1>
       </Tile>
       <ul className="events__list">
         {

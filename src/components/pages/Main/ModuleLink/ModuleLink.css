@@ -40,7 +40,6 @@
 
 .module-link__text {
   text-align: justify;
-  font-size: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,11 +141,6 @@
 
 @media (max-width: 1200px) {
 
-  .module-link__text {
-    font-size: 16px;
-  }
-
-
   .module-link__icon {
     width: 40px;
     height: 40px;
@@ -155,11 +149,6 @@
 }
 
 @media (max-width: 750px) {
-
-  .module-link__text {
-    font-size: 15px;
-  }
-
 
   .module-link__icon {
     width: 40px;

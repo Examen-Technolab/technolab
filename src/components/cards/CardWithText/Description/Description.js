@@ -9,7 +9,7 @@ function Description(props) {
           {
             props.list.map((item, index) => {
               return (
-                <li className="text description__list-item" key={index.toString() + Math.random().toString(16).slice(2)}>
+                <li className="description__list-item" key={index.toString() + Math.random().toString(16).slice(2)}>
                   {item}
                 </li>
               )
