@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e510c17c.css",
-    "main.js": "/static/js/main.b66535a6.js",
+    "main.css": "/static/css/main.d01c5f45.css",
+    "main.js": "/static/js/main.6c94dec2.js",
     "static/media/technobot.mp4": "/static/media/technobot.8827de7c75bcaf944c7a.mp4",
     "static/media/technobot-promo.mp4": "/static/media/technobot-promo.e3ef08a51935d9715359.mp4",
     "static/media/technobot-poster.jpg": "/static/media/technobot-poster.37fca189aa55bfa46471.jpg",
@@ -23,7 +23,6 @@
     "static/media/logo-pitching.svg": "/static/media/logo-pitching.e6bcd817f63aee6e657489a0ed5fbea1.svg",
     "static/media/dobot-icon-hover.svg": "/static/media/dobot-icon-hover.2795e2b0f3292bf11014fe3e57bb9b47.svg",
     "static/media/ittle-bits-icon-hover.svg": "/static/media/ittle-bits-icon-hover.29d099e813b81e36cd796b55562072ce.svg",
-    "static/media/courses.png": "/static/media/courses.93d8440868a9540687c1.png",
     "static/media/icon-research-grey.svg": "/static/media/icon-research-grey.3bb715c81d7139b02f5d.svg",
     "static/media/icon-research.svg": "/static/media/icon-research.53bb484dd474a4fb1faf.svg",
     "static/media/logo.svg": "/static/media/logo.1226ce116cc704d64002c270bce4c82e.svg",
@@ -51,6 +50,7 @@
     "static/media/manuals.png": "/static/media/manuals.aa07a46a2e1cf81b43a2.png",
     "static/media/bridge-registration.png": "/static/media/bridge-registration.ed5aaed09a03f6af8080.png",
     "static/media/table-pitching.png": "/static/media/table-pitching.5da20a4f642e73c581e0.png",
+    "static/media/courses.png": "/static/media/courses.80243da9f4534fae6e9e.png",
     "static/media/background-triangle.png": "/static/media/background-triangle.e2d7753968aadd063e54.png",
     "static/media/icon-preliminary.svg": "/static/media/icon-preliminary.a2787bb81652dd6b3a27.svg",
     "static/media/icon-preliminary-grey.svg": "/static/media/icon-preliminary-grey.da97dac08fb18c4b9ef0.svg",
@@ -68,11 +68,11 @@
     "static/media/btn-delete.svg": "/static/media/btn-delete.823b0cf1b0b7e9cb7cad.svg",
     "static/media/btn-edit.svg": "/static/media/btn-edit.8667ac4a523e8fc42e59.svg",
     "static/media/btn-add.svg": "/static/media/btn-add.136676119fb8aadb1bfa.svg",
-    "main.e510c17c.css.map": "/static/css/main.e510c17c.css.map",
-    "main.b66535a6.js.map": "/static/js/main.b66535a6.js.map"
+    "main.d01c5f45.css.map": "/static/css/main.d01c5f45.css.map",
+    "main.6c94dec2.js.map": "/static/js/main.6c94dec2.js.map"
   },
   "entrypoints": [
-    "static/css/main.e510c17c.css",
-    "static/js/main.b66535a6.js"
+    "static/css/main.d01c5f45.css",
+    "static/js/main.6c94dec2.js"
   ]
 }
