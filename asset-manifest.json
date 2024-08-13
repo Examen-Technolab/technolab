@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.d01c5f45.css",
+    "main.css": "/static/css/main.f3c13e4b.css",
     "main.js": "/static/js/main.6c94dec2.js",
     "static/media/technobot.mp4": "/static/media/technobot.8827de7c75bcaf944c7a.mp4",
     "static/media/technobot-promo.mp4": "/static/media/technobot-promo.e3ef08a51935d9715359.mp4",
@@ -50,8 +50,8 @@
     "static/media/manuals.png": "/static/media/manuals.aa07a46a2e1cf81b43a2.png",
     "static/media/bridge-registration.png": "/static/media/bridge-registration.ed5aaed09a03f6af8080.png",
     "static/media/table-pitching.png": "/static/media/table-pitching.5da20a4f642e73c581e0.png",
-    "static/media/courses.png": "/static/media/courses.80243da9f4534fae6e9e.png",
     "static/media/background-triangle.png": "/static/media/background-triangle.e2d7753968aadd063e54.png",
+    "static/media/courses.png": "/static/media/courses.d4bd7de3123a057ab4fd.png",
     "static/media/icon-preliminary.svg": "/static/media/icon-preliminary.a2787bb81652dd6b3a27.svg",
     "static/media/icon-preliminary-grey.svg": "/static/media/icon-preliminary-grey.da97dac08fb18c4b9ef0.svg",
     "static/media/bridge-field.png": "/static/media/bridge-field.075a64547766ea3ff01a.png",
@@ -68,11 +68,11 @@
     "static/media/btn-delete.svg": "/static/media/btn-delete.823b0cf1b0b7e9cb7cad.svg",
     "static/media/btn-edit.svg": "/static/media/btn-edit.8667ac4a523e8fc42e59.svg",
     "static/media/btn-add.svg": "/static/media/btn-add.136676119fb8aadb1bfa.svg",
-    "main.d01c5f45.css.map": "/static/css/main.d01c5f45.css.map",
+    "main.f3c13e4b.css.map": "/static/css/main.f3c13e4b.css.map",
     "main.6c94dec2.js.map": "/static/js/main.6c94dec2.js.map"
   },
   "entrypoints": [
-    "static/css/main.d01c5f45.css",
+    "static/css/main.f3c13e4b.css",
     "static/js/main.6c94dec2.js"
   ]
 }
