@@ -14,14 +14,15 @@ import { InputStore } from "../../../stores/InputStore";
 
 
 const stores = {
+  id: new InputStore(),
   title: new InputStore(),
   newLi: new InputStore(),
   note: new InputStore(),
-  haveValues: function () {
-    let result = true;
+  haveValue: function () {
+    let result = false;
     for (let key in this) {
-      if (key !== 'haveValues') {
-        result = result && (this[key].value !== '');
+      if (key !== 'haveValue') {
+        result = result || (this[key].value !== '');
       }
     }
     return result;
@@ -29,49 +30,43 @@ const stores = {
 
 }
 
-export const FormEditDescription = observer((props) => {
+export const FormEditDescription = observer(({ submitHandler, item }) => {
 
   const [newList, setNewList] = useState([]);
 
   function handleSubmit() {
-
-    console.log('submit')
+    submitHandler({
+      id: stores.id.value,
+      title: stores.title.value,
+      list: newList.join("','"),
+      note: stores.note.value
+    })
   }
 
   function handleKeyDown(e) {
-
-    // if (e.key === 'Enter') {
-    //   if(e.target.name === 'newLi' && stores.newLi.value !== ''){
-
-    //   }
-    //   console.log(e.target.name);
-    // }
-    if (e.key === "Enter" && stores.newLi.value !== '') {
-      console.log(e.target);
+    if (e.key === "Control" && stores.newLi.value !== '') {
       setNewList([...newList, stores.newLi.value]);
       stores.newLi.setValue('');
     }
   }
 
-  function handleDoubleClickOnLi(e) {
-    console.log(e.target.id)
-
-  }
-
   useEffect(() => {
-
-    console.log('change');
-    console.log(newList);
-
-  }, [newList])
+    console.log(item);
+    if (item) {
+      stores.id.setValue(item.id);
+      stores.title.setValue(item.title);
+      stores.note.setValue(item.note);
+      setNewList(item.list)
+    }
+  }, [])
 
   return (
     <Form btn="Сохранить"
-      btnDisabled={stores.haveValues() ? false : true}
+      btnDisabled={stores.haveValue() ? false : true}
       onFormSubmit={handleSubmit}
       formElements={
         <>
-          <h2 className="text_uppercase">Добавить блок описания</h2>
+          <h2 className="text_uppercase">{item ? 'Редактировать' : 'Добавить'} блок описания</h2>
           <FormTextarea  {...stores.title} name="title" text="Заголовок" />
           <div>
             <h3 className="text_uppercase">Список</h3>
@@ -79,16 +74,26 @@ export const FormEditDescription = observer((props) => {
               {
                 newList.map((li, index) => {
                   return (
-                    <LiInput index={index} key={index} setValue={(val) => {
-                      let array = newList;
-                      array[index] = val;
-                      setNewList(array);
-                    }} value={li} />
+                    <LiInput
+                      deleteLi={() => {
+                        let array = [...newList];
+                        array.splice(index, 1);
+                        setNewList(array);
+                      }}
+                      index={index}
+                      key={index}
+                      setValue={(val) => {
+                        let array = newList;
+                        array[index] = val;
+                        setNewList(array);
+                      }}
+                      value={li}
+                    />
                   )
                 })
               }
             </ul>
-            <FormInput handleKeyDown={handleKeyDown} {...stores.newLi} name="newLi" text="Новый элемент списка. Будет добавлен после нажатия на Enter" />
+            <FormInput handleKeyDown={handleKeyDown} {...stores.newLi} name="newLi" text="Новый элемент списка. Будет добавлен после нажатия на Ctrl" />
           </div>
           <FormTextarea {...stores.note} name="note" text="Заметка" />
         </>

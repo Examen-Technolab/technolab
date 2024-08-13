@@ -10,6 +10,17 @@
   z-index: 3;
 }
 
+.card-with-text__list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.card-with-text__admin-btns {
+  position: static !important;
+  align-self: flex-end;
+}
+
 @media (max-width: 1200px) {
 
   .card-with-text {

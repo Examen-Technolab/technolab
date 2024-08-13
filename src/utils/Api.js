@@ -61,6 +61,16 @@ class Api {
       .then(this._checkResponse)
   }
 
+  postCardInfo(data) {
+    return fetch(`${this._baseUrl}/info`, {
+      method: 'POST',
+      credentials: 'include',
+      headers: this._headers,
+      body: JSON.stringify(data)
+    })
+      .then(this._checkResponse)
+  }
+
   //отправляем get запрос для получения дополнительных данных карточки по id и вкладке
   patchCardInfo(id, data) {
     return fetch(`${this._baseUrl}/info?id=${id}`, {
@@ -165,7 +175,7 @@ class Api {
 
 }
 const api = new Api({
-  baseUrl: 'https://api.examen-technolab.ru/',
+  baseUrl: 'http://localhost:80/technolab',  //'https://api.examen-technolab.ru/',
   headers: {
     'Content-Type': 'application/json; charset=utf-8',
   },

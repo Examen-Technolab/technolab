@@ -7,6 +7,7 @@ import Form from '../../forms/Form/Form';
 import { appStore } from '../../../stores/AppStore';
 import { popupStore } from '../../../stores/PopupStore';
 import { cardsStore } from '../../../stores/CardsStore';
+import { CardAdminBtns } from '../CardAdminBtns/CardAdminBtns';
 
 export const Card = observer((props) => {
 
@@ -57,10 +58,11 @@ export const Card = observer((props) => {
     <div className={`card card_type_${props.type} card_level_${card.type}`}>
       {
         appStore.isLoggedIn ?
-          <div className="card__admin-btns">
-            <button type="button" onClick={onEditClick} title="Редактировать." className="card__admin-btn card__admin-btn_type_edit"></button>
-            <button type="button" onClick={onDeleteClick} title="Удалить." className="card__admin-btn card__admin-btn_type_delete"></button>
-          </div> : <></>
+          <CardAdminBtns
+            onEditClick={onEditClick}
+            onDeleteClick={onDeleteClick}
+          />
+          : <></>
       }
       <Slider sliderClass="card__slider" title={card.title} img={previews} />
       <h2 className="text_uppercase card__title">{card.title}</h2>

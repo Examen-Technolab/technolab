@@ -1,3 +1,4 @@
+import { CardAdminBtns } from '../../cards/CardAdminBtns/CardAdminBtns';
 import style from './LiInput.module.css';
 
 import { useEffect, useRef, useState } from 'react';
@@ -66,8 +67,9 @@ export const LiInput = (props) => {
   }, [myRef, disabled]);
 
   return (
-    <li ref={myRef} onDoubleClick={handleDoubleClick} id={props.index}>
+    <li className={style.li} ref={myRef} onDoubleClick={handleDoubleClick} id={props.index}>
       <input onKeyDown={handleKeyDown} onChange={handleChange} disabled={disabled} className={inputClass} value={newValue}></input>
+      <button type='button' onClick={props.deleteLi}>Удалить</button>
     </li>
   )
 }
