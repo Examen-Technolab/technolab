@@ -12,15 +12,15 @@ text - текст плейсхолдера и подписи поля
 инпут имеет свойства multiple и accept="image/*,image/jpeg"
 */
 
-function FormInput(props) {
+function FormInput({ disabled, name, text, value, setValue, handleKeyDown, required, handleChange, type, errMessage, errMessageClass }) {
   //const inputValidation = new InputValidator(setInputClass, setErrMessageClass, setErrMessage, props.setInputValid);
   //const regex = undefined //(!props.type) ? REGEX_NAME : (props.type === 'email') ? REGEX_EMAIL : undefined;
 
-  function handleChange(e) {
+  function changeHandler(e) {
     //задаем значение инпута при изменении его состояния
 
     // inputValidation.isValid(e);
-    props.setValue(e.target.value);
+    setValue(e.target.value);
     // if (props.setFormErrClass) props.setFormErrClass('visually-hidden');
   }
 
@@ -29,17 +29,17 @@ function FormInput(props) {
   // }, [props.isOpen])
 
   return (
-    <div className="form-input">
-      <label htmlFor={props.name} className="form-input__title">{props.text}</label>
+    <div className={"form-input" + (disabled ? " form-input_disabled" : '')}>
+      <label htmlFor={name} className="form-input__title">{text}</label>
       {/* <input disabled={props.disabled} value={props.value} pattern={regex} onChange={handleChange} required={props.required} className={props.class} id={`${props.type ? props.type : "name"}-input`} type={`${props.type ? props.type : "text"}`} name={`${props.type ? props.type : "userName"}`}
         placeholder={props.text} />  как было*/}
 
-      <input disabled={props.disabled} value={props.value} onKeyDown={props.handleKeyDown ? props.handleKeyDown : () => { }}
-        onChange={props.handleChange ? props.handleChange : handleChange} required={props.required}
-        className='form-input__input' id={props.name} type={`${props.type ? props.type : "text"}`} name={props.name}
-        placeholder={props.text} multiple accept="image/*,image/jpeg" />
+      <input disabled={disabled} value={value} onKeyDown={handleKeyDown ? handleKeyDown : () => { }}
+        onChange={handleChange ? handleChange : changeHandler} required={required}
+        className='form-input__input' id={name} type={`${type ? type : "text"}`} name={name}
+        placeholder={text} multiple accept="image/*,image/jpeg" />
 
-      <span className={props.errMessageClass}>{props.errMessage}</span>
+      <span className={errMessageClass}>{errMessage}</span>
     </div>
   )
 }

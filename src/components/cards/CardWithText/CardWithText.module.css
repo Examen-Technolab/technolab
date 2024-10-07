@@ -1,0 +1,81 @@
+.cardWithText {
+  background-color: var(--tile-background);
+  height: 550px;
+  min-width: 40vw;
+  width: 40vw;
+  max-width: 600px;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 5px 0 25px 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.cardWithText__listItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.cardWithText__btns {
+  position: static !important;
+  align-self: flex-end;
+}
+
+.formContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background: none;
+  border: none;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  transition: all linear .3s;
+  background-image: url(../../../images/btn-cross.svg);
+  background-color: var(--technolab-blue);
+  border-radius: 100%;
+  cursor: pointer;
+  opacity: .6;
+}
+
+.closeBtn:hover {
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+
+  .cardWithText {
+    width: 45vw;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .cardWithText {
+    width: 390px !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .cardWithText {
+    width: 290px !important;
+    background-color: rgba(241, 240, 240, .9);
+    height: 400px;
+  }
+}

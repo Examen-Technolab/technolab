@@ -1,7 +1,6 @@
 import { observer } from 'mobx-react-lite';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { popupStore } from '../../../stores/PopupStore';
-import { useEffect } from 'react';
 
 export const Slider = observer((props) => {
 
@@ -22,8 +21,6 @@ export const Slider = observer((props) => {
     popupStore.open();
     popupStore.setContent(<Slider initIndex={imgIndex} title={props.title} img={props.img} />)
   }
-
-
 
   return (
     <>

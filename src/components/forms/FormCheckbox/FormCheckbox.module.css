@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin: 10px 0 15px 0;
+}
+
+.input {
+  cursor: pointer;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--grey);
+  cursor: pointer;
+}

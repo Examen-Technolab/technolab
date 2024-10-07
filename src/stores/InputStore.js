@@ -10,8 +10,9 @@ export class InputStore {
 
   errMessage = 'Что-то пошло не так...';
 
-  constructor() {
+  constructor(val = '') {
     makeAutoObservable(this);
+    this.value = val;
   }
 
   setValue = (newValue) => {

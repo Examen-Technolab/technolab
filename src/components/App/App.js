@@ -19,7 +19,7 @@ import { Product } from '../pages/Product/Product';
 import Contacts from '../pages/Contacts/Contacts';
 import Files from '../pages/Files/Files';
 import About from '../pages/About/About';
-import Events from '../pages/Events/Events';
+import { Events } from '../pages/Events/Events';
 import EventPage from '../pages/EventPage/EventPage';
 
 import FilesWithFilter from '../pages/FilesWithFilter/FilesWithFilter';
@@ -35,6 +35,7 @@ import { Catalog } from '../pages/Catalog/Catalog';
 
 
 import { appStore } from '../../stores/AppStore';
+import { HiddenProduct } from '../pages/Product/HiddenProduct/HiddenProduct';
 
 
 
@@ -96,6 +97,9 @@ function App() {
             <Route path={`/catalog/:id`}>
               <Product />
             </Route>
+            <Route path={`/hidden/:id`}>
+              <HiddenProduct />
+            </Route>
             <Route exact path="/education">
               <Education list={education} setList={setEducation} title="Обучение" />
             </Route>
@@ -114,17 +118,20 @@ function App() {
             <Route path="/partners">
               <Files list={partners} setList={setPartners} title="Партнерам" />
             </Route>
-            {/* <Route exact path="/events">
+            <Route exact path="/events">
               <Events />
             </Route>
             <Route path={`/events/:eventUrl`}>
               <EventPage />
-            </Route> */}
+            </Route>
             <Route exact path="/admin">
               <Admin />
             </Route>
+            <Route path="/notFound">
+              <FullScreenBanner src="/images/banner/404.svg" alt="Страница не найдена" />
+            </Route>
             <Route path="*">
-              <FullScreenBanner src={image404} alt="Страница не найдена" />
+              <Redirect to="/notFound" />
             </Route>
           </Switch>
 

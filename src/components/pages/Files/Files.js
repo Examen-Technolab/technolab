@@ -5,7 +5,7 @@ import FileLinkWithImg from './FileLinkWithImg/FileLinkWithImg';
 
 import api from '../../../utils/Api';
 import { appStore } from '../../../stores/AppStore';
-import { levels } from '../../../utils/constants';
+import { colors } from '../../../utils/constants';
 
 function Files(props) {
 
@@ -43,11 +43,11 @@ function Files(props) {
         {
           props.list.map((file, index) => {
 
-            const maxInd = levels.length - 1; //не учитываем станки
+            const maxInd = colors.length; //не учитываем станки
 
             const ind = (index < maxInd) ? index : (index % maxInd)
 
-            const level = levels[ind]
+            const level = colors[ind]
             return (
               file.img ?
                 <li key={"file" + index}>

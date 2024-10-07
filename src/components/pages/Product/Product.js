@@ -1,21 +1,25 @@
-import React, { useState } from 'react';
-import { Switch, useRouteMatch, useParams, Route } from 'react-router-dom';
+import React from 'react';
+import { useRouteMatch, useParams } from 'react-router-dom';
 import { observer } from 'mobx-react-lite';
-
-import { CardWithMenu } from '../../cards/CardWithMenu/CardWithMenu';
-import { CardWithText } from '../../cards/CardWithText/CardWithText';
 
 import api from '../../../utils/Api';
 import { cardsStore } from '../../../stores/CardsStore';
 import { appStore } from '../../../stores/AppStore';
+import { ProductItem } from './ProductItem/ProductItem';
 
 export const Product = observer(() => {
   let { id } = useParams();
+  const { url, path } = useRouteMatch();
 
   React.useEffect(() => {
+    cardsStore.setCurrentCard({ title: '', level: '' })
     if (cardsStore.checkIsLoaded()) {
       const card = cardsStore.cards.find(card => card.id == id);
-      cardsStore.setCurrentCard(card);
+      if (card)
+        cardsStore.setCurrentCard(card);
+      else {
+        //window.location.replace('/404');
+      }
     } else {
       appStore.setLoading(true);
       api.getCard(id)
@@ -24,33 +28,28 @@ export const Product = observer(() => {
         })
         .catch((err) => {
           console.log(err);
+          //window.location.replace('/404');
         })
         .finally(() => {
           appStore.setLoading(false);
         })
     }
+    return () => {
+
+      cardsStore.setCurrentCard({ title: '', level: '' })
+    }
   }, []);
 
-  const { url, path } = useRouteMatch();
 
   return (
-    <section className="section product">
-      <h1 className="hidden"> {cardsStore.currentCard.title} </h1>
-      <CardWithMenu url={url} card={cardsStore.currentCard} />
-      <Switch>
-        <Route exact path={`${path}/:tab`}>
-          <CardWithText cardId={id} level={cardsStore.currentCard.type} />
-        </Route>
-        {/* <Route path={`${path}/specifications`}>
-              <CardWithText list={specifications} level={card.type} />
-            </Route> */}
-        {/* <Route path={`${path}/downloads`}>
-              <CardWithText list={[{
-                title: "Раздел дополняется", list: [],
-                note: '',
-              }]} level={card.type} />
-            </Route> */}
-      </Switch>
-    </section>
+    !appStore.loading &&
+    <ProductItem
+      url={url}
+      title={cardsStore.currentCard.title}
+      card={cardsStore.currentCard}
+      path={path}
+      id={id}
+      level={cardsStore.currentCard.type}
+    />
   );
 })

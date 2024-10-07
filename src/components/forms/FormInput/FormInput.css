@@ -4,6 +4,16 @@
   margin-bottom: 10px;
 }
 
+.form-input_disabled {
+  opacity: .6;
+}
+
+.form-input_disabled .form-input__input:hover {
+  box-shadow: none;
+  opacity: .6;
+  cursor: not-allowed;
+}
+
 .form-input__title {
   font-size: 14px;
   font-weight: 400;

@@ -2,19 +2,21 @@ import { useHistory, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 import Tile from '../../generic/Tile/Tile';
-import eventList from '../../../utils/eventList';
 import TileWithScroll from '../../generic/TileWithScroll/TileWithScroll';
 import Paragraph from './Paragraph/Paragraph';
 
 import table from '../../../images/events/table-bridge.png'
 
 import { appStore } from '../../../stores/AppStore';
+import { eventsStore } from '../../../stores/EventsStore';
+import api from '../../../utils/Api';
 
 
 function EventPage(props) {
+
   const { eventUrl } = useParams();
-  const eventPage = eventUrl.replace("-archive", "");
-  const eventData = eventList.find(item => item.eventPage === eventPage);
+
+  const [eventData, setEventData] = useState({ links: [], description: [] });
 
   const [links, setLinks] = useState([]);
 
@@ -26,16 +28,43 @@ function EventPage(props) {
 
   useEffect(() => {
     appStore.setLoading(true);
-    setLinks([eventUrl === eventPage ? eventData.registration : eventData.results, ...eventData.links]);
+
+    api.getData('events')
+      .then(data => {
+        const list = eventsStore.formLists(data);
+
+        const item = list.find(item => item.code === eventUrl);
+
+        if (item) {
+
+          const event = { ...item };
+          event.description = JSON.parse(event.description);
+          event.links = JSON.parse(event.links);
+
+
+          setEventData(event);
+          const newLinks = [...event.links];
+          if (event.btnLink) {
+            if (!event.isArchived) {
+              newLinks.unshift({ body: event.btnLink, title: event.btnText || 'Регистрация', type: 'highlighted' })
+            } else if (event.isLinkResult) {
+              newLinks.unshift({ body: event.btnLink, title: event.btnText || 'Результаты', type: 'highlighted' })
+            }
+          }
+          setLinks([...newLinks]);
+        } else window.location.replace('/notFound');
+      })
+      .finally(() => {
+        appStore.setLoading(false);
+      })
+
+
   }, [])
 
-  useEffect(() => {
-    if (links.length) appStore.setLoading(false);
-  }, [links])
 
   return (
     <main className="section event-page">
-      <h1 className="hidden">{eventPage}</h1>
+      <h1 className="hidden">{eventData.title}</h1>
       <button type="button" onClick={handleClick} className="event-page__back-btn">
         <Tile>
           <p className="text_uppercase event-page__back-btn-text">
@@ -44,14 +73,14 @@ function EventPage(props) {
         </Tile>
       </button>
       <Tile tileClass="event-page__title-tile">
-        <img src={eventData.logo} className="event-page__logo" alt={`Логотип ${eventData.cardTitle}`} />
-        <h1 className="event-page__title">{eventData.cardTitle}</h1>
+        <img src={eventData.logo} className="event-page__logo" alt={`Логотип ${eventData.title}`} />
+        <h1 className="event-page__title">{eventData.title}</h1>
       </Tile>
       <ul className="event-page__list">
         {links.map(item => {
           return (
             <li key={item.title}>
-              <Tile tileClass={`event-page__link event-page__link_type_${item.type}`} link={item.link} linkTitle={item.linkTitle}>
+              <Tile tileClass={`event-page__link event-page__link_type_${item.type}`} link={item.body} linkTitle={item.title}>
                 <p className="text_uppercase event-page__link-text">{item.title}</p>
               </Tile>
             </li>
@@ -63,12 +92,12 @@ function EventPage(props) {
         {
           eventData.description.map(item => {
             return (
-              <Paragraph key={item.title} title={item.title} text={item.text} />
+              <Paragraph key={item.title} title={item.title} text={item.body} />
             )
           })
         }
-        <h3 className="paragraph__title highlighted-text event-page__scores">{eventData.table.title}</h3>
-        <img className="event-page__table" src={eventData.table.src} alt="Таблица начислений очков" />
+        {/* <h3 className="paragraph__title highlighted-text event-page__scores">{eventData.table.title}</h3>
+        <img className="event-page__table" src={eventData.table.src} alt="Таблица начислений очков" /> */}
       </TileWithScroll>
     </main >
   );

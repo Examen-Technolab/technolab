@@ -12,6 +12,7 @@
 
 .form__container {
   display: flex;
+  gap: 5px;
   flex-direction: column;
   margin-top: 20px;
 }

@@ -102,6 +102,26 @@ class Api {
       .then(this._checkResponse)
   }
 
+  //отправляем get запрос для получения скрытых карточек
+  getHiddenCards() {
+    return fetch(`${this._baseUrl}/hidden`, {
+      method: 'GET',
+      credentials: 'include',
+      headers: this._headers,
+    })
+      .then(this._checkResponse)
+  }
+
+  //отправляем get запрос для получения скрытой карточки
+  getHiddenCard(id, tab) {
+    return fetch(`${this._baseUrl}/hidden?id=${id}&tab=${tab}`, {
+      method: 'GET',
+      credentials: 'include',
+      headers: this._headers,
+    })
+      .then(this._checkResponse)
+  }
+
   //отправляем get запрос для получения данных по урлу param
   getData(param) {
     return fetch(`${this._baseUrl}/${param}`, {
@@ -173,9 +193,55 @@ class Api {
       .then(this._checkResponse)
   }
 
+  deleteImages(dir, mainDir) {
+    return fetch(`${this._baseUrl}/image?mainDir=${mainDir}&dir=${dir}`, {
+      method: 'DELETE',
+      credentials: 'include',
+    })
+      .then(this._checkResponse)
+  }
+
+  getCheckProduct(product) {
+    return fetch(`${this._baseUrl}/product?product=${product}`, {
+      method: 'GET',
+      credentials: 'include',
+      headers: this._headers,
+    })
+      .then(this._checkResponse)
+  }
+
+  postEvent(data) {
+    return fetch(`${this._baseUrl}/events`, {
+      method: 'POST',
+      credentials: 'include',
+      headers: this._headers,
+      body: JSON.stringify(data)
+    })
+      .then(this._checkResponse)
+  }
+
+  patchEvent(data, id) {
+    return fetch(`${this._baseUrl}/event?id=${id}`, {
+      method: 'PATCH',
+      credentials: 'include',
+      headers: this._headers,
+      body: JSON.stringify(data)
+    })
+      .then(this._checkResponse)
+  }
+
+  deleteEvent(id) {
+    return fetch(`${this._baseUrl}/event?id=${id}`, {
+      method: 'DELETE',
+      credentials: 'include',
+      headers: this._headers,
+    })
+      .then(this._checkResponse)
+  }
+
 }
 const api = new Api({
-  baseUrl: 'http://localhost:80/technolab',  //'https://api.examen-technolab.ru/',
+  baseUrl: 'http://localhost/technolab',// 'https://api.examen-technolab.ru',
   headers: {
     'Content-Type': 'application/json; charset=utf-8',
   },

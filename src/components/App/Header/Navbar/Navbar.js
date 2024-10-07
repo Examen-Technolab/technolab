@@ -8,6 +8,14 @@ const scrollToTop = () => {
   window.scrollTo(0, 0);
 }
 
+// const clickHandler = (link) =>{
+//   if(link === '/catalog')
+//     setTimeout(()=>{
+//   window.location.reload();
+//   }, 100);
+//   scrollToTop();
+// }
+
 function Navbar({ navLinks }) {
 
   return (

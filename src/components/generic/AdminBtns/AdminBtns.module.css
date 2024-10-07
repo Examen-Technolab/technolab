@@ -43,3 +43,8 @@
 .btn_type_delete {
   background-image: url(../../../images/btn-delete.svg);
 }
+
+.btn_type_close {
+  background-image: url(../../../images/btn-cross.svg);
+  background-size: 200% 200%;
+}

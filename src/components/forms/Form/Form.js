@@ -11,13 +11,12 @@ function Form(props) {
 
   useEffect(() => {
     if (popupStore.keydown === 'Enter') {
-      console.log('enter');
       props.onFormSubmit();
     }
   }, [popupStore.keydown])
 
   return (
-    <form className={props.formClass ? props.formClass : 'form'} name={props.name}>
+    <form onSubmit={handleSubmit} className={props.formClass ? props.formClass : 'form'} name={props.name}>
       <div className="form__container">
         {props.formElements}
       </div>

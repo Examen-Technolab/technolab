@@ -14,7 +14,7 @@ import littleBitsIconHover from '../images/main/ittle-bits-icon-hover.svg';
 import spheroIcon from '../images/main/sphero-icon.svg';
 import spheroIconHover from '../images/main/sphero-icon-hover.svg';
 
-export const levels = ["preliminary", "elementary", "basic", "professional", "research", "aero", "machines"]
+export const colors = ["preliminary", "elementary", "basic", "research"]
 
 export const logosObject = {
   "preliminary": preliminary,

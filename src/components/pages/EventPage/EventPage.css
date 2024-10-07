@@ -101,6 +101,7 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .event-page__link_type_highlighted {
@@ -109,7 +110,7 @@
   -webkit-transition: all .4s linear;
   -o-transition: all .4s linear;
   transition: all .4s linear;
-  background-image: url(../../../images/events/bridge-registration.png);
+  /* background-image: url(../../../images/events/bridge-registration.png); */
 }
 
 .event-page__link_type_field {

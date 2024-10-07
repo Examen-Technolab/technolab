@@ -1,0 +1,42 @@
+.li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px dashed var(--technolab-blue);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+textarea {
+  background: var(--tile-background);
+  border-radius: 8px;
+  border: none;
+  padding: 15px;
+  transition: all .3s linear;
+  color: var(--grey);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 10px 0;
+  width: 50%;
+}
+
+.li button {
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.saveBtn {
+  background-color: green;
+}
+
+.delBtn {
+  background-color: rgb(119, 16, 16);
+}

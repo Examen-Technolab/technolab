@@ -1,18 +1,29 @@
 import { observer } from 'mobx-react-lite';
 
 import { Slider } from '../../generic/Slider/Slider';
-import { FormAddCard } from '../../forms/FormAddCard/FormAddCard';
 import Form from '../../forms/Form/Form';
 
 import { appStore } from '../../../stores/AppStore';
 import { popupStore } from '../../../stores/PopupStore';
 import { cardsStore } from '../../../stores/CardsStore';
-import { CardAdminBtns } from '../CardAdminBtns/CardAdminBtns';
+import { AdminBtns } from '../../generic/AdminBtns/AdminBtns';
+import { FormEditCard } from '../../forms/FormEditCard/FormEditCard';
+import { useEffect, useState } from 'react';
 
-export const Card = observer((props) => {
+function formPreviews(fileName, lastIndex, directory) {
+  const previews = ['/images/cards/' + directory + '/' + fileName];
+  for (let i = 1; i <= lastIndex; i++) {
+    const pointIndex = previews[0].lastIndexOf('.');
+    previews.push(previews[0].slice(0, pointIndex) + `-${i}` + previews[0].slice(pointIndex, previews[0].length));
+  }
+
+  return previews;
+}
+
+export const Card = observer(({ card, type, children }) => {
 
   function onEditClick() {
-    popupStore.open(<FormAddCard card={card} isEdit={true} />);
+    popupStore.open(<FormEditCard card={card} previewList={previewList} />);
   }
 
   function onDeleteClick() {
@@ -29,21 +40,15 @@ export const Card = observer((props) => {
     </>);
   }
 
-  function formPreviews(fileName, lastIndex, directory) {
-    const previews = ['https://examen-technolab.ru/images/cards/' + directory + '/' + fileName];
-    for (let i = 1; i <= lastIndex; i++) {
-      const pointIndex = previews[0].lastIndexOf('.');
-      previews.push(previews[0].slice(0, pointIndex) + `-${i}` + previews[0].slice(pointIndex, previews[0].length));
-    }
+  const [previewList, setPreviewList] = useState([]);
 
-    return previews;
-  }
+  useEffect(() => {
+    // формируем массив превьюшек
+    const previews = formPreviews(card.preview, card.lastPreview, card.product);
+    setPreviewList(previews)
 
-  const card = props.card;
+  }, [])
 
-
-  // формируем массив превьюшек
-  const previews = formPreviews(card.preview, card.lastPreview, card.product);
 
 
   //console.log(props.img[0].replace("-preview", ""));
@@ -55,20 +60,20 @@ export const Card = observer((props) => {
 
 
   return (
-    <div className={`card card_type_${props.type} card_level_${card.type}`}>
+    <div className={`card card_type_${type} card_level_${card.type} ${card.isHidden ? 'card_hidden' : ''}`}>
       {
         appStore.isLoggedIn ?
-          <CardAdminBtns
+          <AdminBtns
             onEditClick={onEditClick}
             onDeleteClick={onDeleteClick}
           />
           : <></>
       }
-      <Slider sliderClass="card__slider" title={card.title} img={previews} />
+      <Slider sliderClass="card__slider" title={card.title} img={previewList} />
       <h2 className="text_uppercase card__title">{card.title}</h2>
       <p hidden={!card.article ? true : false} className="text_uppercase card__article">Артикул: {card.article}</p>
       <p hidden={!card.price ? true : false} className={`text_uppercase card__price highlighted-text highlighted-text_level_${card.type}`}>Цена: {card.price} руб.</p>
-      {props.children}
+      {children}
     </div>
   );
 });

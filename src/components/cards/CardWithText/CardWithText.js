@@ -11,9 +11,11 @@ import { FormEditDescription } from '../../forms/FormEditDescription/FormEditDes
 
 import { appStore } from '../../../stores/AppStore';
 import { cardsStore } from '../../../stores/CardsStore';
-import { CardAdminBtns } from '../CardAdminBtns/CardAdminBtns';
+import { AdminBtns } from '../../generic/AdminBtns/AdminBtns';
 import { popupStore } from '../../../stores/PopupStore';
 import Form from '../../forms/Form/Form';
+
+import style from './CardWithText.module.css'
 
 export const CardWithText = observer((props) => {
   let { tab } = useParams();
@@ -26,7 +28,11 @@ export const CardWithText = observer((props) => {
 
 
   function onPlusBtnClick() {
-    setElement(<FormEditDescription addHandler={addHandler} />);
+    setElement(
+      <div className={style.formContainer}>
+        <button className={style.closeBtn} type='button' onClick={() => { setElement(plusElement) }}></button>
+        <FormEditDescription submitHandler={addHandler} />
+      </div>);
   }
 
   function addHandler(info) {
@@ -34,7 +40,6 @@ export const CardWithText = observer((props) => {
 
     const data = {
       card_id: props.cardId,
-      tab: tab,
       ...info
     }
     api.postCardInfo(data)
@@ -47,18 +52,17 @@ export const CardWithText = observer((props) => {
       })
       .finally(() => {
         appStore.setLoading(false);
-        setElement(plusElement)
+        setElement(plusElement);
+        window.location.reload();
       })
   }
 
   function editHandler(info) {
 
-    console.log(info)
     appStore.setLoading(true);
 
     const data = {
       card_id: props.cardId,
-      tab: tab,
       ...info
     }
     api.patchCardInfo(info.id, data)
@@ -69,14 +73,13 @@ export const CardWithText = observer((props) => {
           const index = newList.findIndex(item => item.id === info.id)
           newList.splice(index, 1, data);
 
-          console.log(list)
-          console.log(newList)
           setList(newList);
         }
       })
       .finally(() => {
         appStore.setLoading(false);
-        setEditIndex(false)
+        setEditIndex(false);
+        window.location.reload();
       })
   }
 
@@ -91,6 +94,7 @@ export const CardWithText = observer((props) => {
             setList(newList);
             popupStore.close();
             appStore.setLoading(false);
+            window.location.reload();
           }
         })
     }
@@ -103,13 +107,12 @@ export const CardWithText = observer((props) => {
   }
 
   function onEditClick(index) {
-    setEditIndex(index)
+    setEditIndex(editIndex === index ? false : index)
   }
 
 
   React.useEffect(() => {
-    let newList = [];
-    newList = cardsStore.getCardInfo(tab);
+    let newList = cardsStore.getCardInfo(tab);
     if (newList.length) {
       setList(newList);
     } else {
@@ -122,35 +125,38 @@ export const CardWithText = observer((props) => {
               title: element.title,
               list: element.list == null ? [] : element.list.split("','"),
               note: element.note,
+              tab: element.tab
             })
           });
           setList(newList);
           cardsStore.setCardInfo(props.cardId, tab, newList);
         })
         .catch((err) => {
+          setList([]);
           console.log(err);
         })
         .finally(() => {
           appStore.setLoading(false);
         })
     }
-  }, [tab]);
+  }, [tab, props.cardId]);
+
 
   return (
-    <TileWithScroll level={props.level} tileClass="card-with-text">
+    <TileWithScroll level={props.level} tileClass={style.cardWithText}>
       {
         <>
           {
             list.map((item, index) => {
               return (
-                <li className='card-with-text__list-item' key={props.level + 'Description' + index}>
-                  {appStore.isAdmin ?
-                    <CardAdminBtns
+                <li className={style.cardWithText__listItem} key={props.level + 'Description' + index}>
+                  {!!appStore.isAdmin &&
+                    <AdminBtns
                       onEditClick={() => { onEditClick(index) }}
                       onDeleteClick={() => { onDeleteClick(index) }}
-                      classAdd="card-with-text__admin-btns"
+                      classAdd={style.cardWithText__btns}
+                      withoutPopup
                     />
-                    : <></>
                   }
 
                   {
@@ -166,7 +172,7 @@ export const CardWithText = observer((props) => {
             })
           }
           {
-            appStore.isAdmin ? element : ''
+            !!appStore.isAdmin && element
           }
         </>
       }

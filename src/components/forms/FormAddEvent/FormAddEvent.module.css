@@ -1,0 +1,20 @@
+.pageOptions {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: 1px solid var(--technolab-blue);
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.pageOptions p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--grey);
+  margin: 0 0 10px 0;
+}

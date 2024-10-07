@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 
 import TileWithScroll from "../../generic/TileWithScroll/TileWithScroll";
 
+import style from "./FormSelect.module.css";
+
 export const FormSelect = (props) => {
 
   //Если передано значение, установленное на карточке, то меняем стейт, который хранит выбранную из списка опцию.
@@ -34,14 +36,14 @@ export const FormSelect = (props) => {
   }
 
   return (
-    <div className="form-select-wrapper">
-      <label htmlFor="form-select" className="form-select__title">Тип</label>
-      <button type="button" onClick={handleFormSelectClick} className="form-select" name="form-select" id="form-select">{formSelectedData}</button>
-      <TileWithScroll tileClass={isOpen ? 'form-select__list-container' : 'hidden'} >
+    <div className={style.selectWrapper}>
+      <label htmlFor="form-select" className={style.title}>Тип</label>
+      <button type="button" onClick={handleFormSelectClick} className={style.select} name="form-select" id="form-select">{formSelectedData}</button>
+      <TileWithScroll tileClass={isOpen ? style.listContainer : style.hidden} >
         {
           props.options.map((option) => {
             return (
-              <button type="button" key={'form-select' + option.value} onClick={handleOptionClick} value={JSON.stringify(option)} className={`form-select__list-item ${formSelectedData === option.title ? 'form-select__list-item_active' : ' '}`}>
+              <button type="button" key={'form-select' + option.value} onClick={handleOptionClick} value={JSON.stringify(option)} className={`${style.listItem} ${formSelectedData === option.title ? style.listItem_active : ' '}`}>
                 {option.title}
               </button>
             )

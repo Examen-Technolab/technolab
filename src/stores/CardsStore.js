@@ -1,6 +1,11 @@
 import { makeAutoObservable } from "mobx";
 import api from "../utils/Api";
 import { appStore } from "./AppStore";
+import { compareArr } from "../utils/functions";
+
+const defaultTypes = [
+  { title: 'Выберите тип карточки', value: 'default' }
+];
 
 class CardsStore {
 
@@ -8,9 +13,9 @@ class CardsStore {
 
   currentCard = {};
 
-  types = [
-    { title: 'Выберите тип карточки', value: 'default' }
-  ];
+  currentTab = '';
+
+  types = defaultTypes;
 
   constructor() {
     makeAutoObservable(this);
@@ -30,12 +35,17 @@ class CardsStore {
     }
   }
 
+  setCurrentTab = (tab) => {
+    this.currentTab = tab;
+  }
+
   setCurrentCard = (card) => {
     this.currentCard = card;
   }
 
   deleteCurrentCard = () => {
     this.currentCard = {};
+    this.currentTab = '';
   }
 
   setTypes = (newTypes) => {
@@ -46,17 +56,19 @@ class CardsStore {
   }
 
   loadTypes = () => {
-    appStore.setLoading(true);
-    api.getData('cardTypes')
-      .then((typesData) => {
-        this.setTypes(typesData);
-      })
-      .catch((err) => {
-        console.log(err);
-      })
-      .finally(() => {
-        appStore.setLoading(false);
-      })
+    if (compareArr(this.types, defaultTypes)) {
+      appStore.setLoading(true);
+      api.getData('cardTypes')
+        .then((typesData) => {
+          this.setTypes(typesData);
+        })
+        .catch((err) => {
+          console.log(err);
+        })
+        .finally(() => {
+          appStore.setLoading(false);
+        })
+    }
   }
 
   getInitialCards = () => {
@@ -73,22 +85,24 @@ class CardsStore {
       })
   }
 
-  addCard = (cardData) => {
+  addCard = (cardData, fin = () => { }) => {
     appStore.setLoading(true);
     api.postCard(cardData)
       .then((data) => {
-        this._setCards([cardData, ...this.cards]);
+        this._setCards([data[0], ...this.cards]);
       })
       .catch((err) => {
         console.log(err);
       })
       .finally(() => {
         appStore.setLoading(false);
+        fin();
       })
   }
 
-  editCard = (card, newCardData) => {
+  editCard = (card, newCardData, fin = () => { }) => {
     appStore.setLoading(true);
+
     api.patchCard(card.id, newCardData)
       .then((data) => {
         this._setCard(card, newCardData);
@@ -98,6 +112,7 @@ class CardsStore {
       })
       .finally(() => {
         appStore.setLoading(false);
+        fin()
       })
 
   }
@@ -136,6 +151,10 @@ class CardsStore {
     if (this.currentCard && (listName in this.currentCard)) {
       return this.currentCard[listName];
     } else return [];
+  }
+
+  getFilterCardList = () => {
+    return this.cards.filter(card => !card.isHidden);
   }
 
 }

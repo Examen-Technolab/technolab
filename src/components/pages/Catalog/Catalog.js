@@ -22,17 +22,19 @@ export const Catalog = observer((props) => {
     }
   }, []);
 
+
+
   return (
     <main className="section catalog">
       <h1 className="hidden"> Каталог </h1>
       <ul className="catalog__list">
         {
-          appStore.isLoggedIn ?
-            <PlusButton title="Добавить карточку."
-              onClick={onPlusBtnClick} /> : <></>
+          appStore.isLoggedIn &&
+          <PlusButton title="Добавить карточку."
+            onClick={onPlusBtnClick} />
         }
         {
-          cardsStore.cards.map((card, index) => {
+          (appStore.isLoggedIn ? cardsStore.cards : cardsStore.getFilterCardList()).map((card, index) => {
             return (
               <CardWithBtn key={'Card' + index.toString()} card={card} />
             )

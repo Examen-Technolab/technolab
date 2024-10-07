@@ -11,6 +11,12 @@
   z-index: 3;
 }
 
+.card_hidden {
+  opacity: .8;
+  border: dashed 2px var(--technolab-blue);
+  filter: grayscale(.5)
+}
+
 /* МОДИФИКАТОРЫ КАРТОЧКИ ПО ТИПУ */
 
 .card_type_with-menu {
