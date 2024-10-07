@@ -75,7 +75,7 @@ function Main(props) {
         }
         listLink={{
           title: 'Узнать больше',
-          link: '/catalog/technobot/kit',
+          link: '/catalog/18/kit',
           linkTitle: 'Перейти в каталог',
         }}
         poster={technobotImg}
@@ -93,7 +93,7 @@ function Main(props) {
           modules.map(item => {
             return (
               <li key={item.title}>
-                <ModuleLink linkTitle="Перейти на страницу модуля." level={item.level} title={item.title} />
+                <ModuleLink linkTitle="Перейти на страницу модуля." id={item.id} level={item.level} title={item.title} />
               </li>
             )
           })

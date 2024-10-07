@@ -38,14 +38,14 @@
 
 .banner {
   width: 100%;
-  min-height: 100vh;
+  min-height: 550px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   background: none;
-  box-sizing: border-box;
   padding: 60px 0;
 }
 
@@ -64,7 +64,7 @@
   align-items: flex-start;
   width: 70%;
   z-index: 4;
-  margin-top: 20vh;
+  margin-top: 150px;
 }
 
 .banner__title {
@@ -194,16 +194,12 @@
 
 @media (max-width: 700px) {
 
-  .banner {
-    justify-content: end;
-    padding: 115px 0;
-  }
-
   .banner__text-container {
     padding-top: 0;
     width: 100%;
     justify-content: center;
     align-items: center;
+    margin-top: 200px;
   }
 
   .banner__title {

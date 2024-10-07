@@ -50,26 +50,32 @@ export const externalLinks = [
 
 export const modules = [
   {
+    id: 1,
     level: 'preliminary',
     title: 'Предварительный уровень'
   },
   {
+    id: 2,
     level: 'elementary',
     title: 'Начальный уровень'
   },
   {
+    id: 3,
     level: 'basic',
     title: 'Базовый уровень'
   },
   {
+    id: 8,
     level: 'professional',
     title: 'Профессиональный уровень'
   },
   {
+    id: 9,
     level: 'research',
     title: 'Исследовательский уровень'
   },
   {
+    id: 10,
     level: 'aero',
     title: 'Аэро'
   },
