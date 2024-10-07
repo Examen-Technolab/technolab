@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c2863015.css",
-    "main.js": "/static/js/main.c01e77cb.js",
+    "main.js": "/static/js/main.f5b521eb.js",
     "static/media/technobot.mp4": "/static/media/technobot.8827de7c75bcaf944c7a.mp4",
     "static/media/technobot-promo.mp4": "/static/media/technobot-promo.e3ef08a51935d9715359.mp4",
     "static/media/technobot-poster.jpg": "/static/media/technobot-poster.37fca189aa55bfa46471.jpg",
@@ -64,10 +64,10 @@
     "static/media/btn-edit.svg": "/static/media/btn-edit.8667ac4a523e8fc42e59.svg",
     "static/media/btn-add.svg": "/static/media/btn-add.136676119fb8aadb1bfa.svg",
     "main.c2863015.css.map": "/static/css/main.c2863015.css.map",
-    "main.c01e77cb.js.map": "/static/js/main.c01e77cb.js.map"
+    "main.f5b521eb.js.map": "/static/js/main.f5b521eb.js.map"
   },
   "entrypoints": [
     "static/css/main.c2863015.css",
-    "static/js/main.c01e77cb.js"
+    "static/js/main.f5b521eb.js"
   ]
 }
