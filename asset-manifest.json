@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8152728c.css",
-    "main.js": "/static/js/main.6195a218.js",
+    "main.css": "/static/css/main.ba546482.css",
+    "main.js": "/static/js/main.3473231b.js",
     "static/media/technobot.mp4": "/static/media/technobot.8827de7c75bcaf944c7a.mp4",
     "static/media/technobot-promo.mp4": "/static/media/technobot-promo.e3ef08a51935d9715359.mp4",
     "static/media/technobot-poster.jpg": "/static/media/technobot-poster.37fca189aa55bfa46471.jpg",
@@ -13,6 +13,7 @@
     "static/media/sphero-icon-hover.svg": "/static/media/sphero-icon-hover.731a23a9b32ad400c5d87b23cbc23123.svg",
     "static/media/dobot-icon.svg": "/static/media/dobot-icon.45c0689401a8893a59eb60a72d1b2552.svg",
     "static/media/logo-machines.svg": "/static/media/logo-machines.793022ede98f3793f43a647731a3ca5c.svg",
+    "static/media/web-banner.png": "/static/media/web-banner.b200d364badb85d96b12.png",
     "static/media/MyriadPro-Regular.eot": "/static/media/MyriadPro-Regular.2cf392de26dab6088666.eot",
     "static/media/MyriadPro-Regular.ttf": "/static/media/MyriadPro-Regular.36cbf678ae00bd8b2c6d.ttf",
     "static/media/MyriadPro-Semibold.ttf": "/static/media/MyriadPro-Semibold.2cd24b6150342edcc9de.ttf",
@@ -22,7 +23,8 @@
     "static/media/ittle-bits-icon-hover.svg": "/static/media/ittle-bits-icon-hover.29d099e813b81e36cd796b55562072ce.svg",
     "static/media/icon-research-grey.svg": "/static/media/icon-research-grey.3bb715c81d7139b02f5d.svg",
     "static/media/icon-research.svg": "/static/media/icon-research.53bb484dd474a4fb1faf.svg",
-    "static/media/logo.svg": "/static/media/logo.1226ce116cc704d64002c270bce4c82e.svg",
+    "static/media/web-hover.png": "/static/media/web-hover.3542a524662ee3eb2361.png",
+    "static/media/logo.svg": "/static/media/logo.f10705ca4b9902e9fc96.svg",
     "static/media/logo-preliminary.svg": "/static/media/logo-preliminary.0c430ec22675cd6406b57513136a48a9.svg",
     "static/media/logo-elementary.svg": "/static/media/logo-elementary.664103b8ef0fba112e3fbba41c7236f1.svg",
     "static/media/logo-basic.svg": "/static/media/logo-basic.f55a23738969efdf7e14f509ee0dfad3.svg",
@@ -52,6 +54,7 @@
     "static/media/bridge-field.png": "/static/media/bridge-field.075a64547766ea3ff01a.png",
     "static/media/support-icon.svg": "/static/media/support-icon.c755d0fff09ad32f3a06.svg",
     "static/media/academy.png": "/static/media/academy.b6daac834cdc47d116af.png",
+    "static/media/promo_online.png": "/static/media/promo_online.0bb784253d495c8c9c73.png",
     "static/media/icon-professional.svg": "/static/media/icon-professional.9a830b038a6fa7e0586a.svg",
     "static/media/icon-professional-grey.svg": "/static/media/icon-professional-grey.674c771419ff4f349fed.svg",
     "static/media/address-icon.svg": "/static/media/address-icon.9c1542ecd2c833acc24b.svg",
@@ -63,11 +66,11 @@
     "static/media/btn-delete.svg": "/static/media/btn-delete.823b0cf1b0b7e9cb7cad.svg",
     "static/media/btn-edit.svg": "/static/media/btn-edit.8667ac4a523e8fc42e59.svg",
     "static/media/btn-add.svg": "/static/media/btn-add.136676119fb8aadb1bfa.svg",
-    "main.8152728c.css.map": "/static/css/main.8152728c.css.map",
-    "main.6195a218.js.map": "/static/js/main.6195a218.js.map"
+    "main.ba546482.css.map": "/static/css/main.ba546482.css.map",
+    "main.3473231b.js.map": "/static/js/main.3473231b.js.map"
   },
   "entrypoints": [
-    "static/css/main.8152728c.css",
-    "static/js/main.6195a218.js"
+    "static/css/main.ba546482.css",
+    "static/js/main.3473231b.js"
   ]
 }
