@@ -18,6 +18,46 @@
   color: #fff;
 }
 
+.link-button_color_preliminary {
+  background-color: var(--preliminary-color);
+  color: #fff;
+}
+
+.link-button_color_aero {
+  background-color: var(--aero-color);
+  color: #fff;
+}
+
+.link-button_color_basic {
+  background-color: var(--basic-color);
+  color: #fff;
+}
+
+.link-button_color_elementary {
+  background-color: var(--elementary-color);
+  color: #fff;
+}
+
+.link-button_color_professional {
+  background-color: var(--professional-color);
+  color: #fff;
+}
+
+.link-button_color_research {
+  background-color: var(--research-color);
+  color: #fff;
+}
+
+.link-button_color_machines {
+  background-color: var(--machines-color);
+  color: #fff;
+}
+
+.link-button_color_grey {
+  background-color: var(--grey-background-color);
+  color: #fff;
+}
+
 .link-button:hover {
   cursor: pointer;
   transform: scale(1.02);

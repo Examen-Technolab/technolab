@@ -16,13 +16,10 @@ export const Catalog = observer((props) => {
   }
 
   React.useEffect(() => {
-
     if (!cardsStore.checkIsLoaded()) {
       cardsStore.getInitialCards();
     }
   }, []);
-
-
 
   return (
     <main className="section catalog">

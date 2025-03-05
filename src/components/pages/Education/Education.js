@@ -39,6 +39,7 @@ function Education(props) {
                     {
                       link: item.link,
                       target: item.isExtern ? '__blank' : undefined,
+                      color: item.color
                     },
                   ]
                 }

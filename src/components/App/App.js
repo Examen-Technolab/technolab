@@ -36,6 +36,7 @@ import { Catalog } from '../pages/Catalog/Catalog';
 
 import { appStore } from '../../stores/AppStore';
 import { HiddenProduct } from '../pages/Product/HiddenProduct/HiddenProduct';
+import { Web } from '../pages/Web/Web';
 
 
 
@@ -59,23 +60,9 @@ function App() {
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    //window.addEventListener('scroll', handleScroll);
     appStore.checkUser();
   }, [])
-
-  // function onUpButtonClick() {
-  //   window.scrollTo(0, 0);
-  // }
-
-  // function handleScroll() {
-  //   setUpBtnClass((window.scrollY < window.innerHeight / 2) ? 'hidden' : '');
-  //   animateMain(firstMainSectionRef, .5, setFirstMainSectionClass);
-  //   animateMain(mainMediaRef, 1.5, setMainMediaClass);
-  // }
-
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll);
-  // }, [])
 
   return (
     <div className="background">
@@ -106,6 +93,9 @@ function App() {
             <Route path="/education/manuals">
               <FilesWithFilter options={filterForManuals} list={manuals} setList={setManuals} title="Пособия" />
             </Route>
+            <Route path="/education/web">
+              <Web />
+            </Route>
             <Route path="/downloads">
               <Files list={downloads} setList={setDownloads} isSimple={true} title="Загрузки" />
             </Route>
@@ -131,7 +121,7 @@ function App() {
               <FullScreenBanner src="/images/banner/404.svg" alt="Страница не найдена" />
             </Route>
             <Route path="*">
-              <Redirect to="/notFound" />
+              <FullScreenBanner src="/images/banner/404.svg" alt="Страница не найдена" />
             </Route>
           </Switch>
 

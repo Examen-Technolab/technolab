@@ -39,6 +39,11 @@
   background-position: right bottom;
 }
 
+.education__promo_type_web {
+  background-color: var(--professional-color);
+  background-image: url(../../../images/education/web-hover.png);
+  background-position: right bottom;
+}
 
 
 @media (max-width: 1000px) {

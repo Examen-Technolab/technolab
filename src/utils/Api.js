@@ -133,10 +133,13 @@ class Api {
   }
 
   //Если переданный список пустой, то получаем новый с помощью get запроса по урлу name
-  getList(list, setList, name, finallyFunc = () => { }) {
+  getList(list, setList, name, finallyFunc = () => { }, preSetFunc) {
     if (!list.length) {
       this.getData(name)
         .then((newList) => {
+          if (preSetFunc) {
+            newList = preSetFunc(newList);
+          }
           setList(newList);
         })
         .catch((err) => {
@@ -232,6 +235,35 @@ class Api {
 
   deleteEvent(id) {
     return fetch(`${this._baseUrl}/event?id=${id}`, {
+      method: 'DELETE',
+      credentials: 'include',
+      headers: this._headers,
+    })
+      .then(this._checkResponse)
+  }
+
+  postWeb(data) {
+    return fetch(`${this._baseUrl}/web`, {
+      method: 'POST',
+      credentials: 'include',
+      headers: this._headers,
+      body: JSON.stringify(data)
+    })
+      .then(this._checkResponse)
+  }
+
+  patchWeb(id, data) {
+    return fetch(`${this._baseUrl}/web?id=${id}`, {
+      method: 'PATCH',
+      credentials: 'include',
+      headers: this._headers,
+      body: JSON.stringify(data)
+    })
+      .then(this._checkResponse)
+  }
+
+  deleteWeb(id) {
+    return fetch(`${this._baseUrl}/web?id=${id}`, {
       method: 'DELETE',
       credentials: 'include',
       headers: this._headers,

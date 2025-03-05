@@ -40,6 +40,7 @@
 .double-tile__item_type_about {
   margin: 0;
   width: 100%;
+  gap: 10px;
 }
 
 .double-tile__about {

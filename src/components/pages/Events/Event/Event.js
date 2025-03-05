@@ -84,7 +84,7 @@ export const Event = ({ eventData }) => {
       <DoubleTile
         promo={
           <>
-            <img src={eventData.logo} className={`event__logo ${eventData.isArchived ? 'grayscale' : ''}`} alt={`Логотип ${eventData.title}`} />
+            <img src={eventData.logo + '.png'} className={`event__logo ${eventData.isArchived ? 'grayscale' : ''}`} alt={`Логотип ${eventData.title}`} />
             <h2 className={`text text_uppercase event__title ${eventData.isArchived ? 'grayscale' : ''}`}>{eventData.title}</h2>
             <p className="event__date">{eventData.date}</p>
             <p className={eventData.isArchived ? 'text event__archive' : 'hidden'}>архив</p>
