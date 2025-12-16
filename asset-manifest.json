@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.6802475e.css",
-    "main.js": "/static/js/main.5add75b2.js",
+    "main.js": "/static/js/main.7f422809.js",
     "static/media/technobot.mp4": "/static/media/technobot.8827de7c75bcaf944c7a.mp4",
     "static/media/technobot-promo.mp4": "/static/media/technobot-promo.e3ef08a51935d9715359.mp4",
     "static/media/technobot-poster.jpg": "/static/media/technobot-poster.37fca189aa55bfa46471.jpg",
-    "static/media/banner.png": "/static/media/banner.82eeaf9f0f03c1271fc1.png",
+    "static/media/iq-banner.png": "/static/media/iq-banner.3386d0f5074f239460cf.png",
     "static/media/main-banner.png": "/static/media/main-banner.dfade4ba5d244fb6e39a.png",
     "static/media/main-modules.png": "/static/media/main-modules.ddad02ff05904db3b2a6.png",
     "static/media/404.svg": "/static/media/404.d13c5575b34be4b8e64d30898f3a0012.svg",
@@ -69,10 +69,10 @@
     "static/media/btn-edit.svg": "/static/media/btn-edit.8667ac4a523e8fc42e59.svg",
     "static/media/btn-add.svg": "/static/media/btn-add.136676119fb8aadb1bfa.svg",
     "main.6802475e.css.map": "/static/css/main.6802475e.css.map",
-    "main.5add75b2.js.map": "/static/js/main.5add75b2.js.map"
+    "main.7f422809.js.map": "/static/js/main.7f422809.js.map"
   },
   "entrypoints": [
     "static/css/main.6802475e.css",
-    "static/js/main.5add75b2.js"
+    "static/js/main.7f422809.js"
   ]
 }
