@@ -130,6 +130,7 @@ html {
 
 .background {
   background-color: var(--background-color);
+  overflow: hidden;
 }
 
 .page {
@@ -235,12 +236,12 @@ html {
 @media (max-width: 1400px) {
   .section {
     width: 90%;
-    margin-top: 160px;
+    margin-top: 180px;
   }
 }
 
 @media (max-width: 1050px) {
   .section {
-    margin-top: 140px;
+    margin-top: 160px;
   }
 }

@@ -31,6 +31,7 @@ export const Popup = observer(() => {
       className={popupStore.isVisible ? style.popup + ` ${isHover ? style.popup_hover : ''}` : ''}
       hidden={!popupStore.isVisible} >
       <div onMouseLeave={handleEnter} onMouseEnter={handleLeave} onClick={(evt) => { evt.stopPropagation(); }} className={style.container}>
+        <button className={style.closeBtn} type="button" onClick={popupStore.close}>&#10006;</button>
         {popupStore.content}
       </div>
     </div>

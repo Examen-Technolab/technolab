@@ -47,7 +47,7 @@ export const Card = observer(({ card, type, children }) => {
     const previews = formPreviews(card.preview, card.lastPreview, card.product);
     setPreviewList(previews)
 
-  }, [])
+  }, [card])
 
 
 

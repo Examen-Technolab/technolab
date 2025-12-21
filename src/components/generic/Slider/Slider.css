@@ -7,6 +7,8 @@
   flex-direction: column;
   position: relative;
   margin: 10px 10px 40px 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider_big {
@@ -25,6 +27,7 @@
   -o-object-fit: contain;
   object-fit: contain;
   transition: all .3s linear;
+  border-radius: 30px;
 }
 
 .slider__img_button:hover {
@@ -45,6 +48,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  z-index: 4;
 }
 
 .slider__state-bar {

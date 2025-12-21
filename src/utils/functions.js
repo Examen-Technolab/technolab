@@ -10,3 +10,10 @@ export const compareArr = (arr1, arr2) => {
   arr2.sort(sortFunc);
   return compareArrStrict(arr1, arr2);
 }
+
+export const priceToNumber = (str) => {
+  const numberPattern = /\d+/g;
+  if (!str)
+    return 0;
+  return str.match(numberPattern).join('');
+}

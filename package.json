@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "browser-image-compression": "^2.0.2",
     "eslint-config-react-app": "^7.0.1",
+    "html-react-parser": "^5.2.10",
     "mobx": "^6.11.0",
     "mobx-react-lite": "^4.0.5",
     "react": "^18.2.0",
@@ -44,6 +45,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "autoprefixer": "^10.4.22",
+    "gh-pages": "^4.0.0",
+    "postcss-loader": "^8.2.0"
   }
 }

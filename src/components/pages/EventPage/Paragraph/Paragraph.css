@@ -9,4 +9,13 @@
   font-size: 17px;
   text-align: justify;
   margin: 15px 0 25px;
+  text-indent: 5%;
+}
+
+.paragraph__title_none-text {
+  margin-bottom: 15px;
+}
+
+.paragraph__text_none-title {
+  margin-top: -10px;
 }

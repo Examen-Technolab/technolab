@@ -1,8 +1,8 @@
 .listGroup {
-  margin-top: 15px;
   border: solid 1px var(--technolab-blue);
   padding: 10px;
   border-radius: 10px;
+  width: 100%;
 }
 
 .listGroup h3 {

@@ -31,15 +31,17 @@ export const FormRadio = ({
         {
           values.map((item, index) => {
             const key = name + index;
+            const val = item.value ?? item;
+            const title = item.title ?? item;
             return (
               <li
                 key={key}
                 className={cls.listItem}
-                onClick={() => { changeValue(item) }}
+                onClick={() => { changeValue(val) }}
               >
-                <input hidden name={key} onChange={changeHandler} type="radio" checked={item === value} />
+                <input hidden name={key} onChange={changeHandler} type="radio" checked={val === value} />
                 <label htmlFor={key} className={cls.radioBtn} />
-                <label htmlFor={key} className={cls.radioLabel}  >{item}</label>
+                <label htmlFor={key} className={cls.radioLabel}  >{title}</label>
               </li>
             )
           })

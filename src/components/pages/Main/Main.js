@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import modulesImg from '../../../images/main/main-modules.png';
 import technobotImg from '../../../images/main/technobot-poster.jpg';
@@ -12,13 +12,27 @@ import StickySection from './StickySection/StickySection';
 import Banner from './Banner/Banner';
 
 import video from '../../../video/technobot-promo.mp4';
+import bannerImage from '../../../images/main/iq-banner.png';
 
 
 function Main(props) {
+  const [scrollY, setScrollY] = useState(false);
+
+  function handleScroll() {
+    setScrollY(window.scrollY);
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  }, [])
 
   return (
     <main className="main">
       <h1 className="hidden">Главная</h1>
+      {/* {
+        (navigator.userAgent.indexOf("Safari") >= 0) &&
+
+      } */}
       <video className="main__video" src={video} autoPlay muted loop ></video>
 
       <div className="main__back"></div>
@@ -42,7 +56,8 @@ function Main(props) {
           },
         ]}
       >
-        <ul className="main__linkbar">
+        <a className='main__event-banner' target="_blank" href="https://my.robocity.info"><img alt="Робосити 2026" src={bannerImage} /></a>
+        {/* <ul className="main__linkbar">
           {
             externalLinks.map(item => {
               return (
@@ -52,11 +67,11 @@ function Main(props) {
               )
             })
           }
-        </ul>
+        </ul> */}
       </Banner>
 
       <StickySection idName="technobot"
-        scrollY={props.scrollY}
+        scrollY={scrollY}
         titleTile={<p><b className="text_uppercase">&laquo;СтемБот 1.0&raquo;</b>&nbsp;&mdash; российское робототехническое решение, собравшее передовые технологии и знания в области конструирования и робототехники.</p>}
         leftTile={<p> <b className="highlighted-text">Набор «СтемБот 1.0»,</b> разработанный компанией «Экзамен-Технолаб» в сотрудничестве с ведущими техническими вузами России, представляет собой комплект компонентов для создания и программирования роботов. </p>}
         rightTile={<p> За основу архитектуры робототехнического контроллера взята платформа Arduino, которая позволяет работать с большинством устройств по популярным протоколам передачи данных.</p>}
@@ -84,7 +99,7 @@ function Main(props) {
       />
 
       <StickySection idName="modules"
-        scrollY={props.scrollY}
+        scrollY={scrollY}
         titleTile={<p> <b className="text_uppercase">&laquo;Робототехнические модули&raquo;</b>&nbsp;&mdash; новый образовательный продукт для учебных классов изучения основ робототехники.</p>}
         leftTile={<p> <b className="highlighted-text">Образовательные робототехнические модули</b> предназначены для освоения базовых навыков в&nbsp;области проектирования различных объектов, направлены на&nbsp;развитие у&nbsp;учащихся любознательности и&nbsp;интереса к&nbsp;технике, для освоения начальных навыков в&nbsp;области проектирования и программирования простейших роботов и&nbsp;робототехнических устройств.</p>}
         rightTile={<p> <b>Каждый модуль&nbsp;&mdash;</b> это продукт, разработанный специально для учебных целей, и&nbsp;предназначенный в&nbsp;первую очередь для применения в&nbsp;рамках программ начального и&nbsp;среднего образования во&nbsp;внеклассной работе с&nbsp;учащимися, а&nbsp;также для оснащения учебных технопарков.</p>}

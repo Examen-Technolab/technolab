@@ -1,7 +1,19 @@
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
 .logo {
   width: 250px;
   height: 34px;
   margin: 0;
+}
+
+.logo_nspo {
+  width: 80px;
 }
 
 @media (max-width: 1050px) {
@@ -16,5 +28,10 @@
 
   .logo {
     margin: 0;
+  }
+
+
+  .logo_nspo {
+    width: 60px;
   }
 }

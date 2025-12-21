@@ -73,7 +73,7 @@ function EventPage(props) {
         </Tile>
       </button>
       <Tile tileClass="event-page__title-tile">
-        <img src={eventData.logo} className="event-page__logo" alt={`Логотип ${eventData.title}`} />
+        <img src={eventData.logo + '.png'} className="event-page__logo" alt={`Логотип ${eventData.title}`} />
         <h1 className="event-page__title">{eventData.title}</h1>
       </Tile>
       <ul className="event-page__list">

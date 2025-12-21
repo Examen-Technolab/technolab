@@ -125,7 +125,8 @@ export const CardWithText = observer((props) => {
               title: element.title,
               list: element.list == null ? [] : element.list.split("','"),
               note: element.note,
-              tab: element.tab
+              tab: element.tab,
+              sort: element.sort
             })
           });
           setList(newList);
@@ -151,12 +152,18 @@ export const CardWithText = observer((props) => {
               return (
                 <li className={style.cardWithText__listItem} key={props.level + 'Description' + index}>
                   {!!appStore.isAdmin &&
-                    <AdminBtns
-                      onEditClick={() => { onEditClick(index) }}
-                      onDeleteClick={() => { onDeleteClick(index) }}
-                      classAdd={style.cardWithText__btns}
-                      withoutPopup
-                    />
+                    (
+                      <>
+                        <p className={style.sort}>Положение в списке:{item.sort}</p>
+                        <AdminBtns
+                          onEditClick={() => { onEditClick(index) }}
+                          onDeleteClick={() => { onDeleteClick(index) }}
+                          classAdd={style.cardWithText__btns}
+                          withoutPopup
+                        />
+                      </>
+
+                    )
                   }
 
                   {

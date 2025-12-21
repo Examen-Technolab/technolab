@@ -15,10 +15,28 @@
   width: 100%;
 }
 
+.catalog__filters {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  max-width: 1000px;
+}
+
 @media (max-width: 950px) {
   .catalog__list {
     grid-template-columns: repeat(auto-fit, 390px);
     gap: 50px;
+  }
+
+  .catalog__filters {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .catalog__filters div {
+    margin-bottom: 0;
   }
 }
 

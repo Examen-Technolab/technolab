@@ -71,6 +71,21 @@
   z-index: 4;
 }
 
+.main__event-banner {
+  width: 25%;
+  height: auto;
+  z-index: 5;
+  margin-top: 150px;
+}
+
+.main__event-banner img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 20px;
+}
+
 /*
 
 .main__navbar {
@@ -103,11 +118,25 @@
   }
 }
 
+@media (max-width: 1100px) {
+
+  .main__event-banner {
+    max-width: 300px;
+    width: 100%;
+  }
+}
+
 
 @media (max-width: 900px) {
   .main__linkbar {
     right: 1vw;
     width: 50px;
+  }
+
+  .main__event-banner {
+    order: -1;
+    margin-top: 80px;
+    max-width: 230px;
   }
 }
 

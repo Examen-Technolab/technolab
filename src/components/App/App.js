@@ -53,11 +53,11 @@ function App() {
   //const [upBtnClass, setUpBtnClass] = useState('hidden');
 
 
-  const [scrollY, setScrollY] = useState(false);
+  // const [scrollY, setScrollY] = useState(false);
 
-  function handleScroll() {
-    setScrollY(window.scrollY);
-  }
+  // function handleScroll() {
+  //   setScrollY(window.scrollY);
+  // }
 
   useEffect(() => {
     //window.addEventListener('scroll', handleScroll);
@@ -76,7 +76,7 @@ function App() {
               <Redirect to="/main" />
             </Route>
             <Route path="/main">
-              <Main scrollY={scrollY} />
+              <Main />
             </Route>
             <Route exact path="/catalog">
               <Catalog />

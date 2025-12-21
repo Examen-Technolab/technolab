@@ -1,10 +1,14 @@
 import { makeAutoObservable } from "mobx";
 import api from "../utils/Api";
 import { appStore } from "./AppStore";
-import { compareArr } from "../utils/functions";
+import { compareArr, priceToNumber } from "../utils/functions";
 
 const defaultTypes = [
   { title: 'Выберите тип карточки', value: 'default' }
+];
+
+const defaultFilters = [
+  { title: 'Показать все', value: '' }
 ];
 
 class CardsStore {
@@ -16,6 +20,8 @@ class CardsStore {
   currentTab = '';
 
   types = defaultTypes;
+
+  filters = defaultFilters;
 
   constructor() {
     makeAutoObservable(this);
@@ -51,7 +57,8 @@ class CardsStore {
   setTypes = (newTypes) => {
     this.types = [];
     newTypes.forEach(newType => {
-      this.types.push({ title: newType.title, value: newType.type }) // можно в базе поменять type на value
+      this.types.push(newType) // можно в базе поменять type на value
+      this.filters.push(newType);
     });
   }
 
@@ -153,8 +160,25 @@ class CardsStore {
     } else return [];
   }
 
-  getFilterCardList = () => {
-    return this.cards.filter(card => !card.isHidden);
+  getFilterCardList = (type, sort, isAdmin) => {
+    let fCards = this.cards.filter(card => (card.type === type || !type) && (!card.isHidden || isAdmin));
+    if (sort) {
+      fCards.sort((a, b) => {
+        switch (+sort) {
+          case 1:
+            return (priceToNumber(a.price) - priceToNumber(b.price));
+          case 2:
+            return (priceToNumber(b.price) - priceToNumber(a.price));
+          default: return 0;
+        }
+      })
+    }
+    return fCards;
+  }
+
+  getFilters = () => {
+    console.log('this', this.filters[0].value)
+    return this.filters;
   }
 
 }

@@ -10,7 +10,7 @@ function CardWithBtn(props) {
   const styleClass = `card__link-btn card__link-btn_level_${props.card.type} ${style.btn}`;
   let link = `/${props.card.isHidden ? 'hidden' : 'catalog'}/${props.card.id}`;
   if (!props.card.isHidden)
-    link = link + '/kit';
+    link = link + '/specifications';
 
   return (
     <Card type="with-btn" card={props.card}

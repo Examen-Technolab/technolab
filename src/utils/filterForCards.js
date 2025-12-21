@@ -1,4 +1,4 @@
-const filterForManuals = [
+export const filterForCards = [
   {
     value: '',
     title: 'Показать все',
@@ -24,10 +24,6 @@ const filterForManuals = [
     title: 'Технолаб. Исследовательский уровень',
   },
   {
-    value: 'expert',
-    title: 'Технолаб. Экспертный уровень',
-  },
-  {
     value: 'aero',
     title: 'Технолаб. Аэро',
   },
@@ -39,18 +35,33 @@ const filterForManuals = [
     value: 'vex',
     title: 'VEX',
   },
-  // {
-  //   value: 'dobot',
-  //   title: 'Dobot',
-  // },
-  // {
-  //   value: 'sphero',
-  //   title: 'Sphero',
-  // },
-  // {
-  //   value: 'littleBits',
-  //   title: 'Little Bits',
-  // },
+  {
+    value: 'technobot',
+    title: 'Стембот 1.0',
+  },
+  {
+    value: 'aurora',
+    title: 'Аврора',
+  },
+  {
+    value: 'dobot',
+    title: 'Dobot',
+  },
 ]
 
-export default filterForManuals;
+export const sortForCards = [
+
+  {
+    title: 'по умолчанию',
+    value: '0'
+  },
+  {
+    title: 'по возрастанию цены',
+    value: '1'
+  },
+  {
+    title: 'по убыванию цены',
+    value: '2'
+  },
+
+]

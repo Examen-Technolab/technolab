@@ -8,6 +8,7 @@ import { FormAddEvent } from "../../../forms/FormAddEvent/FormAddEvent";
 import Form from "../../../forms/Form/Form";
 import { eventsStore } from "../../../../stores/EventsStore";
 import api from "../../../../utils/Api";
+import parse from 'html-react-parser';
 
 export const Event = ({ eventData }) => {
 
@@ -84,7 +85,10 @@ export const Event = ({ eventData }) => {
       <DoubleTile
         promo={
           <>
-            <img src={eventData.logo + '.png'} className={`event__logo ${eventData.isArchived ? 'grayscale' : ''}`} alt={`Логотип ${eventData.title}`} />
+            {
+              !!eventData.logo &&
+              <img src={eventData.logo + '.png'} className={`event__logo ${eventData.isArchived ? 'grayscale' : ''}`} alt={`Логотип ${eventData.title}`} />
+            }
             <h2 className={`text text_uppercase event__title ${eventData.isArchived ? 'grayscale' : ''}`}>{eventData.title}</h2>
             <p className="event__date">{eventData.date}</p>
             <p className={eventData.isArchived ? 'text event__archive' : 'hidden'}>архив</p>
@@ -92,7 +96,7 @@ export const Event = ({ eventData }) => {
         }
         about={
           <>
-            <p className="event__about">{eventData.about}</p>
+            <p className="event__about">{parse(eventData.about)}</p>
           </>
         }
         links={links}

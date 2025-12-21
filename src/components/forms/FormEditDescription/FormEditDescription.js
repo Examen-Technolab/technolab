@@ -11,11 +11,13 @@ import { InputStore } from "../../../stores/InputStore";
 import { FormRadio } from "../FormRadio/FormRadio";
 
 import { ListGroup } from "../ListGroup/ListGroup";
+import FormInput from "../FormInput/FormInput";
 
 
 const stores = {
   id: new InputStore(),
   title: new InputStore(),
+  sort: new InputStore(),
   newLi: new InputStore(),
   note: new InputStore(),
   tab: new InputStore('kit'),
@@ -48,7 +50,8 @@ export const FormEditDescription = observer(({ submitHandler, item }) => {
       title: stores.title.value || '',
       list: newList.join("','") || '',
       note: stores.note.value || '',
-      tab: stores.tab.value
+      tab: stores.tab.value,
+      sort: stores.sort.value || 500
     })
   }
 
@@ -58,7 +61,9 @@ export const FormEditDescription = observer(({ submitHandler, item }) => {
       stores.title.setValue(item.title);
       stores.note.setValue(item.note);
       stores.tab.setValue(item.tab);
+      stores.sort.setValue(item.sort);
       setNewList(item.list)
+      console.log('item', item.sort)
     }
   }, [])
 
@@ -71,11 +76,34 @@ export const FormEditDescription = observer(({ submitHandler, item }) => {
           <h2 className="text_uppercase">{item ? 'Редактировать' : 'Добавить'} блок описания</h2>
           <FormTextarea  {...stores.title} name="title" text="Заголовок" />
           <FormRadio
-            values={['kit', 'specifications']}
+            values={[
+              {
+                value: 'specifications',
+                title: 'Описание'
+              },
+              {
+                value: 'kit',
+                title: 'Комплектация'
+              },
+              {
+                value: 'characteristic',
+                title: 'Характеристики'
+              }
+
+            ]}
             label="Вкладка"
             changeValue={stores.tab.setValue}
             value={stores.tab.value}
             name='tab'
+          />
+
+          <FormInput
+            type='number'
+            value={stores.sort.value}
+            name="sort"
+            setValue={stores.sort.setValue}
+            text="Положение в списке"
+            onChange={(val) => { console.log(val) }}
           />
 
           <ListGroup

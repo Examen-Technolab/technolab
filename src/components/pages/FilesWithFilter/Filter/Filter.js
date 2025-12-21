@@ -16,7 +16,7 @@ function Filter(props) {
   }, [filter])
 
   return (
-    <Select options={props.options} setFilter={setFilter} />
+    <Select options={props.options} onClick={setFilter} />
   );
 }
 export default Filter;

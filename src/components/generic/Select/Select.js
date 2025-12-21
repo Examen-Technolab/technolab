@@ -2,15 +2,15 @@ import { useState } from "react";
 
 import TileWithScroll from "../TileWithScroll/TileWithScroll";
 
-function Select(props) {
+function Select({ options, onClick = () => { }, defaultOption }) {
 
-  const [selectedData, setSelectedData] = useState(props.options[0].title);
+  const [selectedData, setSelectedData] = useState(defaultOption ?? options[0].title);
   const [isOpen, setIsOpen] = useState(false);
 
   function handleOptionClick(evt) {
     const option = JSON.parse(evt.target.value);
     setSelectedData(option.title);
-    props.setFilter(option.value);
+    onClick(option.value);
     setIsOpen(false);
   }
 
@@ -23,9 +23,9 @@ function Select(props) {
       <button type="button" onClick={handleSelectClick} className="select text_uppercase" name="manuals" id="type-select">{selectedData}</button>
       <TileWithScroll tileClass={isOpen ? 'select__list-container' : 'hidden'} >
         {
-          props.options.map((option) => {
+          options.map((option, ind) => {
             return (
-              <button type="button" key={'select' + option.value} onClick={handleOptionClick} value={JSON.stringify(option)} className={`select__list-item ${selectedData === option.title ? 'select__list-item_active' : ' '}`}>
+              <button type="button" key={'select' + option.value + ind} onClick={handleOptionClick} value={JSON.stringify(option)} className={`select__list-item ${selectedData === option.title ? 'select__list-item_active' : ' '}`}>
                 {option.title}
               </button>
             )

@@ -1,3 +1,16 @@
+.sort {
+  position: absolute;
+  right: 120px;
+  opacity: .8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  height: 30px;
+  color: var(--grey-background-color);
+}
+
 .cardWithText {
   background-color: var(--tile-background);
   height: 550px;
@@ -15,6 +28,7 @@
   display: flex;
   flex-direction: column;
   justify-content: stretch;
+  position: relative;
 }
 
 .cardWithText__btns {

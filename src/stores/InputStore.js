@@ -16,6 +16,7 @@ export class InputStore {
   }
 
   setValue = (newValue) => {
+    console.log(newValue)
     this.value = newValue;
   }
 
