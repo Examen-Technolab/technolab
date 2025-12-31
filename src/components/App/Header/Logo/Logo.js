@@ -5,7 +5,7 @@ import { logosObject } from '../../../../utils/constants';
 import { appStore } from '../../../../stores/AppStore';
 
 
-import nsppoLogo from '../../../../images/nsppo.png';
+import nsppoLogo from '../../../../images/nsppo-new.png';
 
 function Logo() {
   let headerLogo = logosObject[appStore.level];

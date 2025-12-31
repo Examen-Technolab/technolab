@@ -1,0 +1,295 @@
+.technology{
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.titleContainer{
+  width: 45%;
+  display:flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+    height: auto;
+}
+
+.titleContainer__technologyImg{
+  width: 80%;
+  object-fit: contain;
+    margin-bottom: -5px;
+    max-width: 400px;
+}
+
+.titleContainer__vexImg{
+  width: 40%;
+  object-fit: contain;
+  max-width: 220px;
+}
+
+.titleContainer__title{
+  color: var(--technolab-blue);
+  font-size: 30px;
+  text-transform: uppercase;
+  max-width: 300px;
+  align-self: flex-end;
+  word-wrap: normal;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+
+.promoContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+    height: auto;
+    position: relative;
+}
+
+.promoContainer__title{
+  color: var(--technolab-blue);
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-size: 16px;
+}
+
+.promoContainer__text{
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-size: 14px;
+}
+
+.promoContainer__list{
+  padding: 0 0 0 20px;
+  margin: 0;
+  gap: 8px;
+  width: calc(100% - 280px);
+}
+
+.promoContainer__triangles{
+  display: flex;
+  position: absolute;
+  right: 20px;
+  background-image: url(../../../images/technology/triangle-1.png);
+  bottom: 20px;
+    height: 80px;
+    content: '';
+    z-index: 10;
+    width: 240px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.promoContainer__triangles_type_2{
+  background-image: url(../../../images/technology/triangle-2.png);
+  height: 100px;
+}
+
+.advantages{
+  width: 100%;
+}
+
+.advantages__list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item{
+  width: 24%;
+  height: auto;
+  margin: 0;
+  color: #fff;
+  border-radius: 40px;
+}
+
+
+.advantages__item_color_default{
+  background-color: var(--technolab-blue);
+}
+
+.advantages__item_color_professional{
+  background-color: var(--professional-color);
+}
+
+.advantages__title{
+text-align: center;
+font-size: 14px;
+margin-bottom: 8px;
+}
+
+.advantages__text{
+  text-align: center;
+  font-size: 12px;
+}
+
+.products{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 32px;
+}
+
+.products__list{
+  list-style: none;
+  width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.products__list li{
+    margin: 0;
+    padding: 0;
+    gap: 24px;
+    display: flex;
+}
+.links{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.links__tile{
+  display: flex;
+  flex-direction: column;
+}
+
+.links__logo{
+  max-width: 400px;
+  position: absolute;
+  right: 20px;
+  width: 100%;
+}
+
+.links__list{
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-direction: column;
+gap: 36px;
+}
+
+
+.links__list li{
+padding: 0;
+margin: 0;
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+
+.links__name{
+  line-height: 1.2;
+  color: var(--technolab-blue);
+
+
+}
+
+.links__btn{
+  width: 120px;
+
+}
+
+@media(max-width:1000px){
+  .technology{
+    gap: 24px;
+  }
+
+  .header{
+  flex-direction: column;  
+  gap: 16px;
+  }
+  
+  .titleContainer{
+    width: 100%;
+    gap: 12px;
+  }
+
+  .titleContainer__title{
+    max-width: 100%;
+  }
+
+  
+  .advantages__list{
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  
+  .advantages__item{
+    width: 100%;
+  }
+
+  .products{
+      gap: 12px;
+      flex-direction: column;
+  }
+
+.products__list li{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  
+.links__tile{
+  gap: 24px;
+}
+
+  
+.links__logo{
+  position: static;
+  align-self: flex-end;
+}
+
+
+.links__name{
+  font-size: 14px;
+
+}
+
+}
+
+
+@media(max-width:700px){ 
+.promoContainer__triangles{
+  display: none;
+}
+
+.promoContainer__list{
+  width: 100%
+}
+}
+
+@media(max-width:500px){ 
+  
+  .titleContainer__title{
+    font-size: 20px;
+  }
+
+  
+  .links__list{
+  gap: 24px;
+  }
+
+}

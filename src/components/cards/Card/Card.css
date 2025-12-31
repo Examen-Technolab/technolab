@@ -141,6 +141,9 @@
 /* ССЫЛКА-КНОПКА КАРТОЧКИ */
 
 .card__link-btn {
+  background: none;
+  border: none;
+  outline: none;
   background-image: url('../../../images/cards/default-btn.png');
   background-position: center top;
   background-repeat: no-repeat;

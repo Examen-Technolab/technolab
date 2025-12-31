@@ -37,6 +37,7 @@ import { Catalog } from '../pages/Catalog/Catalog';
 import { appStore } from '../../stores/AppStore';
 import { HiddenProduct } from '../pages/Product/HiddenProduct/HiddenProduct';
 import { Web } from '../pages/Web/Web';
+import { Techology } from '../pages/Techology/Techology';
 
 
 
@@ -110,6 +111,9 @@ function App() {
             </Route>
             <Route exact path="/events">
               <Events />
+            </Route>            
+            <Route exact path="/technology">
+              <Techology />
             </Route>
             <Route path={`/events/:eventUrl`}>
               <EventPage />

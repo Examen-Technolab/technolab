@@ -31,6 +31,10 @@ const navLinks = [
     link: '/events',
     title: 'Мероприятия'
   },
+  // {
+  //   link: '/technology',
+  //   title: 'Урок-технологии.РФ'
+  // },
 ]
 
 function Header() {

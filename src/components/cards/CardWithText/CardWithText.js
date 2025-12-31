@@ -148,6 +148,7 @@ export const CardWithText = observer((props) => {
       {
         <>
           {
+            !!list.length ?
             list.map((item, index) => {
               return (
                 <li className={style.cardWithText__listItem} key={props.level + 'Description' + index}>
@@ -176,7 +177,8 @@ export const CardWithText = observer((props) => {
                 </li>
 
               )
-            })
+            })            
+            : <Description level={props.level} title='Раздел дополняется' list={[]} note={''} />
           }
           {
             !!appStore.isAdmin && element
