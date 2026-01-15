@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.76999d83.css",
-    "main.js": "/static/js/main.1aff38c6.js",
+    "main.css": "/static/css/main.a5cf8d60.css",
+    "main.js": "/static/js/main.bdc0055f.js",
     "static/media/technobot.mp4": "/static/media/technobot.8827de7c75bcaf944c7a.mp4",
     "static/media/technobot-promo.mp4": "/static/media/technobot-promo.e3ef08a51935d9715359.mp4",
     "static/media/technobot-poster.jpg": "/static/media/technobot-poster.37fca189aa55bfa46471.jpg",
     "static/media/iq-banner.png": "/static/media/iq-banner.3386d0f5074f239460cf.png",
     "static/media/main-banner.png": "/static/media/main-banner.dfade4ba5d244fb6e39a.png",
     "static/media/main-modules.png": "/static/media/main-modules.ddad02ff05904db3b2a6.png",
-    "static/media/404.svg": "/static/media/404.cce525d090e62d770e0254df29b14293.svg",
+    "static/media/404.svg": "/static/media/404.d13c5575b34be4b8e64d30898f3a0012.svg",
     "static/media/nsppo-new.png": "/static/media/nsppo-new.e3f7eb027c5380b05516.png",
     "static/media/sphero-icon.svg": "/static/media/sphero-icon.5894677537de8540295265c05a64452e.svg",
     "static/media/logo-technology.png": "/static/media/logo-technology.820a3125748c85bfe942.png",
@@ -28,7 +28,7 @@
     "static/media/icon-research-grey.svg": "/static/media/icon-research-grey.3bb715c81d7139b02f5d.svg",
     "static/media/icon-research.svg": "/static/media/icon-research.53bb484dd474a4fb1faf.svg",
     "static/media/web-hover.png": "/static/media/web-hover.3542a524662ee3eb2361.png",
-    "static/media/logo.svg": "/static/media/logo.27aac452ccda853cdbdf.svg",
+    "static/media/logo.svg": "/static/media/logo.f10705ca4b9902e9fc96.svg",
     "static/media/logo-preliminary.svg": "/static/media/logo-preliminary.0c430ec22675cd6406b57513136a48a9.svg",
     "static/media/logo-elementary.svg": "/static/media/logo-elementary.664103b8ef0fba112e3fbba41c7236f1.svg",
     "static/media/logo-basic.svg": "/static/media/logo-basic.f55a23738969efdf7e14f509ee0dfad3.svg",
@@ -65,16 +65,16 @@
     "static/media/table-bridge.png": "/static/media/table-bridge.41df3e9e29665cffa7c9.png",
     "static/media/professional-pic.png": "/static/media/professional-pic.d529e990b3a69b51fa7a.png",
     "static/media/btn-profile.svg": "/static/media/btn-profile.517a8edfa0ee4f72ce43.svg",
-    "static/media/btn-cross.svg": "/static/media/btn-cross.5921306c9eb232eafb8b.svg",
+    "static/media/btn-cross.svg": "/static/media/btn-cross.cc303bd125451d64a7ad.svg",
     "index.html": "/index.html",
-    "static/media/btn-delete.svg": "/static/media/btn-delete.ce3b64935accf9b8212e.svg",
-    "static/media/btn-edit.svg": "/static/media/btn-edit.6c7bf05444b9793fdf6e.svg",
-    "static/media/btn-add.svg": "/static/media/btn-add.4c529c4ea7883cf685e6.svg",
-    "main.76999d83.css.map": "/static/css/main.76999d83.css.map",
-    "main.1aff38c6.js.map": "/static/js/main.1aff38c6.js.map"
+    "static/media/btn-delete.svg": "/static/media/btn-delete.823b0cf1b0b7e9cb7cad.svg",
+    "static/media/btn-edit.svg": "/static/media/btn-edit.8667ac4a523e8fc42e59.svg",
+    "static/media/btn-add.svg": "/static/media/btn-add.136676119fb8aadb1bfa.svg",
+    "main.a5cf8d60.css.map": "/static/css/main.a5cf8d60.css.map",
+    "main.bdc0055f.js.map": "/static/js/main.bdc0055f.js.map"
   },
   "entrypoints": [
-    "static/css/main.76999d83.css",
-    "static/js/main.1aff38c6.js"
+    "static/css/main.a5cf8d60.css",
+    "static/js/main.bdc0055f.js"
   ]
 }
