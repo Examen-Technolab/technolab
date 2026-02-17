@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.5889e272.css",
-    "main.js": "/static/js/main.f95dc45f.js",
+    "main.css": "/static/css/main.12c11323.css",
+    "main.js": "/static/js/main.3bdc14e5.js",
     "static/media/technobot.mp4": "/static/media/technobot.8827de7c75bcaf944c7a.mp4",
     "static/media/technobot-promo.mp4": "/static/media/technobot-promo.e3ef08a51935d9715359.mp4",
     "static/media/technobot-poster.jpg": "/static/media/technobot-poster.37fca189aa55bfa46471.jpg",
     "static/media/img11.png": "/static/media/img11.81f0d41ca2c642b3db72.png",
     "static/media/iq-banner.png": "/static/media/iq-banner.3386d0f5074f239460cf.png",
-    "static/media/img9.png": "/static/media/img9.40a63da6e247d39c46c5.png",
     "static/media/main-banner.png": "/static/media/main-banner.dfade4ba5d244fb6e39a.png",
     "static/media/img5.png": "/static/media/img5.ed31e321a57f045560e6.png",
     "static/media/main-modules.png": "/static/media/main-modules.ddad02ff05904db3b2a6.png",
+    "static/media/img9.png": "/static/media/img9.1d291360a90e609637a4.png",
     "static/media/404.svg": "/static/media/404.d13c5575b34be4b8e64d30898f3a0012.svg",
     "static/media/img3.png": "/static/media/img3.30927b52fabae80526c7.png",
-    "static/media/img8.png": "/static/media/img8.b70afbd8a4f684bb1196.png",
     "static/media/img10.png": "/static/media/img10.cc22291efee06c5a5f78.png",
+    "static/media/img8.png": "/static/media/img8.b7242f1d411ce622bc35.png",
     "static/media/nsppo-new.png": "/static/media/nsppo-new.e3f7eb027c5380b05516.png",
     "static/media/img2.png": "/static/media/img2.18b2a275bb42edd82c4d.png",
     "static/media/img1.png": "/static/media/img1.78ba6959a4f4c3edee23.png",
-    "static/media/sensors.png": "/static/media/sensors.0488cfe639cc16f9e3a4.png",
     "static/media/sphero-icon.svg": "/static/media/sphero-icon.5894677537de8540295265c05a64452e.svg",
     "static/media/img4.png": "/static/media/img4.714a136e30287937fe85.png",
     "static/media/img6.png": "/static/media/img6.98482e093cb80d1ce4b9.png",
+    "static/media/sensors.png": "/static/media/sensors.cb725360fe905fa52c32.png",
     "static/media/logo-technology.png": "/static/media/logo-technology.820a3125748c85bfe942.png",
     "static/media/ittle-bits-icon.svg": "/static/media/ittle-bits-icon.104ad84107dcd55d9ad3e748656ae716.svg",
     "static/media/sphero-icon-hover.svg": "/static/media/sphero-icon-hover.731a23a9b32ad400c5d87b23cbc23123.svg",
@@ -119,11 +119,11 @@
     "static/media/btn-delete.svg": "/static/media/btn-delete.823b0cf1b0b7e9cb7cad.svg",
     "static/media/btn-edit.svg": "/static/media/btn-edit.8667ac4a523e8fc42e59.svg",
     "static/media/btn-add.svg": "/static/media/btn-add.136676119fb8aadb1bfa.svg",
-    "main.5889e272.css.map": "/static/css/main.5889e272.css.map",
-    "main.f95dc45f.js.map": "/static/js/main.f95dc45f.js.map"
+    "main.12c11323.css.map": "/static/css/main.12c11323.css.map",
+    "main.3bdc14e5.js.map": "/static/js/main.3bdc14e5.js.map"
   },
   "entrypoints": [
-    "static/css/main.5889e272.css",
-    "static/js/main.f95dc45f.js"
+    "static/css/main.12c11323.css",
+    "static/js/main.3bdc14e5.js"
   ]
 }
