@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2658d635.css",
-    "main.js": "/static/js/main.3bdc14e5.js",
+    "main.css": "/static/css/main.be10e129.css",
+    "main.js": "/static/js/main.9711094d.js",
     "static/media/technobot.mp4": "/static/media/technobot.8827de7c75bcaf944c7a.mp4",
     "static/media/technobot-promo.mp4": "/static/media/technobot-promo.e3ef08a51935d9715359.mp4",
     "static/media/technobot-poster.jpg": "/static/media/technobot-poster.37fca189aa55bfa46471.jpg",
@@ -10,6 +10,7 @@
     "static/media/iq-banner.png": "/static/media/iq-banner.3386d0f5074f239460cf.png",
     "static/media/main-banner.png": "/static/media/main-banner.dfade4ba5d244fb6e39a.png",
     "static/media/img5.png": "/static/media/img5.ed31e321a57f045560e6.png",
+    "static/media/sensors1.png": "/static/media/sensors1.38da72519aab575471c0.png",
     "static/media/main-modules.png": "/static/media/main-modules.ddad02ff05904db3b2a6.png",
     "static/media/404.svg": "/static/media/404.d13c5575b34be4b8e64d30898f3a0012.svg",
     "static/media/img3.png": "/static/media/img3.30927b52fabae80526c7.png",
@@ -119,11 +120,11 @@
     "static/media/btn-delete.svg": "/static/media/btn-delete.823b0cf1b0b7e9cb7cad.svg",
     "static/media/btn-edit.svg": "/static/media/btn-edit.8667ac4a523e8fc42e59.svg",
     "static/media/btn-add.svg": "/static/media/btn-add.136676119fb8aadb1bfa.svg",
-    "main.2658d635.css.map": "/static/css/main.2658d635.css.map",
-    "main.3bdc14e5.js.map": "/static/js/main.3bdc14e5.js.map"
+    "main.be10e129.css.map": "/static/css/main.be10e129.css.map",
+    "main.9711094d.js.map": "/static/js/main.9711094d.js.map"
   },
   "entrypoints": [
-    "static/css/main.2658d635.css",
-    "static/js/main.3bdc14e5.js"
+    "static/css/main.be10e129.css",
+    "static/js/main.9711094d.js"
   ]
 }
